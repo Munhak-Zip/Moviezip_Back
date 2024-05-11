@@ -29,4 +29,5 @@ public class ReviewImpl {
     public Review getReviewDetail(long rvId) {
         return mybatisReviewDao.getReviewDetail(rvId);
     }
+    public int updateReview(Review review) { return mybatisReviewDao.updateReview(review); }
 }
