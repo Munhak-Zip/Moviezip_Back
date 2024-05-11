@@ -14,6 +14,9 @@
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/User.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/MoviezipApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/MoviezipApplicationTests.java" afterDir="false" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : 설정파일">
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,6 +28,8 @@
       <list>
         <option value="Interface" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
+        <option value="spring-beans.schema" />
         <option value="JUnit5 Test Class" />
       </list>
     </option>
@@ -47,6 +52,28 @@
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "JUnit.MoviezipApplicationTests.executor": "Run",
+    "JUnit.ReviewTest.executor": "Run",
+    "Maven.demo [-Dtest=NOT_RESOLVED,test-compile...].executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.MoviezipApplication.executor": "Run",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "add/reviewDAO",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "D:/softwaresystem_dev/jpetstore-boot-rest/jpetstore",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.15",
+    "project.structure.side.proportion": "0.2",
+    "vue.rearranger.settings.migration": "true"
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
     &quot;JUnit.MoviezipApplicationTests.executor&quot;: &quot;Run&quot;,
@@ -80,6 +107,16 @@
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.moviezip.dao.mybatis" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.moviezip.domain" />
+      <recent name="com.example.moviezip.controller" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
     <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
       <recent name="com.example.moviezip.test" />
       <recent name="com.example.moviezip" />
@@ -90,9 +127,42 @@
       <recent name="com.example.moviezip.test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.moviezip.service" />
+      <recent name="com.example.moviezip.dao" />
       <recent name="com.example.moviezip.controller" />
     </key>
   </component>
+  <component name="RunManager" selected="JUnit.ReviewTest">
+    <configuration name="MoviezipApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviezip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviezip" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.MoviezipApplicationTests" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReviewTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviezip.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.ReviewTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
   <component name="RunManager" selected="JUnit.UserTest22">
     <configuration name="MoviezipApplicationTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
@@ -194,6 +264,12 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReviewTest" />
+        <item itemvalue="JUnit.MoviezipApplicationTests" />
+      </list>
+    </recent_temporary>
+    <recent_temporary>
+      <list>
         <item itemvalue="JUnit.UserTest22" />
         <item itemvalue="JUnit.UserTest22.testUser" />
         <item itemvalue="JUnit.UserTest" />
@@ -242,6 +318,127 @@
     </task>
     <task id="LOCAL-00003" summary="db연결">
       <option name="closed" value="true" />
+      <created>1715422566316</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715422566316</updated>
+    </task>
+    <task id="LOCAL-00004" summary="[add] : ReviewController.java 추가">
+      <option name="closed" value="true" />
+      <created>1715423786816</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1715423786816</updated>
+    </task>
+    <task id="LOCAL-00005" summary="[add] : Review.java 추가">
+      <option name="closed" value="true" />
+      <created>1715424491295</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1715424491295</updated>
+    </task>
+    <task id="LOCAL-00006" summary="[add] : Review.java 변수 추가">
+      <option name="closed" value="true" />
+      <created>1715424545265</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715424545265</updated>
+    </task>
+    <task id="LOCAL-00007" summary="[add] : Review.java 기본 생성자 추가">
+      <option name="closed" value="true" />
+      <created>1715424562196</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715424562196</updated>
+    </task>
+    <task id="LOCAL-00008" summary="[add] : Review.java import">
+      <option name="closed" value="true" />
+      <created>1715424579159</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1715424579159</updated>
+    </task>
+    <task id="LOCAL-00009" summary="[add] : Review.java 생성자 추가">
+      <option name="closed" value="true" />
+      <created>1715424649497</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715424649497</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[add] : Review.java getter,setter 추가">
+      <option name="closed" value="true" />
+      <created>1715424702070</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715424702070</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[add] : reviewMapper 주입">
+      <option name="closed" value="true" />
+      <created>1715424791908</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715424791908</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[add] : MybatisReviewDao.java 추가">
+      <option name="closed" value="true" />
+      <created>1715427640181</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715427640181</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[add] : ReviewDao.java 추가">
+      <option name="closed" value="true" />
+      <created>1715427650744</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715427650744</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[add] : ReviewImpl.java 추가">
+      <option name="closed" value="true" />
+      <created>1715427663217</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715427663217</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[add] : ReviewMapper.xml 추가">
+      <option name="closed" value="true" />
+      <created>1715427683232</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715427683232</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[add] : ReviewTest.java 추가">
+      <option name="closed" value="true" />
+      <created>1715427694218</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715427694218</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[add] : 설정파일">
+      <option name="closed" value="true" />
+      <created>1715427713039</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715427713039</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00003" summary="db연결">
+      <option name="closed" value="true" />
       <created>1715323602279</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
@@ -268,6 +465,20 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="초기세팅" />
     <MESSAGE value="db연결" />
-    <option name="LAST_COMMIT_MESSAGE" value="db연결" />
+    <MESSAGE value="[add] : ReviewController.java 추가" />
+    <MESSAGE value="[add] : Review.java 추가" />
+    <MESSAGE value="[add] : Review.java 변수 추가" />
+    <MESSAGE value="[add] : Review.java 기본 생성자 추가" />
+    <MESSAGE value="[add] : Review.java import" />
+    <MESSAGE value="[add] : Review.java 생성자 추가" />
+    <MESSAGE value="[add] : Review.java getter,setter 추가" />
+    <MESSAGE value="[add] : reviewMapper 주입" />
+    <MESSAGE value="[add] : MybatisReviewDao.java 추가" />
+    <MESSAGE value="[add] : ReviewDao.java 추가" />
+    <MESSAGE value="[add] : ReviewImpl.java 추가" />
+    <MESSAGE value="[add] : ReviewMapper.xml 추가" />
+    <MESSAGE value="[add] : ReviewTest.java 추가" />
+    <MESSAGE value="[add] : 설정파일" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : 설정파일" />
   </component>
 </project>
