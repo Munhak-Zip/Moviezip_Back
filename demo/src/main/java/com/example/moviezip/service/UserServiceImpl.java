@@ -1,13 +1,24 @@
 package com.example.moviezip.service;
 
+import com.example.moviezip.dao.mybatis.MybatisReviewDao;
 import com.example.moviezip.dao.mybatis.MybatisUserDao;
+import com.example.moviezip.domain.Review;
+import com.example.moviezip.domain.User;
+import org.springframework.stereotype.Service;
 
-public abstract class UserServiceImpl implements UserService{
-    private MybatisUserDao mybatisUserDao;
+@Service
+public class UserServiceImpl{
+    private final MybatisUserDao mybatisUserDao;
 
 //    public UserServiceImpl(MybatisMypageDao mybatisMypageDao) {
 //        this.mybatisUserDao = mybatisUserDao;
 //    }
+    public UserServiceImpl(MybatisUserDao mybatisUserDao) {
+    this.mybatisUserDao = mybatisUserDao;
+}
+    public User getUserById(Long id) {
+        return mybatisUserDao.getUserById(id);
+    }
 
     public void updatePassword(Long id, String newPassword) {
         mybatisUserDao.updatePassword(id, newPassword);
