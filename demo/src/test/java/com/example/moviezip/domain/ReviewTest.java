@@ -36,7 +36,7 @@ public class ReviewTest {
         rvImpl.deleteReview(81);
          */
 
-        /* selectTest */
+        /* ReviewListTest */
         /*
         List<Review> rvlist = rvImpl.getReviewList(1);
 
@@ -44,5 +44,9 @@ public class ReviewTest {
             System.out.println(review.getRvTitle()+", "+review.getContent());
         }
         */
+
+        /* reviewDetailTest */
+        Review review = rvImpl.getReviewDetail(83);
+        System.out.println(review.getContent()+", "+review.getRvId());
     }
 }
