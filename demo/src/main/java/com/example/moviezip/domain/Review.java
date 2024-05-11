@@ -7,4 +7,8 @@ public class Review {
     private String wrtier;
     private String content;
     private String rvTitle;
+
+    public Review(){
+
+    }
 }
