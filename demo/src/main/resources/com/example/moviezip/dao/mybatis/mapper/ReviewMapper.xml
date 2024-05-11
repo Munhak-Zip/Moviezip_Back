@@ -27,4 +27,13 @@
         FROM REVIEW
         WHERE REVIEW_ID = #{rvId}
     </select>
+
+    <update id="updateReview" parameterType="Review">
+        UPDATE REVIEW SET
+            CONTENT = #{content},
+            STAR = #{rvStar},
+            REVIEW_TITLE = #{rvTitle,jdbcType=VARCHAR}
+        WHERE REVIEW_ID = #{rvId}
+    </update>
+
 </mapper>
