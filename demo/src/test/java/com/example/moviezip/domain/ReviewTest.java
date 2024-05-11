@@ -54,7 +54,7 @@ public class ReviewTest {
         System.out.println(review.getContent()+", "+review.getRvId());*/
 
         /* updateReviewTest */
-        Review newRv = new Review("수정한 내용", 3, 1);
+        Review newRv = new Review("이 부분을 수정", 3, 1);
         newRv.setRvId(83);
         int updatedRv = rvImpl.updateReview(newRv);
         System.out.println(updatedRv);
