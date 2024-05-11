@@ -4,10 +4,15 @@
 <mapper namespace="com.example.moviezip.dao.mybatis.mapper.ReviewMapper">
 <cache />
 
-<insert id="insertMyReview" parameterType="Review">
-    INSERT INTO REVIEW
-    (CONTENT, STAR, MOVIE_ID)
-    VALUES
-    (#{content}, #{rvStar}, #{mvId})
-</insert>
+    <insert id="insertMyReview" parameterType="Review">
+        INSERT INTO REVIEW
+        (CONTENT, STAR, MOVIE_ID)
+        VALUES
+        (#{content}, #{rvStar}, #{mvId})
+    </insert>
+
+    <delete id="deleteReview" parameterType="long">
+        DELETE FROM REVIEW
+        WHERE REVIEW_ID = #{rvId}
+    </delete>
 </mapper>
