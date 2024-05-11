@@ -48,6 +48,43 @@ public class UserTest22 {
         else
             System.out.println("틀렸다!");
 
+        //사용자 찾기
+        User user2 =  mybatisUserDao.findUser("kim", "mimi");
+        if (user2 != null) {
+            System.out.println("찾은 유저 아이디:" + user2.getUser_id());
+        } else {
+            System.out.println("사용자를 찾을 수 없습니다.");
+        }
+
+        //사용자 닉네임 수정
+        User user3 = userDao.getUserById(3L);
+        mybatisUserDao.updateNickname(user.getId(), "dydy");
+        User user4 = userDao.getUserById(3L);
+        System.out.println("변경된 유저닉네임:"+ user4.getNickname());
+
+        //중복 닉네임 체크
+        User user5 = mybatisUserDao.existingNickname("dydy");
+        if(user5 != null) {
+            System.out.println("사용 중인 닉네임입니다");
+        }else {
+            System.out.println("사용 가능한 닉네임입니다");
+        }
+
+        //사용자 삭제
+//        User user6 = userDao.getUserById(61L);
+//        mybatisUserDao.deleteUser(user6.getId());
+
+        //사용자 전체 출력
+        List<User> allUser = mybatisUserDao.findAllUser();
+        for (User user7 : allUser) {
+            System.out.println("ID: " + user7.getId());
+            System.out.println("USERID: " + user7.getUser_id());
+            System.out.println("NICKNAME: " + user7.getNickname());
+            System.out.println("PASSWORD: " + user7.getPassword());
+            System.out.println("HINT: " + user7.getHint());
+
+            System.out.println("--------------------------");
+        }
 
     }
 }
