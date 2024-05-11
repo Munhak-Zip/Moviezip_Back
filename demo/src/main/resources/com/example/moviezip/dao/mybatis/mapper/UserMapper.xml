@@ -30,5 +30,27 @@
         VALUES
             (#{id}, #{genre})
     </insert>
+    <select id="findInterest" resultType="Interest">
+        SELECT * FROM INTEREST
+        WHERE ID = #{id}
+    </select>
+    <update id="updateInterest">
+        UPDATE INTEREST SET GENRE = #{genre} WHERE ID = #{id}
+    </update>
+    <insert id="addUser" parameterType="User">
+        <selectKey keyProperty="id" resultType="java.lang.Long" order="BEFORE">
+            SELECT SEQUENCE_USERID.NEXTVAL FROM DUAL
+        </selectKey>
+        INSERT INTO USER_TABLE (ID, USER_ID, PASSWORD, NICKNAME, HINT)
+        VALUES
+        (#{id}, #{user_id}, #{password}, #{nickname}, #{hint})
+    </insert>
 
+    <select id="findAllUserInterest" resultType="User">
+        --         SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, INTEREST.GENRE AS interest
+        SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, INTEREST.GENRE AS genre
+        FROM USER_TABLE
+                 JOIN INTEREST ON INTEREST.ID = USER_TABLE.ID
+        WHERE INTEREST.ID = #{id}
+    </select>
 </mapper>
