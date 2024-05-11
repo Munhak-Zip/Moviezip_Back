@@ -29,4 +29,8 @@ public class MybatisReviewDao implements ReviewDao {
     public Review getReviewDetail(long rvId) throws DataAccessException {
         return reviewMapper.getReviewDetail(rvId);
     }
+    @Override
+    public int updateReview(Review review) throws DataAccessException {
+        return reviewMapper.updateReview(review);
+    }
 }
