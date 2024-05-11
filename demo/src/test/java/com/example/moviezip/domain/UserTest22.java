@@ -115,7 +115,16 @@ public class UserTest22 {
 //        interest.setGenre(genre.toString());
 //        userDao.addInterest(interest); //관심사도 추가
 
-
+        //사용자 취향까지 출력
+        User user10 = mybatisUserDao.findAllUserInterest(3L);
+        System.out.println("--------------------------");
+        System.out.println("ID: " + user10.getId());
+        System.out.println("USERID: " + user10.getUser_id());
+        System.out.println("NICKNAME: " + user10.getNickname());
+        System.out.println("PASSWORD: " + user10.getPassword());
+        System.out.println("HINT: " + user10.getHint());
+        System.out.println("INTEREST: " + user10.getGenre());
+        System.out.println("--------------------------");
 
     }
 }
