@@ -17,8 +17,14 @@
     </delete>
     
     <select id="getReviewList" resultType="Review">
-        SELECT CONTENT, REVIEW_TITLE
+        SELECT CONTENT, STAR, REVIEW_TITLE, WRITER, REVIEW_ID
         FROM REVIEW
         WHERE MOVIE_ID = #{mvId}
+    </select>
+
+    <select id="getReviewDetail" resultType="Review">
+        SELECT CONTENT, STAR, REVIEW_TITLE, WRITER
+        FROM REVIEW
+        WHERE REVIEW_ID = #{rvId}
     </select>
 </mapper>
