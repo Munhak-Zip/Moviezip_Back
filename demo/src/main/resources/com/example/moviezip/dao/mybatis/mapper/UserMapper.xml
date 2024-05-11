@@ -2,54 +2,55 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="com.example.moviezip.dao.mybatis.mapper.UserMapper">
+
     <!-- 사용자를 가져옴 -->
-    <select id="getUserById" resultType="com.example.moviezip.domain.User">
+    <select id="getUserById" resultType="User">
         SELECT * FROM USER_TABLE WHERE ID = #{id}
     </select>
-<!--    <update id="updateUserPassword">-->
-<!--        UPDATE USER_TABLE SET PASSWORD = #{newPassword} WHERE ID = #{id}-->
-<!--    </update>-->
-<!--    <select id="findUser" resultType="com.example.moviezip.domain.User">-->
-<!--        SELECT * FROM USER_TABLE WHERE HINT = #{hint} AND NICKNAME = #{nickname}-->
-<!--    </select>-->
-<!--    <update id="updateUserNickname">-->
-<!--        UPDATE USER_TABLE SET NICKNAME = #{newNickname} WHERE ID = #{id}-->
-<!--    </update>-->
-<!--    <select id="existingUserNickname" resultType="com.example.moviezip.domain.User">-->
-<!--        SELECT * FROM USER_TABLE WHERE NICKNAME = #{nickname}-->
-<!--    </select>-->
-<!--    <delete id="deleteUser">-->
-<!--        DELETE FROM USER_TABLE WHERE ID = #{id}-->
-<!--    </delete>-->
-<!--    <select id="findAllUser" resultType="com.example.moviezip.domain.User">-->
-<!--        SELECT * FROM USER_TABLE-->
-<!--    </select>-->
-<!--    <insert id="addInterest" parameterType="Interest">-->
-<!--        INSERT INTO INTEREST (ID, GENRE)-->
-<!--        VALUES-->
-<!--            (#{id}, #{genre})-->
-<!--    </insert>-->
-<!--    <select id="findInterest" resultType="Interest">-->
-<!--        SELECT * FROM INTEREST-->
-<!--        WHERE ID = #{id}-->
-<!--    </select>-->
-<!--    <update id="updateInterest">-->
-<!--        UPDATE INTEREST SET GENRE = #{genre} WHERE ID = #{id}-->
-<!--    </update>-->
-<!--    <insert id="addUser" parameterType="User">-->
-<!--        <selectKey keyProperty="id" resultType="java.lang.Long" order="BEFORE">-->
-<!--            SELECT SEQUENCE_USERID.NEXTVAL FROM DUAL-->
-<!--        </selectKey>-->
-<!--        INSERT INTO USER_TABLE (ID, USER_ID, PASSWORD, NICKNAME, HINT)-->
-<!--        VALUES-->
-<!--        (#{id}, #{user_id}, #{password}, #{nickname}, #{hint})-->
-<!--    </insert>-->
+    <update id="updateUserPassword">
+        UPDATE USER_TABLE SET PASSWORD = #{newPassword} WHERE ID = #{id}
+    </update>
+    <select id="findUser" resultType="User">
+        SELECT * FROM USER_TABLE WHERE HINT = #{hint} AND NICKNAME = #{nickname}
+    </select>
+    <update id="updateUserNickname">
+        UPDATE USER_TABLE SET NICKNAME = #{newNickname} WHERE ID = #{id}
+    </update>
+    <select id="existingUserNickname" resultType="User">
+        SELECT * FROM USER_TABLE WHERE NICKNAME = #{nickname}
+    </select>
+    <delete id="deleteUser">
+        DELETE FROM USER_TABLE WHERE ID = #{id}
+    </delete>
+    <select id="findAllUser" resultType="User">
+        SELECT * FROM USER_TABLE
+    </select>
+    <insert id="addInterest" parameterType="Interest">
+        INSERT INTO INTEREST (ID, GENRE)
+        VALUES
+            (#{id}, #{genre})
+    </insert>
+    <select id="findInterest" resultType="Interest">
+        SELECT * FROM INTEREST
+        WHERE ID = #{id}
+    </select>
+    <update id="updateInterest">
+        UPDATE INTEREST SET GENRE = #{genre} WHERE ID = #{id}
+    </update>
+    <insert id="addUser" parameterType="User">
+        <selectKey keyProperty="id" resultType="java.lang.Long" order="BEFORE">
+            SELECT SEQUENCE_USERID.NEXTVAL FROM DUAL
+        </selectKey>
+        INSERT INTO USER_TABLE (ID, USER_ID, PASSWORD, NICKNAME, HINT)
+        VALUES
+        (#{id}, #{user_id}, #{password}, #{nickname}, #{hint})
+    </insert>
 
-<!--    <select id="findAllUserInterest" resultType="com.example.moviezip.domain.User">-->
-<!--        &#45;&#45;         SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, INTEREST.GENRE AS interest-->
-<!--        SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, INTEREST.GENRE AS genre-->
-<!--        FROM USER_TABLE-->
-<!--                 JOIN INTEREST ON INTEREST.ID = USER_TABLE.ID-->
-<!--        WHERE INTEREST.ID = #{id}-->
-<!--    </select>-->
+    <select id="findAllUserInterest" resultType="User">
+        --         SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, INTEREST.GENRE AS interest
+        SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, INTEREST.GENRE AS genre
+        FROM USER_TABLE
+                 JOIN INTEREST ON INTEREST.ID = USER_TABLE.ID
+        WHERE INTEREST.ID = #{id}
+    </select>
 </mapper>
