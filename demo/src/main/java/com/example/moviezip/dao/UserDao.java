@@ -8,6 +8,7 @@ import java.util.List;
 
 public interface UserDao {
     public User getUserById(Long id) throws DataAccessException;
+
     //비번 변경
     public void updatePassword(Long id, String newPassword) throws DataAccessException;
 
@@ -30,4 +31,5 @@ public interface UserDao {
     public void addUser(User user) throws DataAccessException;
 
     public User findAllUserInterest(Long id) throws DataAccessException;
+
 }
