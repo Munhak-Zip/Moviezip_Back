@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : 설정파일">
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" afterDir="false" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : Serializable 추가 #2">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReviewDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReviewDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReviewImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReviewImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -17,9 +22,9 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Interface" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
         <option value="spring-beans.schema" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -292,7 +297,119 @@
       <option name="project" value="LOCAL" />
       <updated>1715427713039</updated>
     </task>
-    <option name="localTasksCounter" value="18" />
+    <task id="LOCAL-00018" summary="[add] : import 수정 #2">
+      <option name="closed" value="true" />
+      <created>1715428126415</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715428126415</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[add] : ReviewMapper.xml delete 쿼리 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715429636997</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715429636997</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[add] : deleteReview 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715429957770</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1715429957770</updated>
+    </task>
+    <task id="LOCAL-00021" summary="[add] : deleteReview 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715429968803</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1715429968803</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[add] : deleteReview 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715429976808</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1715429976808</updated>
+    </task>
+    <task id="LOCAL-00023" summary="[add] : deleteReview 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715429986109</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1715429986109</updated>
+    </task>
+    <task id="LOCAL-00024" summary="[add] : deleteReviewTest 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715429995632</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1715429995632</updated>
+    </task>
+    <task id="LOCAL-00025" summary="[add] : getReviewList 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715432836600</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1715432836600</updated>
+    </task>
+    <task id="LOCAL-00026" summary="[add] : getReviewList 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715432846203</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1715432846203</updated>
+    </task>
+    <task id="LOCAL-00027" summary="[add] : getReviewList 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715432853181</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1715432853181</updated>
+    </task>
+    <task id="LOCAL-00028" summary="[add] : getReviewList 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715432860384</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1715432860384</updated>
+    </task>
+    <task id="LOCAL-00029" summary="[add] : getReviewList 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715432876006</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1715432876006</updated>
+    </task>
+    <task id="LOCAL-00030" summary="[add] : getReviewList 테스트 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715432898873</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1715432898873</updated>
+    </task>
+    <task id="LOCAL-00031" summary="[add] : Serializable 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715432936267</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1715432936267</updated>
+    </task>
+    <option name="localTasksCounter" value="32" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -315,6 +432,13 @@
     <MESSAGE value="[add] : ReviewMapper.xml 추가" />
     <MESSAGE value="[add] : ReviewTest.java 추가" />
     <MESSAGE value="[add] : 설정파일" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] : 설정파일" />
+    <MESSAGE value="[add] : import 수정 #2" />
+    <MESSAGE value="[add] : ReviewMapper.xml delete 쿼리 추가 #2" />
+    <MESSAGE value="[add] : deleteReview 추가 #2" />
+    <MESSAGE value="[add] : deleteReviewTest 추가 #2" />
+    <MESSAGE value="[add] : getReviewList 추가 #2" />
+    <MESSAGE value="[add] : getReviewList 테스트 추가 #2" />
+    <MESSAGE value="[add] : Serializable 추가 #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : Serializable 추가 #2" />
   </component>
 </project>
