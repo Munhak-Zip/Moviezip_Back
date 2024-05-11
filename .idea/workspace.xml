@@ -4,16 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add/#4] 머지">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" afterDir="false" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add/#4] UserDao 추가">
       <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/UserTest22.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/UserTest22.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/test/UserTest.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -255,53 +247,53 @@
       <option name="project" value="LOCAL" />
       <updated>1715323602279</updated>
     </task>
-    <task id="LOCAL-00004" summary="[add] : ReviewController.java 추가">
+    <task id="LOCAL-00004" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715423786816</created>
+      <created>1715432038653</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1715423786816</updated>
+      <updated>1715432038653</updated>
     </task>
-    <task id="LOCAL-00005" summary="[add] : Review.java 추가">
+    <task id="LOCAL-00005" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715424491295</created>
+      <created>1715432043457</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1715424491295</updated>
+      <updated>1715432043457</updated>
     </task>
-    <task id="LOCAL-00006" summary="[add] : Review.java 변수 추가">
+    <task id="LOCAL-00006" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715424545265</created>
+      <created>1715432047858</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1715424545265</updated>
+      <updated>1715432047858</updated>
     </task>
-    <task id="LOCAL-00007" summary="[add] : Review.java 기본 생성자 추가">
+    <task id="LOCAL-00007" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715424562196</created>
+      <created>1715432051499</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1715424562196</updated>
+      <updated>1715432051499</updated>
     </task>
-    <task id="LOCAL-00008" summary="[add] : Review.java import">
+    <task id="LOCAL-00008" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715424579159</created>
+      <created>1715432057278</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1715424579159</updated>
+      <updated>1715432057278</updated>
     </task>
-    <task id="LOCAL-00009" summary="[add] : Review.java 생성자 추가">
+    <task id="LOCAL-00009" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715424649497</created>
+      <created>1715432061211</created>
       <option name="number" value="00009" />
       <option name="presentableId" value="LOCAL-00009" />
       <option name="project" value="LOCAL" />
-      <updated>1715424649497</updated>
+      <updated>1715432061211</updated>
     </task>
     <task id="LOCAL-00010" summary="[add] : Review.java getter,setter 추가">
       <option name="closed" value="true" />
@@ -367,7 +359,7 @@
       <option name="project" value="LOCAL" />
       <updated>1715427713039</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -402,6 +394,7 @@
     <MESSAGE value="[add] : ReviewTest.java 추가" />
     <MESSAGE value="[add] : 설정파일" />
     <MESSAGE value="[add/#4] 머지" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add/#4] 머지" />
+    <MESSAGE value="[add/#4] UserDao 추가" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add/#4] UserDao 추가" />
   </component>
 </project>
