@@ -15,4 +15,8 @@ public class ReviewImpl {
     public void insertMyReview(Review review) {
         mybatisReviewDao.insertMyReview(review);
     }
+
+    public void deleteReview(long rvId){
+        mybatisReviewDao.deleteReview(rvId);
+    }
 }
