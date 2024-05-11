@@ -5,6 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add/#4] UserDao 추가">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Interest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Interest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/UserTest22.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/UserTest22.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -295,53 +299,53 @@
       <option name="project" value="LOCAL" />
       <updated>1715432061211</updated>
     </task>
-    <task id="LOCAL-00010" summary="[add] : Review.java getter,setter 추가">
+    <task id="LOCAL-00010" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715424702070</created>
+      <created>1715432404840</created>
       <option name="number" value="00010" />
       <option name="presentableId" value="LOCAL-00010" />
       <option name="project" value="LOCAL" />
-      <updated>1715424702070</updated>
+      <updated>1715432404840</updated>
     </task>
-    <task id="LOCAL-00011" summary="[add] : reviewMapper 주입">
+    <task id="LOCAL-00011" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715424791908</created>
+      <created>1715432425137</created>
       <option name="number" value="00011" />
       <option name="presentableId" value="LOCAL-00011" />
       <option name="project" value="LOCAL" />
-      <updated>1715424791908</updated>
+      <updated>1715432425137</updated>
     </task>
-    <task id="LOCAL-00012" summary="[add] : MybatisReviewDao.java 추가">
+    <task id="LOCAL-00012" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715427640181</created>
+      <created>1715432438089</created>
       <option name="number" value="00012" />
       <option name="presentableId" value="LOCAL-00012" />
       <option name="project" value="LOCAL" />
-      <updated>1715427640181</updated>
+      <updated>1715432438089</updated>
     </task>
-    <task id="LOCAL-00013" summary="[add] : ReviewDao.java 추가">
+    <task id="LOCAL-00013" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715427650744</created>
+      <created>1715432444335</created>
       <option name="number" value="00013" />
       <option name="presentableId" value="LOCAL-00013" />
       <option name="project" value="LOCAL" />
-      <updated>1715427650744</updated>
+      <updated>1715432444335</updated>
     </task>
-    <task id="LOCAL-00014" summary="[add] : ReviewImpl.java 추가">
+    <task id="LOCAL-00014" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715427663217</created>
+      <created>1715432491636</created>
       <option name="number" value="00014" />
       <option name="presentableId" value="LOCAL-00014" />
       <option name="project" value="LOCAL" />
-      <updated>1715427663217</updated>
+      <updated>1715432491636</updated>
     </task>
-    <task id="LOCAL-00015" summary="[add] : ReviewMapper.xml 추가">
+    <task id="LOCAL-00015" summary="[add/#4] UserDao 추가">
       <option name="closed" value="true" />
-      <created>1715427683232</created>
+      <created>1715432498197</created>
       <option name="number" value="00015" />
       <option name="presentableId" value="LOCAL-00015" />
       <option name="project" value="LOCAL" />
-      <updated>1715427683232</updated>
+      <updated>1715432498197</updated>
     </task>
     <task id="LOCAL-00016" summary="[add] : ReviewTest.java 추가">
       <option name="closed" value="true" />
@@ -359,7 +363,7 @@
       <option name="project" value="LOCAL" />
       <updated>1715427713039</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
