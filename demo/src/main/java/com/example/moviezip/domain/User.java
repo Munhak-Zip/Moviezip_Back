@@ -6,7 +6,6 @@ public class User {
     private String password;
     private String nickname;
     private String hint;
-
     private String genre;
 
     public Long getId() {
@@ -56,4 +55,5 @@ public class User {
     public void setGenre(String genre) {
         this.genre = genre;
     }
+
 }
