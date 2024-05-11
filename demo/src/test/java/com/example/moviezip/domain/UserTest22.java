@@ -86,5 +86,36 @@ public class UserTest22 {
             System.out.println("--------------------------");
         }
 
+        //사용자의 관심사 찾기
+        Interest interests = userDao.findInterest(3L);
+        System.out.println("관심사:"+ interests.getGenre());
+
+        //관심사 수정
+//        List<String> genre = new ArrayList<>(); // 예시 관심사
+//        genre.add("1");
+//        genre.add("2");
+//        System.out.println(genre);
+//        userDao.updateInterest(3L, genre.toString());
+
+        //사용자 추가
+//        User user9 = new User();
+//        user9.setUser_id("0511");
+//        user9.setPassword("hello");
+//        user9.setHint("하이");
+//        user9.setNickname("hi");
+//        userDao.addUser(user9);
+//
+//        List<String> genre = new ArrayList<>(); // 예시 관심사
+//        genre.add("1");
+//        genre.add("3");
+//        System.out.println(genre);
+//
+//        Interest interest = new Interest();
+//        interest.setId(user9.getId());
+//        interest.setGenre(genre.toString());
+//        userDao.addInterest(interest); //관심사도 추가
+
+
+
     }
 }
