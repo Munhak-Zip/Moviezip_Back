@@ -4,18 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : 설정파일 #2">
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/7dee98cc-112b-4b22-a8bf-49e573e99f25.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/7dee98cc-112b-4b22-a8bf-49e573e99f25.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/demo/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReviewDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReviewDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReviewImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReviewImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : 설정파일 #2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -231,7 +220,7 @@
       <workItem from="1715308691976" duration="18293000" />
       <workItem from="1715423885812" duration="4126000" />
       <workItem from="1715428108154" duration="303000" />
-      <workItem from="1715442554332" duration="2191000" />
+      <workItem from="1715442554332" duration="2677000" />
     </task>
     <task id="LOCAL-00001" summary="초기세팅">
       <option name="closed" value="true" />
@@ -481,7 +470,71 @@
       <option name="project" value="LOCAL" />
       <updated>1715432936267</updated>
     </task>
-    <option name="localTasksCounter" value="32" />
+    <task id="LOCAL-00032" summary="[add] : updateReview 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715444833502</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444833502</updated>
+    </task>
+    <task id="LOCAL-00033" summary="[add] : updateReview 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715444840357</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444840357</updated>
+    </task>
+    <task id="LOCAL-00034" summary="[add] : updateReview 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715444845628</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444845628</updated>
+    </task>
+    <task id="LOCAL-00035" summary="[add] : updateReview 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715444852817</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444852817</updated>
+    </task>
+    <task id="LOCAL-00036" summary="[add] : updateReview 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715444857404</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444857404</updated>
+    </task>
+    <task id="LOCAL-00037" summary="[add] : updateReview Test 추가 #2">
+      <option name="closed" value="true" />
+      <created>1715444865894</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444865894</updated>
+    </task>
+    <task id="LOCAL-00038" summary="[add] : rvStar로 변경 #2">
+      <option name="closed" value="true" />
+      <created>1715444880302</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444880302</updated>
+    </task>
+    <task id="LOCAL-00039" summary="[add] : 설정파일 #2">
+      <option name="closed" value="true" />
+      <created>1715444891498</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1715444891498</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -499,9 +552,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="db연결" />
-    <MESSAGE value="[add] : ReviewController.java 추가" />
-    <MESSAGE value="[add] : Review.java 추가" />
     <MESSAGE value="[add] : Review.java 변수 추가" />
     <MESSAGE value="[add] : Review.java 기본 생성자 추가" />
     <MESSAGE value="[add] : Review.java import" />
@@ -523,6 +573,9 @@
     <MESSAGE value="[add] : getReviewList 추가 #2" />
     <MESSAGE value="[add] : getReviewList 테스트 추가 #2" />
     <MESSAGE value="[add] : Serializable 추가 #2" />
+    <MESSAGE value="[add] : updateReview 추가 #2" />
+    <MESSAGE value="[add] : updateReview Test 추가 #2" />
+    <MESSAGE value="[add] : rvStar로 변경 #2" />
     <MESSAGE value="[add] : 설정파일 #2" />
     <option name="LAST_COMMIT_MESSAGE" value="[add] : 설정파일 #2" />
   </component>
