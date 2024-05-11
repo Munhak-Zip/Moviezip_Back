@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <dataSource name="oracle">
   <database-model serializer="dbm" dbms="ORACLE" family-id="ORACLE" format-version="4.51">
-    <root id="1">
-      <ServerVersion>12.2.0.1.0</ServerVersion>
-      <TablespacesHash>2130123946</TablespacesHash>
-    </root>
+    <root id="1"/>
     <schema id="2" parent="1" name="SS240205">
       <AutoIntrospectionLevel>3</AutoIntrospectionLevel>
       <CommentsHash>294951343614</CommentsHash>
@@ -55018,29 +55015,56 @@
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <Position>3</Position>
     </column>
-    <column id="6977" parent="158" name="WRITER">
+    <column id="6977" parent="158" name="REVIEW_TITLE">
+      <Comment>소제목</Comment>
+      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <Position>3</Position>
+    </column>
+    <column id="6978" parent="158" name="WRITER">
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <Position>4</Position>
     </column>
-    <column id="6978" parent="158" name="MOVIE_ID">
+    <column id="6979" parent="158" name="WRITER">
+      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <Position>4</Position>
+    </column>
+    <column id="6980" parent="158" name="MOVIE_ID">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <column id="6979" parent="158" name="REVIEW_ID">
+    <column id="6981" parent="158" name="MOVIE_ID">
+      <DasType>NUMBER(*)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <column id="6982" parent="158" name="REVIEW_ID">
       <DasType>NUMBER(*)|0s</DasType>
       <DefaultExpression>&quot;SS240205&quot;.&quot;SEQUENCE_REVIEWID&quot;.&quot;NEXTVAL&quot;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>6</Position>
     </column>
-    <foreign-key id="6980" parent="158" name="REVIEW_FK1">
+    <column id="6983" parent="158" name="REVIEW_ID">
+      <DasType>NUMBER(*)|0s</DasType>
+      <DefaultExpression>&quot;SS240205&quot;.&quot;SEQUENCE_REVIEWID&quot;.&quot;NEXTVAL&quot;</DefaultExpression>
+      <NotNull>1</NotNull>
+      <Position>6</Position>
+    </column>
+    <foreign-key id="6984" parent="158" name="REVIEW_FK1">
       <ColNames>MOVIE_ID</ColNames>
       <ModifiedTimestamp>2024-04-12.20:41:07</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>MOVIE_PK</RefKeyName>
       <RefTableName>MOVIE</RefTableName>
     </foreign-key>
-    <index id="6981" parent="158" name="REVIEW_PK">
+    <foreign-key id="6985" parent="158" name="REVIEW_FK1">
+      <ColNames>MOVIE_ID</ColNames>
+      <ModifiedTimestamp>2024-04-12.20:41:07</ModifiedTimestamp>
+      <OnDelete>restrict</OnDelete>
+      <RefKeyName>MOVIE_PK</RefKeyName>
+      <RefTableName>MOVIE</RefTableName>
+    </foreign-key>
+    <index id="6986" parent="158" name="REVIEW_PK">
       <ColNames>REVIEW_ID</ColNames>
       <CreatedTimestamp>2024-04-12.21:19:15</CreatedTimestamp>
       <ModifiedTimestamp>2024-04-12.21:19:15</ModifiedTimestamp>
@@ -55048,66 +55072,113 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6982" parent="158" name="REVIEW_PK">
+    <index id="6987" parent="158" name="REVIEW_PK">
+      <ColNames>REVIEW_ID</ColNames>
+      <CreatedTimestamp>2024-04-12.21:19:15</CreatedTimestamp>
+      <ModifiedTimestamp>2024-04-12.21:19:15</ModifiedTimestamp>
+      <ObjectId>122867</ObjectId>
+      <Unique>1</Unique>
+      <TablespaceName>USERS</TablespaceName>
+    </index>
+    <key id="6988" parent="158" name="REVIEW_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-04-12.21:19:15</ModifiedTimestamp>
       <Primary>1</Primary>
       <UnderlyingIndexName>REVIEW_PK</UnderlyingIndexName>
     </key>
-    <column id="6983" parent="159" name="ID">
+    <key id="6989" parent="158" name="REVIEW_PK">
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ModifiedTimestamp>2024-04-12.21:19:15</ModifiedTimestamp>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>REVIEW_PK</UnderlyingIndexName>
+    </key>
+    <column id="6990" parent="159" name="ID">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6984" parent="159" name="REVIEW_ID">
+    <column id="6991" parent="159" name="ID">
+      <DasType>NUMBER(*)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>1</Position>
+    </column>
+    <column id="6992" parent="159" name="REVIEW_ID">
       <DasType>NUMBER(*)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <foreign-key id="6985" parent="159" name="REVIEW_WISH_FK1">
+    <column id="6993" parent="159" name="REVIEW_ID">
+      <DasType>NUMBER(*)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>2</Position>
+    </column>
+    <foreign-key id="6994" parent="159" name="REVIEW_WISH_FK1">
       <ColNames>ID</ColNames>
       <ModifiedTimestamp>2024-04-12.20:46:24</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>USER_TABLE_PK</RefKeyName>
       <RefTableName>USER_TABLE</RefTableName>
     </foreign-key>
-    <foreign-key id="6986" parent="159" name="REVIEW_WISH_FK3">
+    <foreign-key id="6995" parent="159" name="REVIEW_WISH_FK1">
+      <ColNames>ID</ColNames>
+      <ModifiedTimestamp>2024-04-12.20:46:24</ModifiedTimestamp>
+      <OnDelete>restrict</OnDelete>
+      <RefKeyName>USER_TABLE_PK</RefKeyName>
+      <RefTableName>USER_TABLE</RefTableName>
+    </foreign-key>
+    <foreign-key id="6996" parent="159" name="REVIEW_WISH_FK3">
       <ColNames>ID</ColNames>
       <ModifiedTimestamp>2024-04-12.21:31:51</ModifiedTimestamp>
       <OnDelete>restrict</OnDelete>
       <RefKeyName>REVIEW_PK</RefKeyName>
       <RefTableName>REVIEW</RefTableName>
     </foreign-key>
-    <column id="6987" parent="160" name="ID">
+    <column id="6997" parent="160" name="ID">
       <Comment>시퀀스 번호</Comment>
       <DasType>NUMBER(*)|0s</DasType>
       <DefaultExpression>&quot;SS240205&quot;.&quot;SEQUENCE_USERID&quot;.&quot;NEXTVAL&quot;</DefaultExpression>
       <NotNull>1</NotNull>
       <Position>1</Position>
     </column>
-    <column id="6988" parent="160" name="USER_ID">
+    <column id="6998" parent="160" name="USER_ID">
       <Comment>사용자 아이디</Comment>
       <DasType>VARCHAR2(10 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>2</Position>
     </column>
-    <column id="6989" parent="160" name="PASSWORD">
+    <column id="6999" parent="160" name="PASSWORD">
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>3</Position>
     </column>
-    <column id="6990" parent="160" name="NICKNAME">
+    <column id="7000" parent="160" name="PASSWORD">
+      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>3</Position>
+    </column>
+    <column id="7001" parent="160" name="NICKNAME">
       <DasType>VARCHAR2(30 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>4</Position>
     </column>
-    <column id="6991" parent="160" name="HINT">
+    <column id="7002" parent="160" name="NICKNAME">
+      <DasType>VARCHAR2(30 byte)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>4</Position>
+    </column>
+    <column id="7003" parent="160" name="HINT">
       <Comment>힌트 응답</Comment>
       <DasType>VARCHAR2(20 byte)|0s</DasType>
       <NotNull>1</NotNull>
       <Position>5</Position>
     </column>
-    <index id="6992" parent="160" name="USER_TABLE_PK">
+    <column id="7004" parent="160" name="HINT">
+      <Comment>힌트 응답</Comment>
+      <DasType>VARCHAR2(20 byte)|0s</DasType>
+      <NotNull>1</NotNull>
+      <Position>5</Position>
+    </column>
+    <index id="7005" parent="160" name="USER_TABLE_PK">
       <ColNames>ID</ColNames>
       <CreatedTimestamp>2024-04-12.20:15:22</CreatedTimestamp>
       <ModifiedTimestamp>2024-04-12.20:15:22</ModifiedTimestamp>
@@ -55115,7 +55186,21 @@
       <Unique>1</Unique>
       <TablespaceName>USERS</TablespaceName>
     </index>
-    <key id="6993" parent="160" name="USER_TABLE_PK">
+    <index id="7006" parent="160" name="USER_TABLE_PK">
+      <ColNames>ID</ColNames>
+      <CreatedTimestamp>2024-04-12.20:15:22</CreatedTimestamp>
+      <ModifiedTimestamp>2024-04-12.20:15:22</ModifiedTimestamp>
+      <ObjectId>122840</ObjectId>
+      <Unique>1</Unique>
+      <TablespaceName>USERS</TablespaceName>
+    </index>
+    <key id="7007" parent="160" name="USER_TABLE_PK">
+      <InitiallyDeferred>1</InitiallyDeferred>
+      <ModifiedTimestamp>2024-04-12.20:15:22</ModifiedTimestamp>
+      <Primary>1</Primary>
+      <UnderlyingIndexName>USER_TABLE_PK</UnderlyingIndexName>
+    </key>
+    <key id="7008" parent="160" name="USER_TABLE_PK">
       <InitiallyDeferred>1</InitiallyDeferred>
       <ModifiedTimestamp>2024-04-12.20:15:22</ModifiedTimestamp>
       <Primary>1</Primary>
