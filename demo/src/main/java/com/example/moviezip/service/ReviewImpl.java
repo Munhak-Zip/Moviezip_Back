@@ -25,4 +25,8 @@ public class ReviewImpl {
     public List<Review> getReviewList(long mvId) {
         return mybatisReviewDao.getReviewList(mvId);
     }
+
+    public Review getReviewDetail(long rvId) {
+        return mybatisReviewDao.getReviewDetail(rvId);
+    }
 }
