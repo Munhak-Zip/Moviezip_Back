@@ -7,4 +7,5 @@ public interface ReviewDao {
 
     void insertMyReview(Review review) throws DataAccessException;
 
+    void deleteReview(long rvId) throws DataAccessException;
 }
