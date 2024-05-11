@@ -1,6 +1,8 @@
 package com.example.moviezip.domain;
 
-public class Review {
+import java.io.Serializable;
+
+public class Review implements Serializable {
     private int mvId;
     private int rvId;
     private int rvStar;
