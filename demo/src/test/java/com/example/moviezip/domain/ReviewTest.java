@@ -50,7 +50,14 @@ public class ReviewTest {
         */
 
         /* reviewDetailTest */
-        Review review = rvImpl.getReviewDetail(83);
-        System.out.println(review.getContent()+", "+review.getRvId());
+        /*Review review = rvImpl.getReviewDetail(83);
+        System.out.println(review.getContent()+", "+review.getRvId());*/
+
+        /* updateReviewTest */
+        Review newRv = new Review("수정한 내용", 3, 1);
+        newRv.setRvId(83);
+        int updatedRv = rvImpl.updateReview(newRv);
+        System.out.println(updatedRv);
+
     }
 }
