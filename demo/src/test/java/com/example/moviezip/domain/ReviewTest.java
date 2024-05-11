@@ -21,10 +21,15 @@ public class ReviewTest {
     @Test
     public void testReview() throws Exception{
         System.out.println("테스트");
-
-        Review review = new Review("0511", 1,2);
         ReviewImpl rvImpl = new ReviewImpl(mybatisReviewDao);
 
-        rvImpl.insertMyReview(review);
+        /* insertTest */
+        /*
+        Review review = new Review("0511", 1,2);
+
+        rvImpl.insertMyReview(review); */
+
+        /* deleteTest */
+        rvImpl.deleteReview(81);
     }
 }
