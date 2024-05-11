@@ -11,4 +11,5 @@ public interface ReviewMapper {
     void deleteReview(long rvId);
     List<Review> getReviewList(long mvId);
     Review getReviewDetail(long rvId);
+    int updateReview(Review review);
 }
