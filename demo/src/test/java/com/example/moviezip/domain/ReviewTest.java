@@ -9,6 +9,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import java.util.List;
+
 @SpringBootTest
 @ExtendWith(SpringExtension.class) // JUnit 5에서 Spring 테스트와의 통합을 위해 사용
 public class ReviewTest {
@@ -30,6 +32,17 @@ public class ReviewTest {
         rvImpl.insertMyReview(review); */
 
         /* deleteTest */
+        /*
         rvImpl.deleteReview(81);
+         */
+
+        /* selectTest */
+        /*
+        List<Review> rvlist = rvImpl.getReviewList(1);
+
+        for (Review review : rvlist ) {
+            System.out.println(review.getRvTitle()+", "+review.getContent());
+        }
+        */
     }
 }
