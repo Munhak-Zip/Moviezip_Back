@@ -15,9 +15,9 @@ public class Review implements Serializable {
 
     }
 
-    public Review(String content, int star, int mvId) { // id 지웠음, 예진이 수정 필요 -> 완료
+    public Review(String content, int rvStar, int mvId) { // id 지웠음, 예진이 수정 필요 -> 완료
         this.content = content;
-        this.rvStar = star;
+        this.rvStar = rvStar;
         this.mvId = mvId;
     }
 
