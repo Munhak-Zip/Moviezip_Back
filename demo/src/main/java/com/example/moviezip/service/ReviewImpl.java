@@ -4,6 +4,8 @@ import com.example.moviezip.dao.mybatis.MybatisReviewDao;
 import com.example.moviezip.domain.Review;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 @Service
 public class ReviewImpl {
     private final MybatisReviewDao mybatisReviewDao;
@@ -18,5 +20,9 @@ public class ReviewImpl {
 
     public void deleteReview(long rvId){
         mybatisReviewDao.deleteReview(rvId);
+    }
+
+    public List<Review> getReviewList(long mvId) {
+        return mybatisReviewDao.getReviewList(mvId);
     }
 }
