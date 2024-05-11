@@ -1,13 +1,17 @@
 package com.example.moviezip.domain;
 
 import com.example.moviezip.dao.ReviewDao;
+import com.example.moviezip.dao.UserDao;
 import com.example.moviezip.dao.mybatis.MybatisReviewDao;
+import com.example.moviezip.dao.mybatis.MybatisUserDao;
 import com.example.moviezip.service.ReviewImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
+
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class) // JUnit 5에서 Spring 테스트와의 통합을 위해 사용
