@@ -10,4 +10,5 @@ public interface ReviewMapper {
     void insertMyReview(Review review);
     void deleteReview(long rvId);
     List<Review> getReviewList(long mvId);
+    Review getReviewDetail(long rvId);
 }
