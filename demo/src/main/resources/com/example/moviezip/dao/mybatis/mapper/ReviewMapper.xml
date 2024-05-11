@@ -15,4 +15,10 @@
         DELETE FROM REVIEW
         WHERE REVIEW_ID = #{rvId}
     </delete>
+    
+    <select id="getReviewList" resultType="Review">
+        SELECT CONTENT, REVIEW_TITLE
+        FROM REVIEW
+        WHERE MOVIE_ID = #{mvId}
+    </select>
 </mapper>
