@@ -11,6 +11,8 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
@@ -25,10 +27,37 @@ public class ReviewTest {
     @Test
     public void testReview() throws Exception{
         System.out.println("테스트");
-
-        Review review = new Review("0511", 1,2);
         ReviewImpl rvImpl = new ReviewImpl(mybatisReviewDao);
 
-        rvImpl.insertMyReview(review);
+        /* insertTest */
+        /*
+        Review review = new Review("0511", 1,2);
+
+        rvImpl.insertMyReview(review); */
+
+        /* deleteTest */
+        /*
+        rvImpl.deleteReview(81);
+         */
+
+        /* ReviewListTest */
+        /*
+        List<Review> rvlist = rvImpl.getReviewList(1);
+
+        for (Review review : rvlist ) {
+            System.out.println(review.getRvTitle()+", "+review.getContent());
+        }
+        */
+
+        /* reviewDetailTest */
+        /*Review review = rvImpl.getReviewDetail(83);
+        System.out.println(review.getContent()+", "+review.getRvId());*/
+
+        /* updateReviewTest */
+        Review newRv = new Review("이 부분을 수정", 3, 1);
+        newRv.setRvId(83);
+        int updatedRv = rvImpl.updateReview(newRv);
+        System.out.println(updatedRv);
+
     }
 }
