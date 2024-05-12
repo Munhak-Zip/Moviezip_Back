@@ -27,6 +27,11 @@ public class MybatisWishDao implements WishDao {
     }
 
     @Override
+    public int deleteWishReview(int id, int rvId) throws DataAccessException{
+        return wishMapper.deleteWishReview(id, rvId);
+    }
+
+    @Override
     public List<Review> getMyReview(String userId) throws DataAccessException{
         return wishMapper.getMyReview(userId);
     }

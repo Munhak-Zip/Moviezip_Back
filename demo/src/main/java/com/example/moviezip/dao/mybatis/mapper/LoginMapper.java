@@ -8,8 +8,6 @@ import org.springframework.transaction.annotation.Transactional;
 
 @Mapper
 public interface LoginMapper {
-    //DB 접근
-    @Transactional
-    @Select("SELECT * FROM USER_TABLE WHERE USER_ID = #{userId} and PASSWORD = #{password}")
-    public User userLogin(@Param("userId") String userId, @Param("password") String password);
+    User userLogin(@Param("userId") String userId, @Param("password") String password);
 }
+

@@ -1,13 +1,12 @@
 package com.example.moviezip.domain;
 
 public class User {
-
     private Long id;
-
     private String user_id;
     private String password;
     private String nickname;
     private String hint;
+    private String genre;
 
     public User() {
     }
@@ -51,4 +50,13 @@ public class User {
     public void setHint(String hint) {
         this.hint = hint;
     }
+
+    public String getGenre() {
+        return genre;
+    }
+
+    public void setGenre(String genre) {
+        this.genre = genre;
+    }
+
 }

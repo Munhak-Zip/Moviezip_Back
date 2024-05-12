@@ -4,15 +4,12 @@ package com.example.moviezip;
 import com.example.moviezip.dao.mybatis.MybatisWishDao;
 import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.Review;
+import junit.framework.TestCase;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import org.junit.runner.RunWith;
-import org.mybatis.spring.annotation.MapperScan;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
-import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
 import java.util.List;
 
@@ -20,9 +17,8 @@ import java.util.List;
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
 //@RunWith(SpringJUnit4ClassRunner.class) //Unit 프레임워크에게 사용할 테스트 러너(runner)를 지정하는 데 사용
-@ContextConfiguration(locations = "file:demo/src/main/resources/application.properties")  //테스트 실행에 필요한 애플리케이션 컨텍스트를 구성하는 방법을 지정
-@MapperScan("com.example.moviezip.dao.mybatis.mapper") // MyBatis 매퍼 인터페이스 위치
-
+//@ContextConfiguration(locations = "file:demo/src/main/resources/application.properties")  //테스트 실행에 필요한 애플리케이션 컨텍스트를 구성하는 방법을 지정
+//@MapperScan("com.example.moviezip.dao.mybatis.mapper") // MyBatis 매퍼 인터페이스 위치
 public class WishTest {
     @Autowired
     private MybatisWishDao mybatisWishDao;
@@ -84,6 +80,34 @@ public class WishTest {
         List<Review> review3 = mybatisWishDao.getWishReview(2);
         System.out.println("HMY 찜한 평론가 리뷰 가져오기");
         for (Review review : review3) {
+            System.out.println("Review Writer: " + review.getWriter());
+            System.out.println("Review Star: " + review.getRvStar());
+            System.out.println("Review Title: " + review.getRvTitle());
+            System.out.println("Review Context: " + review.getContent());
+            System.out.println("--------------------------");
+        }
+        System.out.println();
+    }
+
+    @Test // 좋아하는 리뷰 삭제
+    public void testDeleteWishReview() throws Exception{
+        // 삭제 전 출력
+        System.out.println("삭제 전 출력");
+        List<Review> review1 = mybatisWishDao.getWishReview(21);
+        for (Review review : review1) {
+            System.out.println("Review Writer: " + review.getWriter());
+            System.out.println("Review Star: " + review.getRvStar());
+            System.out.println("Review Title: " + review.getRvTitle());
+            System.out.println("Review Context: " + review.getContent());
+            System.out.println("--------------------------");
+        }
+        System.out.println();
+
+        // 삭제 후 출력
+        System.out.println("삭제 후 출력");
+        int deleteWishReview1 = mybatisWishDao.deleteWishReview(21, 41);
+        review1 = mybatisWishDao.getWishReview(21); // 삭제 후 다시 받아와야 함
+        for (Review review : review1) {
             System.out.println("Review Writer: " + review.getWriter());
             System.out.println("Review Star: " + review.getRvStar());
             System.out.println("Review Title: " + review.getRvTitle());

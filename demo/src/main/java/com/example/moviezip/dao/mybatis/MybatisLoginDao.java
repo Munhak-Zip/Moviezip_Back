@@ -14,7 +14,6 @@ public class MybatisLoginDao implements LoginDao {
     @Autowired
     private LoginMapper loginMapper;
 
-    @Transactional
     @Override
     public User userLogin(String userId, String password) throws DataAccessException {
         return loginMapper.userLogin(userId, password);

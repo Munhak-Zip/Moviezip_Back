@@ -9,12 +9,12 @@ spring:
     hikari:          # HikariCP settings
       maximumPoolSize: 3
       connectionTimeout: 3000
-  #      minimumIdle: 5
-  #      maximumPoolSize: 20
-  #      idleTimeout: 30000
-  #      connectionTimeout: 30000
-  #      maxLifetime: 2000000
-  #      poolName: HikariPool
+#        minimumIdle: 5
+#        maximumPoolSize: 20
+#        idleTimeout: 30000
+#        connectionTimeout: 30000
+#        maxLifetime: 2000000
+#        poolName: HikariPool
   mvc:
     view:             # JSP views
       prefix: /WEB-INF/jsp/
@@ -37,4 +37,4 @@ logging:
               mapper: DEBUG
 
 server:
-  port: 8088
+  port: 8080

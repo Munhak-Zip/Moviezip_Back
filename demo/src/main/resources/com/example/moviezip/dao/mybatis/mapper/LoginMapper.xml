@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.jpetstore.dao.mybatis.mapper.LoginMapper">
+  <!-- 사용자 로그인, 사용자 정보를 User 객체 형태로 가져옴-->
+  <select id="userLogin" resultType="com.example.jpetstore.domain.User">
+    SELECT USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint
+    FROM USER_TABLE
+    WHERE USER_TABLE.USER_ID = #{userId} and USER_TABLE.PASSWORD = #{password}
+    </select>
+
+</mapper>
