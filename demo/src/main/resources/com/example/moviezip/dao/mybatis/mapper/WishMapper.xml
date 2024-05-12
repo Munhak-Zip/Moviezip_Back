@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.jpetstore.dao.mybatis.mapper.WishMapper">
+  <!-- 찜한 영화 가져오기, 영화의 제목과 별점을 Movie List 객체 형태로 가져옴-->
+  <select id="getWishMovie" resultType="com.example.jpetstore.domain.Movie">
+    SELECT MOVIE.MOVIE_TITLE AS mvTitle, MOVIE.MOVIE_STAR AS mvStar
+    FROM MOVIE
+    JOIN MOVIE_WISH ON MOVIE.MOVIE_ID = MOVIE_WISH.MOVIE_ID
+    WHERE MOVIE_WISH.ID = #{id}
+    </select>
+
+  <!-- 찜한 리뷰 가져오기, 리뷰의 작성자, 별점, 제목, 내용을 Review List 객체 형태로 가져옴-->
+  <select id="getWishReview" resultType="com.example.jpetstore.domain.Review">
+    SELECT REVIEW.WRITER AS writer, REVIEW.STAR AS rvStar, REVIEW.REVIEW_TITLE AS rvTitle, REVIEW.CONTENT AS content
+    FROM REVIEW
+    JOIN REVIEW_WISH ON REVIEW.REVIEW_ID = REVIEW_WISH.REVIEW_ID
+    WHERE REVIEW_WISH.ID = #{id}
+  </select>
+
+  <!-- 내가 쓴 리뷰 가져오기, 영화 제목, 별점, 내용을 Review List 형태로 가져옴-->
+  <select id="getMyReview" resultType="com.example.jpetstore.domain.Review">
+    SELECT MOVIE.MOVIE_TITLE As mvTitle, REVIEW.STAR As rvStar, REVIEW.CONTENT As content
+    FROM REVIEW
+           JOIN MOVIE ON REVIEW.MOVIE_ID = MOVIE.MOVIE_ID
+    WHERE REVIEW.WRITER = #{userId}
+  </select>
+</mapper>
