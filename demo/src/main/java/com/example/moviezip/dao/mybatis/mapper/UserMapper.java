@@ -1,6 +1,7 @@
 package com.example.moviezip.dao.mybatis.mapper;
 
 import com.example.moviezip.domain.Interest;
+import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -37,4 +38,8 @@ public interface UserMapper {
     void addUser(User user);
 
     User findAllUserInterest(@Param("id") Long id);
+
+    //영화 검색
+    List<Movie> searchMovieByKeyword(@Param("keyword") String keyword);
+
 }
