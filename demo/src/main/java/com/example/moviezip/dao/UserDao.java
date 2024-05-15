@@ -33,7 +33,5 @@ public interface UserDao {
 
     public User findAllUserInterest(Long id) throws DataAccessException;
 
-    //영화 검색
-    public List<Movie> searchMovieByKeyword(String keyword);
 
 }

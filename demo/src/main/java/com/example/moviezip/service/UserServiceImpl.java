@@ -31,8 +31,5 @@ public class UserServiceImpl{
 
     public void deleteUser(Long id) { mybatisUserDao.deleteUser(id); }
 
-    public List<Movie> searchMoviesByTitle(String keyword) {
 
-        return mybatisUserDao.searchMovieByKeyword(keyword);
-    }
 }

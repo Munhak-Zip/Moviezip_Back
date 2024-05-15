@@ -3,12 +3,10 @@ package com.example.moviezip.dao.mybatis;
 import com.example.moviezip.dao.UserDao;
 import com.example.moviezip.dao.mybatis.mapper.UserMapper;
 import com.example.moviezip.domain.Interest;
-import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
-import org.springframework.transaction.annotation.Transactional;
 
 import java.util.List;
 
@@ -86,12 +84,6 @@ public class MybatisUserDao implements UserDao {
     public User findAllUserInterest(Long id) throws DataAccessException{
         System.out.println("MybatisUserDao - findAllUserInterest");
         return userMapper.findAllUserInterest(id);
-    }
-
-    @Override
-    public List<Movie> searchMovieByKeyword(String keyword) throws DataAccessException {
-
-        return userMapper.searchMovieByKeyword(keyword);
     }
 
 

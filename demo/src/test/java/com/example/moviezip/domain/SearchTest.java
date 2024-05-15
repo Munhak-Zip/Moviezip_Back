@@ -1,5 +1,6 @@
 package com.example.moviezip.domain;
 
+import com.example.moviezip.dao.mybatis.MybatisMovieDao;
 import com.example.moviezip.dao.mybatis.MybatisUserDao;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.junit.jupiter.api.Test;
@@ -16,7 +17,7 @@ import static junit.framework.TestCase.assertNotNull;
 public class SearchTest {
 
     @Autowired
-    private MybatisUserDao mybatisUserDao;
+    private MybatisMovieDao mybatisMovieDao;
 
     @Test
     public void testSearchMovieByKeyword() throws Exception {
@@ -24,7 +25,7 @@ public class SearchTest {
         // String keyword = "파";
 
         // When
-        List<Movie> movies = mybatisUserDao.searchMovieByKeyword("파");
+        List<Movie> movies = mybatisMovieDao.searchMovieByKeyword("파");
         assertNotNull(movies);
         System.out.println("검색결과 가져오기");
 
