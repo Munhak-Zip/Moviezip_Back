@@ -14,6 +14,7 @@ import java.util.List;
 public class MybatisUserDao implements UserDao {
     @Autowired
     private UserMapper userMapper;
+
     @Override
     public User getUserById(Long id) throws DataAccessException {
         return userMapper.getUserById(id);
@@ -84,4 +85,6 @@ public class MybatisUserDao implements UserDao {
         System.out.println("MybatisUserDao - findAllUserInterest");
         return userMapper.findAllUserInterest(id);
     }
+
+
 }
