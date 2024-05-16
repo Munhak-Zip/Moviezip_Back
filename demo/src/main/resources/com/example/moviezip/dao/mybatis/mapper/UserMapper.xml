@@ -48,7 +48,7 @@
 
     <select id="findAllUserInterest" resultType="User">
         --         SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, INTEREST.GENRE AS interest
-        SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, INTEREST.GENRE AS genre
+        SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, GENRE AS "interest.genre"
         FROM USER_TABLE
                  JOIN INTEREST ON INTEREST.ID = USER_TABLE.ID
         WHERE INTEREST.ID = #{id}
