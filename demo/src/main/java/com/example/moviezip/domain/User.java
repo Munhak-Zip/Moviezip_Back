@@ -6,7 +6,6 @@ public class User {
     private String password;
     private String nickname;
     private String hint;
-    private String genre;
 
     private Interest interest;
 
@@ -50,13 +49,6 @@ public class User {
         this.hint = hint;
     }
 
-    public String getGenre() {
-        return genre;
-    }
-
-    public void setGenre(String genre) {
-        this.genre = genre;
-    }
 
     public Interest getInterest() {
         return interest;
