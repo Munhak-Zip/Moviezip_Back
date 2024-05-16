@@ -123,7 +123,7 @@ public class UserTest22 {
         System.out.println("NICKNAME: " + user10.getNickname());
         System.out.println("PASSWORD: " + user10.getPassword());
         System.out.println("HINT: " + user10.getHint());
-        System.out.println("INTEREST: " + user10.getGenre());
+        System.out.println("INTEREST: " + user10.getInterest().getGenre());
         System.out.println("--------------------------");
 
     }
