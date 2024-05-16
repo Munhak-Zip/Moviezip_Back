@@ -8,6 +8,8 @@ public class User {
     private String hint;
     private String genre;
 
+    private Interest interest;
+
     public Long getId() {
         return id;
     }
@@ -56,4 +58,11 @@ public class User {
         this.genre = genre;
     }
 
+    public Interest getInterest() {
+        return interest;
+    }
+
+    public void setInterest(Interest interest) {
+        this.interest = interest;
+    }
 }
