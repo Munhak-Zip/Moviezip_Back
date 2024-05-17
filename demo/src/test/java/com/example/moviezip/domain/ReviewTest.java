@@ -1,5 +1,6 @@
 package com.example.moviezip.domain;
 
+import ch.qos.logback.core.encoder.EchoEncoder;
 import com.example.moviezip.dao.ReviewDao;
 import com.example.moviezip.dao.UserDao;
 import com.example.moviezip.dao.mybatis.MybatisReviewDao;
@@ -25,7 +26,7 @@ public class ReviewTest {
     private MybatisReviewDao mybatisReviewDao;
 
     @Test
-    public void testReview() throws Exception{
+    public void testReview() throws Exception {
         System.out.println("테스트");
         ReviewImpl rvImpl = new ReviewImpl(mybatisReviewDao);
 
@@ -59,5 +60,37 @@ public class ReviewTest {
         int updatedRv = rvImpl.updateReview(newRv);
         System.out.println(updatedRv);
 
+    }
+
+    @Test
+    public void CriticTest() throws Exception {
+        ReviewImpl rvImpl = new ReviewImpl(mybatisReviewDao);
+        List<Review> critic_reviews;
+
+        critic_reviews = rvImpl.getCriticReviews(3);
+
+
+        if (!critic_reviews.isEmpty()) {
+
+            for (Review review : critic_reviews) {
+
+                if (review != null) {
+
+                    System.out.println("영화 아이디: " + review.getMvId());
+                    System.out.println("리뷰 제목: " + review.getRvTitle());
+                    System.out.println("평점: " + review.getRvStar());
+                    System.out.println("리뷰 내용: " + review.getContent());
+                    System.out.println("작성자: " + review.getWriter());
+
+                    System.out.println("--------------------------");
+                } else {
+
+                    System.out.println("Review is null");
+                }
+            }
+        } else {
+            System.out.println("No search results found");
+        }
+        System.out.println();
     }
 }

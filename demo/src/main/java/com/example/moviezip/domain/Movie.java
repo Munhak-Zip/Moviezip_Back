@@ -8,6 +8,8 @@ public class Movie {
 
     private String mvDirector;
 
+    private String openDate;
+
     public String getMvDirector() {
         return mvDirector;
     }
@@ -63,6 +65,17 @@ public class Movie {
         this.mvDetail = mvDetail;
     }
 
+    public void setMvStar(int mvStar) {
+        this.mvStar = mvStar;
+    }
+
+    public String getOpenDate() {
+        return openDate;
+    }
+
+    public void setOpenDate(String openDate) {
+        this.openDate = openDate;
+    }
 
     //
 //    public List<String> getGenre() {
