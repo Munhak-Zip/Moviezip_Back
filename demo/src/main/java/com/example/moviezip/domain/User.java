@@ -11,6 +11,13 @@ public class User {
     public User() {
     }
 
+//    public User(String user_id, String password, String nickname, String hint) {
+//        this.user_id = user_id;
+//        this.password = password;
+//        this.nickname = nickname;
+//        this.hint = hint;
+//    }
+
     public Long getId() {
         return id;
     }
