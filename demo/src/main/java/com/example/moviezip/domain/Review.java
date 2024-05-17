@@ -9,15 +9,14 @@ public class Review implements Serializable {
     private int mvId;
     private int rvId;
     private int rvStar;
-    private String mvTitle;
     private String writer;
+    private String mvTitle;
     private String content;
     private String rvTitle;
     private String is_Critic;
 
 
-    public Review(){
-
+    public Review() {
     }
 
     public Review(String content, int rvStar, int mvId) { // id 지웠음, 예진이 수정 필요 -> 완료
@@ -26,6 +25,21 @@ public class Review implements Serializable {
         this.mvId = mvId;
     }
 
+    public void setContent(String content) {
+        this.content = content;
+    }
+
+    public void setRvTitle(String rvTitle) {
+        this.rvTitle = rvTitle;
+    }
+
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
+
+    public void setIs_Critic(String is_Critic) {
+        this.is_Critic = is_Critic;
+    }
 
     public void setMvId(int mvId) {
         this.mvId = mvId;
@@ -41,21 +55,5 @@ public class Review implements Serializable {
 
     public void setMvTitle(String mvTitle) {
         this.mvTitle = mvTitle;
-    }
-
-    public void setWriter(String writer) {
-        this.writer = writer;
-    }
-
-    public void setContent(String content) {
-        this.content = content;
-    }
-
-    public void setRvTitle(String rvTitle) {
-        this.rvTitle = rvTitle;
-    }
-
-    public void setIs_Critic(String is_Critic) {
-        this.is_Critic = is_Critic;
     }
 }
