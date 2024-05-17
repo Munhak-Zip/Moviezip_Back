@@ -37,4 +37,6 @@ public interface UserMapper {
     void addUser(User user);
 
     User findAllUserInterest(@Param("id") Long id);
+
+
 }

@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public class MybatisReviewDao implements ReviewDao {
     @Autowired
@@ -14,5 +16,21 @@ public class MybatisReviewDao implements ReviewDao {
     @Override
     public void insertMyReview(Review review) throws DataAccessException {
         reviewMapper.insertMyReview(review);
+    }
+    @Override
+    public void deleteReview(long rvId) throws DataAccessException{
+        reviewMapper.deleteReview(rvId);
+    }
+    @Override
+    public List<Review> getReviewList(long mvId) throws DataAccessException{
+        return reviewMapper.getReviewList(mvId);
+    }
+    @Override
+    public Review getReviewDetail(long rvId) throws DataAccessException {
+        return reviewMapper.getReviewDetail(rvId);
+    }
+    @Override
+    public int updateReview(Review review) throws DataAccessException {
+        return reviewMapper.updateReview(review);
     }
 }

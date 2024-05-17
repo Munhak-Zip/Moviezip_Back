@@ -2,9 +2,12 @@ package com.example.moviezip.service;
 
 import com.example.moviezip.dao.mybatis.MybatisReviewDao;
 import com.example.moviezip.dao.mybatis.MybatisUserDao;
+import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.Review;
 import com.example.moviezip.domain.User;
 import org.springframework.stereotype.Service;
+
+import java.util.List;
 
 @Service
 public class UserServiceImpl{
@@ -27,4 +30,6 @@ public class UserServiceImpl{
     public void updateNickname(Long id, String newNickname) { mybatisUserDao.updateNickname(id, newNickname); }
 
     public void deleteUser(Long id) { mybatisUserDao.deleteUser(id); }
+
+
 }

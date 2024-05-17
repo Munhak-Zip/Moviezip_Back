@@ -12,6 +12,15 @@ public class Movie {
     private String mvDirector;
 
     public Movie() {
+
+    }
+
+    public Movie(Long mvId, String mvTitle, Integer mvStar, String mvDetail, String mvDirector) {
+        this.mvId = mvId;
+        this.mvTitle = mvTitle;
+        this.mvStar = mvStar;
+        this.mvDetail = mvDetail;
+        this.mvDirector = mvDirector;
     }
 
     public Long getMvId() {
@@ -60,5 +69,13 @@ public class Movie {
 
     public void setReview(List<Review> review) {
         this.review = review;
+    }
+
+    public String getMvDirector() {
+        return mvDirector;
+    }
+
+    public void setMvDirector(String mvDirector) {
+        this.mvDirector = mvDirector;
     }
 }
