@@ -4,18 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : 영화검색 테스트코드 추가 #12">
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" afterDir="false" />
+    <list default="true" id="502d9ffa-c092-44cf-951d-976c35a5e42a" name="Changes" comment="[add] : ReservationImpl #17">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +17,8 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Interface" />
+        <option value="spring-beans.schema" />
+        <option value="JUnit5 Test Class" />
         <option value="Class" />
       </list>
     </option>
@@ -33,48 +26,57 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="1be1d789-f1f4-4152-8103-fe128d6e8c16" />
-  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2gFw7a5oiNtVyPt5d0HMF2mJ7Ma" />
+  <component name="ProjectColorInfo"><![CDATA[{
+  "customColor": "",
+  "associatedIndex": 0
+}]]></component>
+  <component name="ProjectId" id="2gZfbV1K3h75zimAJAM2O18kM9l" />
   <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.ReservationTest.executor": "Run",
+    "JUnit.ReviewTest.testReview.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
+    "git-widget-placeholder": "add/reservDAO",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Moviezip_Back/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper",
+    "last_opened_file_path": "D:/movie_zip/movie_zip_back",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
-    "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229",
     "vue.rearranger.settings.migration": "true"
-  },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "oracle"
-    ]
   }
 }]]></component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\4th_grade\1st_semester\MunhakZip\Moviezip_Back\demo\src\main\resources\com\example\moviezip\dao\mybatis\mapper" />
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="ExtractSuperBase.RECENT_KEYS">
+      <recent name="com.example.moviezip.dao.mybatis" />
+    </key>
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="com.example.moviezip.dao" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="com.example.moviezip.domain" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.moviezip.dao.mybatis" />
+      <recent name="com.example.moviezip.dao.mybatis.mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest">
-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ReviewTest.testReview">
+    <configuration name="ReservationTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -83,13 +85,13 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.SearchTest" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.ReservationTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.testSearchMovieByKeyword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="ReviewTest.testReview" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -98,151 +100,186 @@
         </pattern>
       </extension>
       <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.SearchTest" />
-      <option name="METHOD_NAME" value="testSearchMovieByKeyword" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.ReviewTest" />
+      <option name="METHOD_NAME" value="testReview" />
       <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest22.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.moviezip.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.UserTest22" />
-      <option name="METHOD_NAME" value="testUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="demo (1)" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="demo (1)" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="MoviezipApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
-      <module name="demo" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.moviezip.MoviezipApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.UserTest22.testUser" />
-        <item itemvalue="JUnit.SearchTest.testSearchMovieByKeyword" />
+        <item itemvalue="JUnit.ReviewTest.testReview" />
+        <item itemvalue="JUnit.ReservationTest" />
       </list>
     </recent_temporary>
   </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-21.0.1-openjdk-21.0.1-4caba194b151-23eed401" />
+      </set>
+    </attachedChunks>
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="" />
-      <created>1715306467063</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1715306467063</updated>
-      <workItem from="1715306469179" duration="738000" />
-      <workItem from="1715307804229" duration="95000" />
-      <workItem from="1715307911383" duration="8000" />
-      <workItem from="1715780642806" duration="598000" />
-      <workItem from="1715791503922" duration="5527000" />
-    </task>
-    <task id="LOCAL-00001" summary="[add] : Movie 클래스 생성">
+    <task id="LOCAL-00001" summary="[add] : updateTest #2">
       <option name="closed" value="true" />
-      <created>1715796505057</created>
+      <created>1715445701112</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1715796505057</updated>
+      <updated>1715445701112</updated>
     </task>
-    <task id="LOCAL-00002" summary="[add] : MybatisUserDao 생성">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="502d9ffa-c092-44cf-951d-976c35a5e42a" name="Changes" comment="[add] : updateTest #2" />
+      <created>1715910091893</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1715910091893</updated>
+      <workItem from="1715910093042" duration="6677000" />
+    </task>
+    <task id="LOCAL-00002" summary="[add] : Reservation 도메인 추가 #17">
       <option name="closed" value="true" />
-      <created>1715796528532</created>
+      <created>1715910378567</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1715796528532</updated>
+      <updated>1715910378567</updated>
     </task>
-    <task id="LOCAL-00003" summary="[add] : UserDao에 searchMovieByKeyword 영화검색 인터페이스 추가">
+    <task id="LOCAL-00003" summary="[add] : ReservationMapper.java 추가 #17">
       <option name="closed" value="true" />
-      <created>1715796587624</created>
+      <created>1715913146603</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1715796587624</updated>
+      <updated>1715913146603</updated>
     </task>
-    <task id="LOCAL-00004" summary="[add] : UserMapper에 searchMovieByKeyword 영화검색 인터페이스 추가">
+    <task id="LOCAL-00004" summary="[add] : ReservationMapper.xml 추가 #17">
       <option name="closed" value="true" />
-      <created>1715796611714</created>
+      <created>1715913157577</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1715796611714</updated>
+      <updated>1715913157577</updated>
     </task>
-    <task id="LOCAL-00005" summary="[add] : UserMapper.xml에 영화검색 쿼리 추가">
+    <task id="LOCAL-00005" summary="[add] : 필드 추가 #17">
       <option name="closed" value="true" />
-      <created>1715796641383</created>
+      <created>1715914025255</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1715796641383</updated>
+      <updated>1715914025255</updated>
     </task>
-    <task id="LOCAL-00006" summary="[add] : UserServie 인터페이스에 searchMoviesByTitle 영화검색 인터페이스 추가">
+    <task id="LOCAL-00006" summary="[add] : getter,setter 추가 #17">
       <option name="closed" value="true" />
-      <created>1715796688849</created>
+      <created>1715914047438</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1715796688849</updated>
+      <updated>1715914047438</updated>
     </task>
-    <task id="LOCAL-00007" summary="[add] : UserServieImpl에 searchMoviesByTitle 영화검색 인터페이스 구현코드 추가">
+    <task id="LOCAL-00007" summary="[add] : 생성자 추가 #17">
       <option name="closed" value="true" />
-      <created>1715796726017</created>
+      <created>1715914069388</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1715796726017</updated>
+      <updated>1715914069388</updated>
     </task>
-    <task id="LOCAL-00008" summary="[add] : 영화검색 테스트코드 추가 #12">
+    <task id="LOCAL-00008" summary="[add] : Movie 상속 #17">
       <option name="closed" value="true" />
-      <created>1715796792284</created>
+      <created>1715914087011</created>
       <option name="number" value="00008" />
       <option name="presentableId" value="LOCAL-00008" />
       <option name="project" value="LOCAL" />
-      <updated>1715796792284</updated>
+      <updated>1715914087011</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="[add] : ReservationMapper 주입 #17">
+      <option name="closed" value="true" />
+      <created>1715914251639</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715914251639</updated>
+    </task>
+    <task id="LOCAL-00010" summary="[add] : Reservation domain 완성 #17">
+      <option name="closed" value="true" />
+      <created>1715917270441</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917270441</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[add] : insertReservation 완성 #17">
+      <option name="closed" value="true" />
+      <created>1715917291113</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917291113</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[add] : insertReservation 완성 #17">
+      <option name="closed" value="true" />
+      <created>1715917300344</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917300344</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[add] : insertReservation 완성 #17">
+      <option name="closed" value="true" />
+      <created>1715917312116</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917312116</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[add] : insertReservation 완성 #17">
+      <option name="closed" value="true" />
+      <created>1715917319395</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917319395</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[add] : insertReservation 테스트 #17">
+      <option name="closed" value="true" />
+      <created>1715917332971</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917332971</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[add] : ReservationImpl #17">
+      <option name="closed" value="true" />
+      <created>1715917350394</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917350394</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : Movie 클래스 생성" />
-    <MESSAGE value="[add] : MybatisUserDao 생성" />
-    <MESSAGE value="[add] : UserDao에 searchMovieByKeyword 영화검색 인터페이스 추가" />
-    <MESSAGE value="[add] : UserMapper에 searchMovieByKeyword 영화검색 인터페이스 추가" />
-    <MESSAGE value="[add] : UserMapper.xml에 영화검색 쿼리 추가" />
-    <MESSAGE value="[add] : UserServie 인터페이스에 searchMoviesByTitle 영화검색 인터페이스 추가" />
-    <MESSAGE value="[add] : UserServieImpl에 searchMoviesByTitle 영화검색 인터페이스 구현코드 추가" />
-    <MESSAGE value="[add] : 영화검색 테스트코드 추가 #12" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] : 영화검색 테스트코드 추가 #12" />
+    <MESSAGE value="[add] : pull #2" />
+    <MESSAGE value="[add] : updateTest #2" />
+    <MESSAGE value="[add] : Reservation 도메인 추가 #17" />
+    <MESSAGE value="[add] : ReservationMapper.java 추가 #17" />
+    <MESSAGE value="[add] : ReservationMapper.xml 추가 #17" />
+    <MESSAGE value="[add] : 필드 추가 #17" />
+    <MESSAGE value="[add] : getter,setter 추가 #17" />
+    <MESSAGE value="[add] : 생성자 추가 #17" />
+    <MESSAGE value="[add] : Movie 상속 #17" />
+    <MESSAGE value="[add] : ReservationMapper 주입 #17" />
+    <MESSAGE value="[add] : Reservation domain 완성 #17" />
+    <MESSAGE value="[add] : insertReservation 완성 #17" />
+    <MESSAGE value="[add] : insertReservation 테스트 #17" />
+    <MESSAGE value="[add] : ReservationImpl #17" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : ReservationImpl #17" />
   </component>
 </project>
