@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.moviezip.dao.mybatis.mapper.ReviewMapper">
+    <cache />
+
+    <insert id="insertMyReview" parameterType="Review">
+        INSERT INTO REVIEW
+            (CONTENT, STAR, MOVIE_ID)
+        VALUES
+            (#{content}, #{rvStar}, #{mvId})
+    </insert>
+
+    <delete id="deleteReview" parameterType="long">
+        DELETE FROM REVIEW
+        WHERE REVIEW_ID = #{rvId}
+    </delete>
+
+    <select id="getReviewList" resultType="Review">
+        SELECT CONTENT, STAR, REVIEW_TITLE, WRITER, REVIEW_ID
+        FROM REVIEW
+        WHERE MOVIE_ID = #{mvId}
+    </select>
+
+    <select id="getReviewDetail" resultType="Review">
+        SELECT CONTENT, STAR, REVIEW_TITLE, WRITER
+        FROM REVIEW
+        WHERE REVIEW_ID = #{rvId}
+    </select>
+
+    <update id="updateReview" parameterType="Review">
+        UPDATE REVIEW SET
+                          CONTENT = #{content},
+                          STAR = #{rvStar},
+                          REVIEW_TITLE = #{rvTitle,jdbcType=VARCHAR}
+        WHERE REVIEW_ID = #{rvId}
+    </update>
+
+</mapper>
