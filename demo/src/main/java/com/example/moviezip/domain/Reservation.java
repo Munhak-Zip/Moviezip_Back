@@ -2,7 +2,7 @@ package com.example.moviezip.domain;
 
 import java.util.Date;
 
-public class Reservation {
+public class Reservation extends Movie{
     private Long reserveId;
     private Date date;
 
