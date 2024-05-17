@@ -15,13 +15,13 @@
     SELECT REVIEW.WRITER AS writer, REVIEW.STAR AS rvStar, REVIEW.REVIEW_TITLE AS rvTitle, REVIEW.CONTENT AS content
     FROM REVIEW
     JOIN REVIEW_WISH ON REVIEW.REVIEW_ID = REVIEW_WISH.REVIEW_ID
-    WHERE REVIEW_WISH.ID = #{id}
+    WHERE REVIEW_WISH.USER_ID = #{id}
   </select>
 
   <!-- 찜한 리뷰 삭제 -->
   <delete id="deleteWishReview">
     DELETE FROM REVIEW_WISH
-    WHERE REVIEW_WISH.ID = #{id} AND REVIEW_WISH.REVIEW_ID = #{rvId}
+    WHERE REVIEW_WISH.USER_ID = #{id} AND REVIEW_WISH.REVIEW_ID = #{rvId}
   </delete>
 
   <!-- 내가 쓴 리뷰 가져오기, 영화 제목, 별점, 내용을 Review List 형태로 가져옴-->

@@ -36,4 +36,10 @@
         WHERE REVIEW_ID = #{rvId}
     </update>
 
+    <select id="getCriticReviews" resultType="Review">
+        SELECT CONTENT, STAR AS rvStar, REVIEW_TITLE AS rvTitle, WRITER, REVIEW_ID AS rvId, REVIEW.MOVIE_ID AS mvId
+        FROM REVIEW
+            JOIN MOVIE ON MOVIE.MOVIE_ID = REVIEW.MOVIE_ID
+        WHERE REVIEW.MOVIE_ID = #{mvId} and IS_CRITIC ='Y'
+    </select>
 </mapper>

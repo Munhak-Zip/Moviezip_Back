@@ -6,17 +6,11 @@ public class User {
     private String password;
     private String nickname;
     private String hint;
-    private String genre;
+
+    private Interest interest;
 
     public User() {
     }
-
-//    public User(String user_id, String password, String nickname, String hint) {
-//        this.user_id = user_id;
-//        this.password = password;
-//        this.nickname = nickname;
-//        this.hint = hint;
-//    }
 
     public Long getId() {
         return id;
@@ -58,11 +52,12 @@ public class User {
         this.hint = hint;
     }
 
-    public String getGenre() {
-        return genre;
+
+    public Interest getInterest() {
+        return interest;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setInterest(Interest interest) {
+        this.interest = interest;
     }
 }

@@ -30,4 +30,9 @@ public class ReviewImpl {
         return mybatisReviewDao.getReviewDetail(rvId);
     }
     public int updateReview(Review review) { return mybatisReviewDao.updateReview(review); }
+
+    public List<Review> getCriticReviews(int mvId) {
+        return mybatisReviewDao.getCriticReviews(mvId);
+    }
+
 }

@@ -10,6 +10,8 @@ public class Movie {
     private List<String> genre;
     private List<Review> review;
     private String mvDirector;
+    private String openDate;
+
 
     public Movie() {
 
@@ -23,59 +25,71 @@ public class Movie {
         this.mvDirector = mvDirector;
     }
 
-    public Long getMvId() {
-        return mvId;
-    }
-
     public void setMvId(Long mvId) {
         this.mvId = mvId;
-    }
-
-    public String getMvTitle() {
-        return mvTitle;
     }
 
     public void setMvTitle(String mvTitle) {
         this.mvTitle = mvTitle;
     }
 
-    public int getMvStar() {
-        return mvStar;
-    }
-
-    public void setMvStar(int mvStar) {
+    public void setMvStar(Integer mvStar) {
         this.mvStar = mvStar;
-    }
-
-    public String getMvDetail() {
-        return mvDetail;
     }
 
     public void setMvDetail(String mvDetail) {
         this.mvDetail = mvDetail;
     }
 
-    public List<String> getGenre() {
-        return genre;
-    }
-
     public void setGenre(List<String> genre) {
         this.genre = genre;
     }
 
-    public List<Review> getReview() {
-        return review;
+    public void setMvStar(int mvStar) {
+        this.mvStar = mvStar;
+    }
+
+    public void setOpenDate(String openDate) {
+        this.openDate = openDate;
     }
 
     public void setReview(List<Review> review) {
         this.review = review;
     }
 
+    public void setMvDirector(String mvDirector) {
+        this.mvDirector = mvDirector;
+    }
+
+    public Long getMvId() {
+        return mvId;
+    }
+
+    public String getMvTitle() {
+        return mvTitle;
+    }
+
+    public int getMvStar() {
+        return mvStar;
+    }
+
+    public String getMvDetail() {
+        return mvDetail;
+    }
+
+    public List<String> getGenre() {
+        return genre;
+    }
+
+    public List<Review> getReview() {
+        return review;
+    }
+
     public String getMvDirector() {
         return mvDirector;
     }
 
-    public void setMvDirector(String mvDirector) {
-        this.mvDirector = mvDirector;
+    public String getOpenDate() {
+        return openDate;
     }
 }
