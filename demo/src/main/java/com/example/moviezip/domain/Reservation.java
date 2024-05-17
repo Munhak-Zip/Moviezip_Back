@@ -4,15 +4,23 @@ import java.util.Date;
 
 public class Reservation extends Movie{
     private Long reserveId;
+    private Long id;
     private Date date;
+    private String seat;
 
-    public Reservation(Long reserveId, Date date, String seat) {
-        this.reserveId = reserveId;
+    public Reservation(Long mvId, Long id, Date date, String seat) {
+        super.setMvId(mvId);
+        this.id = id;
         this.date = date;
         this.seat = seat;
     }
-
-    private String seat;
+    public Reservation(Long mvId, String mvTitle, Integer mvStar, String mvDetail, String mvDirector, Long reserveId, Long id, Date date, String seat) {
+        super(mvId, mvTitle, mvStar, mvDetail, mvDirector);
+        this.reserveId = reserveId;
+        this.id = id;
+        this.date = date;
+        this.seat = seat;
+    }
 
     public Long getReserveId() {
         return reserveId;
