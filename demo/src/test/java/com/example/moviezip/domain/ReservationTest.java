@@ -24,12 +24,22 @@ class ReservationTest {
     @Test
     public void testReservation() throws Exception {
         ReservationImpl rsvImpl = new ReservationImpl(mybatisReservationDao);
-
-        SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        /*insert test*/
+        /*SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = sdf.parse("2024-05-17");
 
         Reservation reservation = new Reservation(3L, 2L, date, "A1");
 
         rsvImpl.insertReservation(reservation);
+        */
+
+        /*update test*/
+         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        Date date = sdf.parse("2024-06-28");
+        Reservation reservation = new Reservation(3L, 2L,date, "L2");
+        reservation.setReserveId(16L);
+        int count = rsvImpl.updateReservation(reservation);
+        System.out.println(count);
+
     }
 }
