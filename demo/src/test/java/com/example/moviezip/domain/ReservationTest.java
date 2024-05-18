@@ -11,6 +11,7 @@ import org.springframework.test.context.junit.jupiter.SpringExtension;
 
 import java.text.SimpleDateFormat;
 import java.util.Date;
+import java.util.List;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
@@ -44,5 +45,12 @@ class ReservationTest {
 
         /*delete test*/
         /*rsvImpl.deleteReservation(16L);*/
+
+        /* getReservationById test*/
+        Long id = 3L;
+        List<Reservation> list = rsvImpl.getReservationById(id);
+        for( Reservation rsv : list ) {
+            System.out.println(rsv.getMvTitle()+", "+rsv.getSeat()+", "+rsv.getDate());
+        }
     }
 }
