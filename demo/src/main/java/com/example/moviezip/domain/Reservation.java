@@ -1,8 +1,9 @@
 package com.example.moviezip.domain;
 
+import java.io.Serializable;
 import java.util.Date;
 
-public class Reservation extends Movie{
+public class Reservation extends Movie implements Serializable {
     private Long reserveId;
     private Long id;
     private Date date;
@@ -21,7 +22,11 @@ public class Reservation extends Movie{
         this.date = date;
         this.seat = seat;
     }
-
+    public Reservation(Date date, String seat, String movieTitle) {
+        this.date = date;
+        this.seat = seat;
+        super.setMvTitle(movieTitle);
+    }
     public Long getReserveId() {
         return reserveId;
     }
