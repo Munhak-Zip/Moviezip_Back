@@ -34,12 +34,15 @@ class ReservationTest {
         */
 
         /*update test*/
-         SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
+        /*SimpleDateFormat sdf = new SimpleDateFormat("yyyy-MM-dd");
         Date date = sdf.parse("2024-06-28");
         Reservation reservation = new Reservation(3L, 2L,date, "L2");
         reservation.setReserveId(16L);
         int count = rsvImpl.updateReservation(reservation);
         System.out.println(count);
+        */
 
+        /*delete test*/
+        /*rsvImpl.deleteReservation(16L);*/
     }
 }
