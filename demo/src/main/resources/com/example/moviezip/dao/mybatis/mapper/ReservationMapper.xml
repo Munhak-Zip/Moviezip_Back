@@ -29,4 +29,11 @@
         INNER JOIN MOVIE ON RESERVATION.MOVIE_ID = MOVIE.MOVIE_ID
         WHERE RESERVATION.ID = #{id}
     </select>
+
+    <select id="getReservationDetail" resultType="Reservation">
+        SELECT RESERVATION.RESERVATE_DATE, RESERVATION.SEAT, MOVIE.MOVIE_TITLE
+        FROM RESERVATION
+        INNER JOIN MOVIE ON RESERVATION.MOVIE_ID = MOVIE.MOVIE_ID
+        WHERE RESERVATION.RESERVATION_ID = #{reserveId}
+    </select>
 </mapper>
