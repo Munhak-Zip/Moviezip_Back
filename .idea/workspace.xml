@@ -4,11 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="502d9ffa-c092-44cf-951d-976c35a5e42a" name="Changes" comment="[add] : ReservationImpl #17">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" afterDir="false" />
-    </list>
+    <list default="true" id="502d9ffa-c092-44cf-951d-976c35a5e42a" name="Changes" comment="[add] : update test #2" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -137,7 +133,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715910091893</updated>
-      <workItem from="1715910093042" duration="6677000" />
+      <workItem from="1715910093042" duration="7021000" />
     </task>
     <task id="LOCAL-00002" summary="[add] : Reservation 도메인 추가 #17">
       <option name="closed" value="true" />
@@ -259,7 +255,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715917350394</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="[add] : Movie 상속 #2">
+      <option name="closed" value="true" />
+      <created>1715917536436</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917536436</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[add] : update test #2">
+      <option name="closed" value="true" />
+      <created>1715917545301</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917545301</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[add] : update test #2">
+      <option name="closed" value="true" />
+      <created>1715917582176</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1715917582176</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -280,6 +300,8 @@
     <MESSAGE value="[add] : insertReservation 완성 #17" />
     <MESSAGE value="[add] : insertReservation 테스트 #17" />
     <MESSAGE value="[add] : ReservationImpl #17" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] : ReservationImpl #17" />
+    <MESSAGE value="[add] : Movie 상속 #2" />
+    <MESSAGE value="[add] : update test #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : update test #2" />
   </component>
 </project>
