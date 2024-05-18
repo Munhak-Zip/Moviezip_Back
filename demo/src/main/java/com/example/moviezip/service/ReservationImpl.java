@@ -9,4 +9,5 @@ public class ReservationImpl {
         this.mybatisReservationDao = mybatisReservationDao;
     }
     public void insertReservation(Reservation reservation) { mybatisReservationDao.insertReservation(reservation);}
+    public int updateReservation(Reservation reservation) { return mybatisReservationDao.updateReservation(reservation);}
 }
