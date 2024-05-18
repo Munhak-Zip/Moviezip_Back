@@ -17,4 +17,9 @@
             SEAT = #{seat}
         WHERE RESERVATION_ID = #{reserveId}
     </update>
+
+    <delete id="deleteReservation" parameterType="Long">
+        DELETE FROM RESERVATION
+        WHERE RESERVATION_ID = #{reserveId}
+    </delete>
 </mapper>
