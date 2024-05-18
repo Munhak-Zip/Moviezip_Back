@@ -12,4 +12,5 @@ public interface ReservationMapper {
     int updateReservation(Reservation reservation);
     void deleteReservation(Long reserveId);
     List<Reservation> getReservationById(Long id);
+    Reservation getReservationDetail(Long reserveId);
 }
