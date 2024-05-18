@@ -8,4 +8,5 @@ import java.util.List;
 
 public interface ReservationDao {
     void insertReservation(Reservation reservation) throws DataAccessException;
+    int updateReservation(Reservation reservation) throws DataAccessException;
 }
