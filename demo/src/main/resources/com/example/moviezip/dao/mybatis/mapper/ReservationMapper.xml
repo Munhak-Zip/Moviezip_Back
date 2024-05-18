@@ -11,4 +11,10 @@
             (#{date}, #{seat}, #{mvId}, #{id})
     </insert>
 
+    <update id="updateReservation" parameterType="Reservation">
+        UPDATE RESERVATION SET
+            RESERVATE_DATE = #{date},
+            SEAT = #{seat}
+        WHERE RESERVATION_ID = #{reserveId}
+    </update>
 </mapper>
