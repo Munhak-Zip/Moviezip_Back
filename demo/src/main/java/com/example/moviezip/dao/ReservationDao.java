@@ -11,4 +11,5 @@ public interface ReservationDao {
     int updateReservation(Reservation reservation) throws DataAccessException;
     void deleteReservation(Long reserveId) throws DataAccessException;
     List<Reservation> getReservationById(Long id) throws DataAccessException;
+    Reservation getReservationDetail(Long reserveId) throws DataAccessException;
 }
