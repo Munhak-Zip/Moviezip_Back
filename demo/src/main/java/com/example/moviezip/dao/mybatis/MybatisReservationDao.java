@@ -7,6 +7,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
 
+import java.util.List;
+
 @Repository
 public class MybatisReservationDao implements ReservationDao {
     @Autowired
@@ -25,5 +27,10 @@ public class MybatisReservationDao implements ReservationDao {
     @Override
     public void deleteReservation(Long reserveId) throws DataAccessException {
         reservationMapper.deleteReservation(reserveId);
+    }
+
+    @Override
+    public List<Reservation> getReservationById(Long id) throws DataAccessException {
+        return reservationMapper.getReservationById(id);
     }
 }
