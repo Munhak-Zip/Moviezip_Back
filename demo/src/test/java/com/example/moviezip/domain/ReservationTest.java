@@ -47,10 +47,16 @@ class ReservationTest {
         /*rsvImpl.deleteReservation(16L);*/
 
         /* getReservationById test*/
-        Long id = 3L;
+        /*Long id = 3L;
         List<Reservation> list = rsvImpl.getReservationById(id);
         for( Reservation rsv : list ) {
             System.out.println(rsv.getMvTitle()+", "+rsv.getSeat()+", "+rsv.getDate());
-        }
+        }*/
+
+        /*getReservationDetail test*/
+        /*Long reserveId = 15L;
+        Reservation rsv = rsvImpl.getReservationDetail(reserveId);
+        System.out.println(rsv.getMvTitle()+", "+rsv.getSeat()+", "+rsv.getDate());
+        */
     }
 }
