@@ -10,4 +10,5 @@ public class ReservationImpl {
     }
     public void insertReservation(Reservation reservation) { mybatisReservationDao.insertReservation(reservation);}
     public int updateReservation(Reservation reservation) { return mybatisReservationDao.updateReservation(reservation);}
+    public void deleteReservation(Long reserveId) { mybatisReservationDao.deleteReservation(reserveId);}
 }
