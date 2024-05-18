@@ -1,9 +1,4 @@
 package com.example.moviezip.domain;
-
-import lombok.Getter;
-
-import java.io.Serializable;
-
 public class Review extends Movie {
     private int rvId;
     private int rvStar;
