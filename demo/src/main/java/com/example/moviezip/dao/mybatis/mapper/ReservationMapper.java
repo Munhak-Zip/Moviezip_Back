@@ -10,4 +10,5 @@ import java.util.List;
 public interface ReservationMapper {
     void insertReservation(Reservation reservation);
     int updateReservation(Reservation reservation);
+    void deleteReservation(Long reserveId);
 }
