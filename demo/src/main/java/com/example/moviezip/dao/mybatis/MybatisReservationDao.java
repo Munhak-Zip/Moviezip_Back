@@ -17,4 +17,9 @@ public class MybatisReservationDao implements ReservationDao {
         reservationMapper.insertReservation(reservation);
     }
 
+    @Override
+    public int updateReservation(Reservation reservation) throws DataAccessException {
+        return reservationMapper.updateReservation(reservation);
+    }
+
 }
