@@ -6,7 +6,11 @@ public class User {
     private String password;
     private String nickname;
     private String hint;
-    private String genre;
+
+    private Interest interest;
+
+    public User() {
+    }
 
     public Long getId() {
         return id;
@@ -48,12 +52,12 @@ public class User {
         this.hint = hint;
     }
 
-    public String getGenre() {
-        return genre;
+
+    public Interest getInterest() {
+        return interest;
     }
 
-    public void setGenre(String genre) {
-        this.genre = genre;
+    public void setInterest(Interest interest) {
+        this.interest = interest;
     }
-
 }
