@@ -4,38 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : update test #2">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/sqlDataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/LoginDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/WishDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisLoginDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisWishDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/LoginMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/WishMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/LoginMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/WishMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/LoginTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/WishTest.java" afterDir="false" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : Review 도메인 수정 #2">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReviewDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReviewDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Movie.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Movie.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReviewImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReviewImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/UserTest22.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/UserTest22.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReservationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReservationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReservationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReservationImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -71,11 +48,12 @@
   "keyToString": {
     "JUnit.LoginTest.executor": "Run",
     "JUnit.LoginTest.testLogin.executor": "Run",
+    "JUnit.ReservationTest.testReservation.executor": "Run",
     "JUnit.WishTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "Merging add/reservDAO",
+    "git-widget-placeholder": "add/reservDAO",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Moviezip_Back/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper",
     "node.js.detected.package.eslint": "true",
@@ -101,7 +79,7 @@
       <recent name="D:\4th_grade\1st_semester\MunhakZip\Moviezip_Back\demo\src\main\resources\com\example\moviezip\dao\mybatis\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WishTest">
+  <component name="RunManager" selected="JUnit.ReservationTest.testReservation">
     <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -133,6 +111,22 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ReservationTest.testReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviezip.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.ReservationTest" />
+      <option name="METHOD_NAME" value="testReservation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -144,22 +138,6 @@
       <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
       <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.SearchTest" />
       <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest22.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.moviezip.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.UserTest22" />
-      <option name="METHOD_NAME" value="testUser" />
-      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -202,13 +180,20 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReservationTest.testReservation" />
         <item itemvalue="JUnit.WishTest" />
         <item itemvalue="JUnit.LoginTest" />
         <item itemvalue="JUnit.LoginTest.testLogin" />
         <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.UserTest22.testUser" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -312,7 +297,71 @@
       <option name="project" value="LOCAL" />
       <updated>1715916277179</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="[add] : pull/review 도메인 충돌 수정 #17">
+      <option name="closed" value="true" />
+      <created>1716016414327</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716016414327</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017327322</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017327322</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017331979</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017331979</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017335648</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017335648</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017339395</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017339395</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017342959</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017342959</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017353644</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017353644</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[add] : Review 도메인 수정 #2">
+      <option name="closed" value="true" />
+      <created>1716017384419</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017384419</updated>
+    </task>
+    <option name="localTasksCounter" value="20" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -332,6 +381,9 @@
     <MESSAGE value="pull 받기..2" />
     <MESSAGE value="[add/#9] LoginDao 추가" />
     <MESSAGE value="[add] : update test #2" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] : update test #2" />
+    <MESSAGE value="[add] : pull/review 도메인 충돌 수정 #17" />
+    <MESSAGE value="[add] : updateReservation 추가 #17" />
+    <MESSAGE value="[add] : Review 도메인 수정 #2" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : Review 도메인 수정 #2" />
   </component>
 </project>

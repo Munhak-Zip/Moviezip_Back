@@ -22,4 +22,8 @@ public class MybatisReservationDao implements ReservationDao {
         return reservationMapper.updateReservation(reservation);
     }
 
+    @Override
+    public void deleteReservation(Long reserveId) throws DataAccessException {
+        reservationMapper.deleteReservation(reserveId);
+    }
 }
