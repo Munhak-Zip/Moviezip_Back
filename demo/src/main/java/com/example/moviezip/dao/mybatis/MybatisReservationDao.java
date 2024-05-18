@@ -33,4 +33,9 @@ public class MybatisReservationDao implements ReservationDao {
     public List<Reservation> getReservationById(Long id) throws DataAccessException {
         return reservationMapper.getReservationById(id);
     }
+
+    @Override
+    public Reservation getReservationDetail(Long reserveId) throws DataAccessException {
+        return reservationMapper.getReservationDetail(reserveId);
+    }
 }
