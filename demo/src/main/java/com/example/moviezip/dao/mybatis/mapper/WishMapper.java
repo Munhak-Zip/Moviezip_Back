@@ -13,4 +13,7 @@ public interface WishMapper {
      List<Review> getWishReview(int id);
      int deleteWishReview(@Param("id") int id, @Param("rvId") int rvId);
      List<Review> getMyReview(String userId);
+
+     //영화 찜하기
+     int saveWishMovie(int userid, int movie_id);
 }
