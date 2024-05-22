@@ -6,12 +6,20 @@
   <component name="ChangeListManager">
     <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : ReviewTest 테스트코드 추가 #16">
       <change afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/MovieTest.java" afterDir="false" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : import java.io.Serializable; #17">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReservationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReservationDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReservationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReservationImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,15 +47,20 @@
   &quot;associatedIndex&quot;: 0
 }</component>
   <component name="ProjectId" id="2gFw7a5oiNtVyPt5d0HMF2mJ7Ma" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent"><![CDATA[{
   "keyToString": {
+    "JUnit.LoginTest.executor": "Run",
+    "JUnit.LoginTest.testLogin.executor": "Run",
+    "JUnit.ReservationTest.testReservation.executor": "Run",
+    "JUnit.WishTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "add/reservDAO",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Moviezip_Back",
     "node.js.detected.package.eslint": "true",
@@ -55,6 +68,10 @@
     "node.js.selected.package.eslint": "(autodetect)",
     "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "project.structure.last.edited": "Project",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "preferences.lookFeel",
     "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229",
     "vue.rearranger.settings.migration": "true"
   },
@@ -102,6 +119,55 @@
       </method>
     </configuration>
     <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.ReservationTest.testReservation">
+    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviezip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviezip" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.LoginTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviezip.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviezip" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.LoginTest" />
+      <option name="METHOD_NAME" value="testLogin" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="ReservationTest.testReservation" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviezip.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.ReservationTest" />
+      <option name="METHOD_NAME" value="testReservation" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
@@ -116,34 +182,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="SearchTest.testSearchMovieByKeyword" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="WishTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.moviezip.domain.*" />
+          <option name="PATTERN" value="com.example.moviezip.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.SearchTest" />
-      <option name="METHOD_NAME" value="testSearchMovieByKeyword" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest22.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.moviezip.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.UserTest22" />
-      <option name="METHOD_NAME" value="testUser" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="PACKAGE_NAME" value="com.example.moviezip" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.WishTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -171,13 +220,22 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.ReservationTest.testReservation" />
+        <item itemvalue="JUnit.WishTest" />
+        <item itemvalue="JUnit.LoginTest" />
+        <item itemvalue="JUnit.LoginTest.testLogin" />
         <item itemvalue="JUnit.MovieTest.RecentMoviesTest" />
         <item itemvalue="JUnit.MovieTest" />
         <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.UserTest22.testUser" />
-        <item itemvalue="JUnit.SearchTest.testSearchMovieByKeyword" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="jdk-17.0.10-corretto-17.0.10-4caba194b151-5cd809f4" />
+      </set>
+    </attachedChunks>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -258,7 +316,199 @@
       <option name="project" value="LOCAL" />
       <updated>1715796792284</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="pull 받기..1">
+      <option name="closed" value="true" />
+      <created>1715912090429</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715912090429</updated>
+    </task>
+    <task id="LOCAL-00010" summary="pull 받기..2">
+      <option name="closed" value="true" />
+      <created>1715912247401</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715912247401</updated>
+    </task>
+    <task id="LOCAL-00011" summary="[add/#9] LoginDao 추가">
+      <option name="closed" value="true" />
+      <created>1715916277179</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715916277179</updated>
+    </task>
+    <task id="LOCAL-00012" summary="[add] : pull/review 도메인 충돌 수정 #17">
+      <option name="closed" value="true" />
+      <created>1716016414327</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1716016414327</updated>
+    </task>
+    <task id="LOCAL-00013" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017327322</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017327322</updated>
+    </task>
+    <task id="LOCAL-00014" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017331979</created>
+      <option name="number" value="00014" />
+      <option name="presentableId" value="LOCAL-00014" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017331979</updated>
+    </task>
+    <task id="LOCAL-00015" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017335648</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017335648</updated>
+    </task>
+    <task id="LOCAL-00016" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017339395</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017339395</updated>
+    </task>
+    <task id="LOCAL-00017" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017342959</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017342959</updated>
+    </task>
+    <task id="LOCAL-00018" summary="[add] : updateReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716017353644</created>
+      <option name="number" value="00018" />
+      <option name="presentableId" value="LOCAL-00018" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017353644</updated>
+    </task>
+    <task id="LOCAL-00019" summary="[add] : Review 도메인 수정 #2">
+      <option name="closed" value="true" />
+      <created>1716017384419</created>
+      <option name="number" value="00019" />
+      <option name="presentableId" value="LOCAL-00019" />
+      <option name="project" value="LOCAL" />
+      <updated>1716017384419</updated>
+    </task>
+    <task id="LOCAL-00020" summary="[add] : deleteReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716018000842</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1716018000842</updated>
+    </task>
+    <task id="LOCAL-00021" summary="[add] : deleteReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716018005043</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1716018005043</updated>
+    </task>
+    <task id="LOCAL-00022" summary="[add] : deleteReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716018009021</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1716018009021</updated>
+    </task>
+    <task id="LOCAL-00023" summary="[add] : deleteReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716018012751</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1716018012751</updated>
+    </task>
+    <task id="LOCAL-00024" summary="[add] : deleteReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716018016993</created>
+      <option name="number" value="00024" />
+      <option name="presentableId" value="LOCAL-00024" />
+      <option name="project" value="LOCAL" />
+      <updated>1716018016993</updated>
+    </task>
+    <task id="LOCAL-00025" summary="[add] : deleteReservation 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716018020790</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1716018020790</updated>
+    </task>
+    <task id="LOCAL-00026" summary="[add] : getReservationById 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019273580</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019273580</updated>
+    </task>
+    <task id="LOCAL-00027" summary="[add] : getReservationById 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019298930</created>
+      <option name="number" value="00027" />
+      <option name="presentableId" value="LOCAL-00027" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019298930</updated>
+    </task>
+    <task id="LOCAL-00028" summary="[add] : getReservationById 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019304616</created>
+      <option name="number" value="00028" />
+      <option name="presentableId" value="LOCAL-00028" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019304616</updated>
+    </task>
+    <task id="LOCAL-00029" summary="[add] : getReservationById 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019308492</created>
+      <option name="number" value="00029" />
+      <option name="presentableId" value="LOCAL-00029" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019308492</updated>
+    </task>
+    <task id="LOCAL-00030" summary="[add] : getReservationById 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019311885</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019311885</updated>
+    </task>
+    <task id="LOCAL-00031" summary="[add] : getReservationById 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019315325</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019315325</updated>
+    </task>
+    <task id="LOCAL-00032" summary="[add] : import java.io.Serializable; #17">
+      <option name="closed" value="true" />
+      <created>1716019349316</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019349316</updated>
+    </task>
+    <option name="localTasksCounter" value="33" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -282,5 +532,17 @@
     <MESSAGE value="[add] : ReviewMapper.xml 추가 #16" />
     <MESSAGE value="[add] : ReviewTest 테스트코드 추가 #16" />
     <option name="LAST_COMMIT_MESSAGE" value="[add] : ReviewTest 테스트코드 추가 #16" />
+    <MESSAGE value="[add/#10] Login Test Error add" />
+    <MESSAGE value="pull 받기..1" />
+    <MESSAGE value="pull 받기..2" />
+    <MESSAGE value="[add/#9] LoginDao 추가" />
+    <MESSAGE value="[add] : update test #2" />
+    <MESSAGE value="[add] : pull/review 도메인 충돌 수정 #17" />
+    <MESSAGE value="[add] : updateReservation 추가 #17" />
+    <MESSAGE value="[add] : Review 도메인 수정 #2" />
+    <MESSAGE value="[add] : deleteReservation 추가 #17" />
+    <MESSAGE value="[add] : getReservationById 추가 #17" />
+    <MESSAGE value="[add] : import java.io.Serializable; #17" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : import java.io.Serializable; #17" />
   </component>
 </project>
