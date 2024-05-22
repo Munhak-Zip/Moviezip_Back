@@ -4,15 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[fix] : 데이터베이스 환경">
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/WishImpl.java" afterDir="false" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[fix] : update workspace.xml">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/WishDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/WishDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisWishDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisWishDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/WishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/WishMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/WishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/WishMapper.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/WishTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/WishTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/MovieTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/MovieTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,33 +78,34 @@
       <recent name="D:\4th_grade\1st_semester\MunhakZip\Moviezip_Back\demo\src\main\resources\com\example\moviezip\dao\mybatis\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.WishTest.testSaveWishMovie">
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.MovieTest.getMoviedetail">
+    <configuration name="MovieTest.RecentMoviesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.moviezip.*" />
+          <option name="PATTERN" value="com.example.moviezip.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.LoginTest" />
-      <option name="TEST_OBJECT" value="class" />
+      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.MovieTest" />
+      <option name="METHOD_NAME" value="RecentMoviesTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="LoginTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="MovieTest.getMoviedetail" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="com.example.moviezip.*" />
+          <option name="PATTERN" value="com.example.moviezip.domain.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.LoginTest" />
-      <option name="METHOD_NAME" value="testLogin" />
+      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.MovieTest" />
+      <option name="METHOD_NAME" value="getMoviedetail" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -181,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest.getMoviedetail" />
+        <item itemvalue="JUnit.MovieTest.RecentMoviesTest" />
         <item itemvalue="JUnit.WishTest.testSaveWishMovie" />
         <item itemvalue="JUnit.ReservationTest.testReservation" />
         <item itemvalue="JUnit.WishTest" />
-        <item itemvalue="JUnit.LoginTest" />
-        <item itemvalue="JUnit.LoginTest.testLogin" />
       </list>
     </recent_temporary>
   </component>
@@ -475,20 +475,69 @@
       <option name="project" value="LOCAL" />
       <updated>1716387346055</updated>
     </task>
-    <option name="localTasksCounter" value="34" />
+    <task id="LOCAL-00034" summary="[add] : MybatisWishDao saveWishMovie 영화찜하기 추가 #21">
+      <option name="closed" value="true" />
+      <created>1716387417213</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1716387417213</updated>
+    </task>
+    <task id="LOCAL-00035" summary="[add] : WishDao interface saveWishMovie 영화찜하기 추가 #21">
+      <option name="closed" value="true" />
+      <created>1716387440217</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1716387440217</updated>
+    </task>
+    <task id="LOCAL-00036" summary="[add] : WishMapper interface saveWishMovie 영화 찜하기 추가 #21">
+      <option name="closed" value="true" />
+      <created>1716387465958</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1716387465958</updated>
+    </task>
+    <task id="LOCAL-00037" summary="[add] : WishMapper.xml 영화 찜하기 쿼리 추가 #21">
+      <option name="closed" value="true" />
+      <created>1716387525766</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1716387525766</updated>
+    </task>
+    <task id="LOCAL-00038" summary="[add] : WishImpl service saveWishMovie 추가 #21">
+      <option name="closed" value="true" />
+      <created>1716387554705</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1716387554705</updated>
+    </task>
+    <task id="LOCAL-00039" summary="[add] : WishTest Code 추가, 중복 값 예외 처리코드 추가 #21">
+      <option name="closed" value="true" />
+      <created>1716387590073</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1716387590073</updated>
+    </task>
+    <task id="LOCAL-00040" summary="[fix] : update workspace.xml">
+      <option name="closed" value="true" />
+      <created>1716387629383</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1716387629383</updated>
+    </task>
+    <option name="localTasksCounter" value="41" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : UserDao에 searchMovieByKeyword 영화검색 인터페이스 추가" />
-    <MESSAGE value="[add] : UserMapper에 searchMovieByKeyword 영화검색 인터페이스 추가" />
-    <MESSAGE value="[add] : UserMapper.xml에 영화검색 쿼리 추가" />
-    <MESSAGE value="[add] : UserServie 인터페이스에 searchMoviesByTitle 영화검색 인터페이스 추가" />
-    <MESSAGE value="[add] : UserServieImpl에 searchMoviesByTitle 영화검색 인터페이스 구현코드 추가" />
-    <MESSAGE value="[add] : 영화검색 테스트코드 추가 #12" />
-    <MESSAGE value="[add] : Movie도메인에 개봉일필드 추가 #15" />
     <MESSAGE value="[add] : MybatisReviewDao 추가 #16" />
     <MESSAGE value="[add] : Review 도메인 is_Critic 추가 #16" />
     <MESSAGE value="[add] : ReviewDao interface 추가 #16" />
@@ -509,6 +558,13 @@
     <MESSAGE value="[add] : import java.io.Serializable; #17" />
     <MESSAGE value="[add] : update workspace #15" />
     <MESSAGE value="[fix] : 데이터베이스 환경" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] : 데이터베이스 환경" />
+    <MESSAGE value="[add] : MybatisWishDao saveWishMovie 영화찜하기 추가 #21" />
+    <MESSAGE value="[add] : WishDao interface saveWishMovie 영화찜하기 추가 #21" />
+    <MESSAGE value="[add] : WishMapper interface saveWishMovie 영화 찜하기 추가 #21" />
+    <MESSAGE value="[add] : WishMapper.xml 영화 찜하기 쿼리 추가 #21" />
+    <MESSAGE value="[add] : WishImpl service saveWishMovie 추가 #21" />
+    <MESSAGE value="[add] : WishTest Code 추가, 중복 값 예외 처리코드 추가 #21" />
+    <MESSAGE value="[fix] : update workspace.xml" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] : update workspace.xml" />
   </component>
 </project>
