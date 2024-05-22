@@ -4,18 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : 영화검색 테스트코드 추가 #12">
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" afterDir="false" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : ReviewTest 테스트코드 추가 #16">
+      <change afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/MovieTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserServiceImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +49,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Moviezip_Back/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper",
+    "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Moviezip_Back",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -73,7 +69,38 @@
       <recent name="D:\4th_grade\1st_semester\MunhakZip\Moviezip_Back\demo\src\main\resources\com\example\moviezip\dao\mybatis\mapper" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.SearchTest">
+  <component name="RunManager" selected="JUnit.MovieTest.RecentMoviesTest">
+    <configuration name="MovieTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviezip.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.MovieTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="MovieTest.RecentMoviesTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="demo" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviezip.domain.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.MovieTest" />
+      <option name="METHOD_NAME" value="RecentMoviesTest" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="demo" />
       <extension name="coverage">
@@ -144,6 +171,8 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.MovieTest.RecentMoviesTest" />
+        <item itemvalue="JUnit.MovieTest" />
         <item itemvalue="JUnit.SearchTest" />
         <item itemvalue="JUnit.UserTest22.testUser" />
         <item itemvalue="JUnit.SearchTest.testSearchMovieByKeyword" />
@@ -163,6 +192,7 @@
       <workItem from="1715307911383" duration="8000" />
       <workItem from="1715780642806" duration="598000" />
       <workItem from="1715791503922" duration="5527000" />
+      <workItem from="1716379790329" duration="610000" />
     </task>
     <task id="LOCAL-00001" summary="[add] : Movie 클래스 생성">
       <option name="closed" value="true" />
@@ -243,6 +273,14 @@
     <MESSAGE value="[add] : UserServie 인터페이스에 searchMoviesByTitle 영화검색 인터페이스 추가" />
     <MESSAGE value="[add] : UserServieImpl에 searchMoviesByTitle 영화검색 인터페이스 구현코드 추가" />
     <MESSAGE value="[add] : 영화검색 테스트코드 추가 #12" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] : 영화검색 테스트코드 추가 #12" />
+    <MESSAGE value="[add] : Movie도메인에 개봉일필드 추가 #15" />
+    <MESSAGE value="[add] : MybatisReviewDao 추가 #16" />
+    <MESSAGE value="[add] : Review 도메인 is_Critic 추가 #16" />
+    <MESSAGE value="[add] : ReviewDao interface 추가 #16" />
+    <MESSAGE value="[add] : ReviewImpl 추가 #16" />
+    <MESSAGE value="[add] : ReviewMapper interface 추가 #16" />
+    <MESSAGE value="[add] : ReviewMapper.xml 추가 #16" />
+    <MESSAGE value="[add] : ReviewTest 테스트코드 추가 #16" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : ReviewTest 테스트코드 추가 #16" />
   </component>
 </project>
