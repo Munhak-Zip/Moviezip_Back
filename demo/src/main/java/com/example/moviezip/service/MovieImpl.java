@@ -27,6 +27,7 @@ public class MovieImpl {
 
 
     //영화 디테일 조회
+
     public Movie getMoviedetail(int movie_id){
         return mybatisMovieDao.getMoviedetail(movie_id);
     }
