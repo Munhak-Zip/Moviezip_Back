@@ -47,4 +47,25 @@ public class MovieTest {
         }
         System.out.println();
     }
-}
+
+    @Test
+    public void getMoviedetail() throws Exception {
+//        MovieImpl mvImpl = new MovieImpl(mybatisMovieDao);
+
+        Movie moviesdetail = mybatisMovieDao.getMoviedetail(1);
+
+        if (moviesdetail != null) {
+                    System.out.println("영화 아이디: " + moviesdetail.getMvId());
+                    System.out.println("영화 제목: " + moviesdetail.getMvTitle());
+                    System.out.println("평점: " + moviesdetail.getMvStar());
+                    System.out.println("영화 내용: " + moviesdetail.getMvDetail());
+                    System.out.println("감독: " +moviesdetail.getMvDirector());
+                    System.out.println("개봉일: " +moviesdetail.getOpenDate());
+
+                    System.out.println("--------------------------");
+                } else {
+
+                    System.out.println("Review is null");
+                }
+            }
+    }
