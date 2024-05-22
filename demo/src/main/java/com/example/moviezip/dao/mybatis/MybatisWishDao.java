@@ -35,4 +35,10 @@ public class MybatisWishDao implements WishDao {
     public List<Review> getMyReview(String userId) throws DataAccessException{
         return wishMapper.getMyReview(userId);
     }
+
+    //영화 찜하기
+    @Override
+    public int saveWishMovie(int userid, int movie_id) throws DataAccessException{
+        return wishMapper.saveWishMovie(userid,movie_id);
+    }
 }
