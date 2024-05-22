@@ -13,4 +13,6 @@ public interface MovieDao {
     //최신 영화 검색
     public List<Movie> getRecentMovie();
 
+    //영화 상세 정보 조회
+    Movie getMoviedetail(int movie_id);
 }
