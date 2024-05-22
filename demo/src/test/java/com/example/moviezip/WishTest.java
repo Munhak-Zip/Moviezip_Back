@@ -10,6 +10,7 @@ import com.example.moviezip.dao.mybatis.MybatisWishDao;
 import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.Review;
 
+import java.sql.SQLIntegrityConstraintViolationException;
 import java.util.List;
 
 @SpringBootTest
@@ -126,6 +127,33 @@ public class WishTest {
         }
         System.out.println();
     }
+
+    //이미 찜한 영화 한번 더 찜했을 때 예외처리 - 혹시 모를 예외 처리
+    public void saveWishMovieWithHandling(int userId, int movieId) {
+        try {
+            mybatisWishDao.saveWishMovie(userId, movieId);
+        } catch (Exception e) {
+            System.err.println("이미 찜한 영화입니다. " +"사용자 아이디: "+userId +"영화 아이디"+ movieId);
+        }
+    }
+    // 영화 찜하기
+    @Test
+    public void testSaveWishMovie() throws Exception {
+        saveWishMovieWithHandling(21, 4);
+        saveWishMovieWithHandling(21, 3);
+        saveWishMovieWithHandling(21, 41);
+        saveWishMovieWithHandling(21, 1);
+
+        List<Movie> movie1 = mybatisWishDao.getWishMovie(21);
+        System.out.println("mih 찜한 영화 가져오기");
+        for (Movie movie : movie1) {
+            System.out.println("Title: " + movie.getMvTitle());
+            System.out.println("Star: " + movie.getMvStar());
+            System.out.println("--------------------------");
+        }
+        System.out.println();
+    }
+
 
 
 }
