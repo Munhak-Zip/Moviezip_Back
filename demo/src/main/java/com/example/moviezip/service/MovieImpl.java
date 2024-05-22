@@ -24,4 +24,10 @@ public class MovieImpl {
     public List<Movie> getRecentMovie(){
         return mybatisMovieDao.getRecentMovie();
     }
+
+
+    //영화 디테일 조회
+    public Movie getMoviedetail(int movie_id){
+        return mybatisMovieDao.getMoviedetail(movie_id);
+    }
 }
