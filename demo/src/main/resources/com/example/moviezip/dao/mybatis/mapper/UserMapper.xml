@@ -53,4 +53,10 @@
                  JOIN INTEREST ON INTEREST.ID = USER_TABLE.ID
         WHERE INTEREST.ID = #{id}
     </select>
+
+    <select id="searchMovieByKeyword" resultType="Movie">
+        SELECT MOVIE.MOVIE_TITLE AS mvTitle, MOVIE.MOVIE_STAR AS mvStar, MOVIE.MOVIE_DETAIL AS mvDetail , MOVIE.MOVIE_DIRECTOR AS mvDirector, MOVIE.MOVIE_ID AS mvId
+        FROM MOVIE
+        WHERE MOVIE_TITLE LIKE '%' || #{keyword} || '%'
+    </select>
 </mapper>

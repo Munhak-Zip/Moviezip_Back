@@ -33,4 +33,9 @@ public class MybatisReviewDao implements ReviewDao {
     public int updateReview(Review review) throws DataAccessException {
         return reviewMapper.updateReview(review);
     }
+
+    @Override
+    public List<Review> getCriticReviews(long mvId) throws DataAccessException{
+        return reviewMapper.getCriticReviews(mvId);
+    }
 }

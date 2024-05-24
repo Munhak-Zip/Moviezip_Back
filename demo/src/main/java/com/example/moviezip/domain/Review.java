@@ -1,33 +1,38 @@
 package com.example.moviezip.domain;
-
-import java.io.Serializable;
-
-public class Review implements Serializable {
-    private int mvId;
+public class Review extends Movie {
     private int rvId;
     private int rvStar;
+    private String writer;
     private String mvTitle;
-    private String wrtier;
     private String content;
     private String rvTitle;
+    private String is_Critic;
 
-    public Review(){
 
-    }
 
-    public Review(String content, int rvStar, int mvId) { // id 지웠음, 예진이 수정 필요 -> 완료
+    public Review(String content, int rvStar, Long mvId) { // id 지웠음, 예진이 수정 필요 -> 완료
         this.content = content;
         this.rvStar = rvStar;
-        this.mvId = mvId;
+        super.setMvId(mvId);
+        super.setMvId(mvId);
     }
 
-    public int getMvId() {
-        return mvId;
+    public void setContent(String content) {
+        this.content = content;
     }
 
-    public void setMvId(int mvId) {
-        this.mvId = mvId;
+    public void setRvTitle(String rvTitle) {
+        this.rvTitle = rvTitle;
     }
+
+    public void setWriter(String writer) {
+        this.writer = writer;
+    }
+
+    public void setIs_Critic(String is_Critic) {
+        this.is_Critic = is_Critic;
+    }
+
 
     public int getRvId() {
         return rvId;
@@ -53,27 +58,21 @@ public class Review implements Serializable {
         this.mvTitle = mvTitle;
     }
 
-    public String getWrtier() {
-        return wrtier;
+    public String getWriter() {
+        return writer;
     }
 
-    public void setWrtier(String wrtier) {
-        this.wrtier = wrtier;
+    public String getIs_Critic() {
+        return is_Critic;
     }
 
     public String getContent() {
         return content;
     }
 
-    public void setContent(String content) {
-        this.content = content;
-    }
 
     public String getRvTitle() {
         return rvTitle;
     }
 
-    public void setRvTitle(String rvTitle) {
-        this.rvTitle = rvTitle;
-    }
 }

@@ -9,6 +9,9 @@ public class User {
 
     private Interest interest;
 
+    public User() {
+    }
+
     public Long getId() {
         return id;
     }
