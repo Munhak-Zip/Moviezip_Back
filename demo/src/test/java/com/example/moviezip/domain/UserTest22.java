@@ -126,5 +126,6 @@ public class UserTest22 {
         System.out.println("INTEREST: " + user10.getInterest().getGenre());
         System.out.println("--------------------------");
 
+        ///ㅁㅇㄹㅁㄴㅇㄹ맨ㄹ야ㅐㅁ
     }
 }
