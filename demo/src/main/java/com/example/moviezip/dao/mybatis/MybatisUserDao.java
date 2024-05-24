@@ -4,6 +4,7 @@ import com.example.moviezip.dao.UserDao;
 import com.example.moviezip.dao.mybatis.mapper.UserMapper;
 import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
+import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
