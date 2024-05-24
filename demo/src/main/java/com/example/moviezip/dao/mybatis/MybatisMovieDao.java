@@ -22,4 +22,21 @@ public class MybatisMovieDao implements MovieDao {
 
         return moviemapper.searchMovieByKeyword(keyword);
     }
+
+
+    @Transactional
+    @Override
+    public List<Movie> getRecentMovie() throws DataAccessException {
+        return moviemapper.getRecentMovie();
+    }
+
+    //영화 상세 조회
+
+    @Transactional
+    @Override
+    public Movie getMoviedetail(int movie_id) throws DataAccessException {
+        return moviemapper.getMoviedetail(movie_id);
+    }
+
+
 }

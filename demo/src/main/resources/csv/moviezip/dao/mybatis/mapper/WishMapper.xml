@@ -31,4 +31,9 @@
            JOIN MOVIE ON REVIEW.MOVIE_ID = MOVIE.MOVIE_ID
     WHERE REVIEW.WRITER = #{userId}
   </select>
+  <!--영화 찜하기-->
+  <insert id="saveWishMovie">
+    INSERT INTO MOVIE_WISH(ID,MOVIE_ID)
+    VALUES (#{userid} , #{movie_id})
+  </insert>
 </mapper>
