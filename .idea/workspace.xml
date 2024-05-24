@@ -4,15 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : import java.io.Serializable; #17">
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : 설정파일 #17">
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/csv/MOVIE.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReservationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReservationDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReservationDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReservationImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReservationImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReservationMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -50,12 +46,13 @@
     "JUnit.LoginTest.testLogin.executor": "Run",
     "JUnit.ReservationTest.testReservation.executor": "Run",
     "JUnit.WishTest.executor": "Run",
+    "Maven.demo [validate,-DforkCount=0...].executor": "Debug",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "add/reservDAO",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Moviezip_Back/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper",
+    "last_opened_file_path": "D:/movie_zip/moviezip_back/Moviezip_Back/demo/src/main/java/com/example/moviezip/service/csv/MOVIE.csv",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,7 +61,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "preferences.lookFeel",
+    "settings.editor.selected.configurable": "File.Encoding",
     "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229",
     "vue.rearranger.settings.migration": "true"
   },
@@ -77,6 +74,9 @@
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="D:\4th_grade\1st_semester\MunhakZip\Moviezip_Back\demo\src\main\resources\com\example\moviezip\dao\mybatis\mapper" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="D:\movie_zip\moviezip_back\Moviezip_Back\demo\src\main\java\com\example\moviezip\service\csv" />
     </key>
   </component>
   <component name="RunManager" selected="JUnit.ReservationTest.testReservation">
@@ -208,6 +208,7 @@
       <workItem from="1715307911383" duration="8000" />
       <workItem from="1715780642806" duration="598000" />
       <workItem from="1715791503922" duration="5527000" />
+      <workItem from="1716518565373" duration="3076000" />
     </task>
     <task id="LOCAL-00001" summary="[add] : Movie 클래스 생성">
       <option name="closed" value="true" />
@@ -465,7 +466,63 @@
       <option name="project" value="LOCAL" />
       <updated>1716019349316</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="[add] : getReservationDetail 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019878992</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019878992</updated>
+    </task>
+    <task id="LOCAL-00034" summary="[add] : getReservationDetail 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019885233</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019885233</updated>
+    </task>
+    <task id="LOCAL-00035" summary="[add] : getReservationDetail 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019888631</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019888631</updated>
+    </task>
+    <task id="LOCAL-00036" summary="[add] : getReservationDetail 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019893016</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019893016</updated>
+    </task>
+    <task id="LOCAL-00037" summary="[add] : getReservationDetail 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019896758</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019896758</updated>
+    </task>
+    <task id="LOCAL-00038" summary="[add] : getReservationDetail 추가 #17">
+      <option name="closed" value="true" />
+      <created>1716019900375</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019900375</updated>
+    </task>
+    <task id="LOCAL-00039" summary="[add] : 설정파일 #17">
+      <option name="closed" value="true" />
+      <created>1716019916834</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1716019916834</updated>
+    </task>
+    <option name="localTasksCounter" value="40" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -491,6 +548,8 @@
     <MESSAGE value="[add] : deleteReservation 추가 #17" />
     <MESSAGE value="[add] : getReservationById 추가 #17" />
     <MESSAGE value="[add] : import java.io.Serializable; #17" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] : import java.io.Serializable; #17" />
+    <MESSAGE value="[add] : getReservationDetail 추가 #17" />
+    <MESSAGE value="[add] : 설정파일 #17" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : 설정파일 #17" />
   </component>
 </project>
