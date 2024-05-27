@@ -11,4 +11,7 @@ public interface MovieMapper {
     //영화 검색
     List<Movie> searchMovieByKeyword(@Param("keyword") String keyword);
 
+    List<Movie> getRecentMovie();
+
+    Movie getMoviedetail(int movie_id);
 }

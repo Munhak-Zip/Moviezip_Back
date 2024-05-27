@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.example.moviezip.dao.mybatis.mapper.ReservationMapper">
+    <cache />
+
+    <insert id="insertReservation" parameterType="Reservation">
+        INSERT INTO RESERVATION
+            (RESERVATE_DATE, SEAT, MOVIE_ID, ID)
+        VALUES
+            (#{date}, #{seat}, #{mvId}, #{id})
+    </insert>
+
+    <update id="updateReservation" parameterType="Reservation">
+        UPDATE RESERVATION SET
+            RESERVATE_DATE = #{date},
+            SEAT = #{seat}
+        WHERE RESERVATION_ID = #{reserveId}
+    </update>
+
+    <delete id="deleteReservation" parameterType="Long">
+        DELETE FROM RESERVATION
+        WHERE RESERVATION_ID = #{reserveId}
+    </delete>
+
+    <select id="getReservationById" resultType="Reservation">
+        SELECT RESERVATION.RESERVATE_DATE, RESERVATION.SEAT, MOVIE.MOVIE_TITLE
+        FROM RESERVATION
+        INNER JOIN MOVIE ON RESERVATION.MOVIE_ID = MOVIE.MOVIE_ID
+        WHERE RESERVATION.ID = #{id}
+    </select>
+
+    <select id="getReservationDetail" resultType="Reservation">
+        SELECT RESERVATION.RESERVATE_DATE, RESERVATION.SEAT, MOVIE.MOVIE_TITLE
+        FROM RESERVATION
+        INNER JOIN MOVIE ON RESERVATION.MOVIE_ID = MOVIE.MOVIE_ID
+        WHERE RESERVATION.RESERVATION_ID = #{reserveId}
+    </select>
+</mapper>

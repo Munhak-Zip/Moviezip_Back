@@ -11,4 +11,6 @@ public interface WishDao {
     List<Review> getWishReview(int id); // 찜한 리뷰 가져오기
     int deleteWishReview(@Param("id") int id, @Param("rvId") int rvId);
     List<Review> getMyReview(String userId); // 내가 쓴 리뷰 가져오기
+
+    int saveWishMovie(int userid, int movie_id); //영화 찜하기
 }
