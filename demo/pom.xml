@@ -79,12 +79,12 @@
 		<dependency>
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-core_2.12</artifactId>
-			<version>3.4.1</version>
+			<version>3.4.1</version> <!-- 최신 버전 확인 -->
 		</dependency>
 		<dependency>
 			<groupId>org.apache.spark</groupId>
 			<artifactId>spark-mllib_2.12</artifactId>
-			<version>3.4.1</version>
+			<version>3.4.1</version> <!-- 최신 버전 확인 -->
 		</dependency>
 	</dependencies>
 
