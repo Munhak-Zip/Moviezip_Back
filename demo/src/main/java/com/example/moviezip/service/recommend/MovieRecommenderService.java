@@ -162,7 +162,7 @@ public class MovieRecommenderService {
 
             sortedRecommendations.forEach(recommendation -> {
                 Tuple3<String, String, String> movieTitleGenreDirector = movieInfoMap.get(recommendation._1()._2());
-                String resultString = "결과 Movie Title: " + movieTitleGenreDirector._1() + ", Genre: " + movieTitleGenreDirector._2() + ", Director: " + movieTitleGenreDirector._3() + ", Rating: " + recommendation._2();
+                String resultString = "영화 명: " + movieTitleGenreDirector._1() + ", 장르: " + movieTitleGenreDirector._2() + ", 감독: " + movieTitleGenreDirector._3() + ", 예상 별점: " + recommendation._2();
                 recommendationResults.add(resultString);
             });
             recommendationResults.forEach(System.out::println);
