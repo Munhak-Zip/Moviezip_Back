@@ -15,7 +15,6 @@ import scala.Tuple3;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
 @Service
 public class MovieRecommenderService {
         public static List<String> recommendMovies(int userId)  {
@@ -43,10 +42,10 @@ public class MovieRecommenderService {
             JavaRDD<Rating> ratings = filteredData.map(line -> {
                 try {
                     String[] parts = line.split(",");
-                    //int userId = Integer.parseInt(parts[4]);
+                    int userId2 = Integer.parseInt(parts[4]);
                     int movieId = parts[0].hashCode();
                     double rating = Double.parseDouble(parts[1]);
-                    return new Rating(userId, movieId, rating);
+                    return new Rating(userId2, movieId, rating);
                 } catch (Exception e) {
                     return null;
                 }
