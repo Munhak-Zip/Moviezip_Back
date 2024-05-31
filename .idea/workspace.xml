@@ -7,8 +7,6 @@
     <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add/#25] 사용자 맞춤형 알고리즘 영화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/MovieRecommendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/MovieRecommendController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/recommend/MovieRecommenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/recommend/MovieRecommenderService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -165,6 +163,7 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.moviezip.MoviezipApplication" />
+      <option name="VM_PARAMETERS" value="--add-exports java.base/sun.nio.ch=ALL-UNNAMED" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -204,31 +203,7 @@
       <workItem from="1716872294716" duration="373000" />
       <workItem from="1716872683317" duration="11089000" />
       <workItem from="1716884231969" duration="7092000" />
-      <workItem from="1717051709079" duration="17894000" />
-    </task>
-    <task id="LOCAL-00002" summary="[add] : MybatisUserDao 생성">
-      <option name="closed" value="true" />
-      <created>1715796528532</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796528532</updated>
-    </task>
-    <task id="LOCAL-00003" summary="[add] : UserDao에 searchMovieByKeyword 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796587624</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796587624</updated>
-    </task>
-    <task id="LOCAL-00004" summary="[add] : UserMapper에 searchMovieByKeyword 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796611714</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796611714</updated>
+      <workItem from="1717051709079" duration="19996000" />
     </task>
     <task id="LOCAL-00005" summary="[add] : UserMapper.xml에 영화검색 쿼리 추가">
       <option name="closed" value="true" />
@@ -598,7 +573,31 @@
       <option name="project" value="LOCAL" />
       <updated>1717124049880</updated>
     </task>
-    <option name="localTasksCounter" value="51" />
+    <task id="LOCAL-00051" summary="[add/#25] 사용자 맞춤형 알고리즘 영화">
+      <option name="closed" value="true" />
+      <created>1717128028827</created>
+      <option name="number" value="00051" />
+      <option name="presentableId" value="LOCAL-00051" />
+      <option name="project" value="LOCAL" />
+      <updated>1717128028827</updated>
+    </task>
+    <task id="LOCAL-00052" summary="[add/#25] 사용자 맞춤형 알고리즘 영화">
+      <option name="closed" value="true" />
+      <created>1717128032124</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1717128032124</updated>
+    </task>
+    <task id="LOCAL-00053" summary="[add/#25] 사용자 맞춤형 알고리즘 영화">
+      <option name="closed" value="true" />
+      <created>1717128035129</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1717128035129</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
