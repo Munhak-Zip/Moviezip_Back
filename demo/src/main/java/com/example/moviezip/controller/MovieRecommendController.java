@@ -9,12 +9,18 @@ import java.util.List;
 
 
 @RestController
+@RequestMapping("/")
 public class MovieRecommendController {
+    private MovieRecommenderService recommenderService;
+    @Autowired
+    public void setMovieRecommend(MovieRecommenderService recommenderService) {
+        this.recommenderService = recommenderService;
+    }
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/main/recommend")
-    public List<String> recommendMovies(@RequestParam int userId) {
+    public List<String> recommendMovies(@RequestParam int userId) throws Exception {
         // MovieRecommender 실행
-        List<String> recommendations = MovieRecommenderService.recommendMovies(userId); // 수정된 부분
+        List<String> recommendations = recommenderService.recommendMovies(userId); // 수정된 부분
         if (recommendations.isEmpty()) {
             System.out.println("없다");
         }
