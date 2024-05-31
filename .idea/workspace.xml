@@ -5,7 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add/#25] 사용자 맞춤형 알고리즘 영화">
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/recommend/MovieRecommender.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/recommend/MovieRecommenderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,6 +51,7 @@
   "keyToString": {
     "Application.MovieRecommender.executor": "Run",
     "Application.MovieRecommender2.executor": "Run",
+    "Application.MovieRecommenderService.executor": "Run",
     "HTTP Request.generated-requests | #1.executor": "Run",
     "HTTP Request.generated-requests | #5.executor": "Run",
     "JUnit.LoginTest.executor": "Run",
@@ -95,7 +98,7 @@
       <recent name="C:\Users\user\IdeaProjects\movie\demo\src\main\java\com\example\moviezip\service\csv" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.MoviezipApplication">
+  <component name="RunManager" selected="Application.MovieRecommenderService">
     <configuration name="MovieRecommender" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.example.moviezip.service.recommend.MovieRecommender" />
       <module name="demo" />
@@ -124,26 +127,25 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="MovieRecommenderService" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.service.recommend.MovieRecommenderService" />
+      <module name="demo" />
+      <option name="VM_PARAMETERS" value="--add-exports java.base/sun.nio.ch=ALL-UNNAMED" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.example.moviezip.service.recommend.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="generated-requests | #5" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="5" requestIdentifier="#5" runType="Run single request">
       <method v="2" />
-    </configuration>
-    <configuration name="UserTest22" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.moviezip.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.UserTest22" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
     </configuration>
     <configuration default="true" type="JetRunConfigurationType">
       <module name="demo (1)" />
@@ -167,20 +169,20 @@
       </method>
     </configuration>
     <list>
+      <item itemvalue="Application.MovieRecommenderService" />
       <item itemvalue="Application.MovieRecommender2" />
       <item itemvalue="Application.MovieRecommender" />
       <item itemvalue="HTTP Request.generated-requests | #1" />
       <item itemvalue="HTTP Request.generated-requests | #5" />
-      <item itemvalue="JUnit.UserTest22" />
       <item itemvalue="Spring Boot.MoviezipApplication" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.MovieRecommenderService" />
         <item itemvalue="HTTP Request.generated-requests | #1" />
         <item itemvalue="HTTP Request.generated-requests | #5" />
         <item itemvalue="Application.MovieRecommender" />
         <item itemvalue="Application.MovieRecommender2" />
-        <item itemvalue="JUnit.UserTest22" />
       </list>
     </recent_temporary>
   </component>
@@ -201,7 +203,7 @@
       <workItem from="1716872294716" duration="373000" />
       <workItem from="1716872683317" duration="11089000" />
       <workItem from="1716884231969" duration="7092000" />
-      <workItem from="1717051709079" duration="12685000" />
+      <workItem from="1717051709079" duration="13969000" />
     </task>
     <task id="LOCAL-00001" summary="[add] : Movie 클래스 생성">
       <option name="closed" value="true" />
@@ -571,7 +573,15 @@
       <option name="project" value="LOCAL" />
       <updated>1717121957206</updated>
     </task>
-    <option name="localTasksCounter" value="47" />
+    <task id="LOCAL-00047" summary="[add/#25] 사용자 맞춤형 알고리즘 영화">
+      <option name="closed" value="true" />
+      <created>1717122845060</created>
+      <option name="number" value="00047" />
+      <option name="presentableId" value="LOCAL-00047" />
+      <option name="project" value="LOCAL" />
+      <updated>1717122845060</updated>
+    </task>
+    <option name="localTasksCounter" value="48" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
