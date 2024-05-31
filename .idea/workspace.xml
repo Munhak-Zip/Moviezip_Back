@@ -6,7 +6,7 @@
   <component name="ChangeListManager">
     <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add/#25] 사용자 맞춤형 알고리즘 영화">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/MovieRecommendController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/MovieRecommendController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/recommend/MovieRecommenderService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/recommend/MovieRecommenderService.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -203,23 +203,7 @@
       <workItem from="1716872294716" duration="373000" />
       <workItem from="1716872683317" duration="11089000" />
       <workItem from="1716884231969" duration="7092000" />
-      <workItem from="1717051709079" duration="19996000" />
-    </task>
-    <task id="LOCAL-00005" summary="[add] : UserMapper.xml에 영화검색 쿼리 추가">
-      <option name="closed" value="true" />
-      <created>1715796641383</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796641383</updated>
-    </task>
-    <task id="LOCAL-00006" summary="[add] : UserServie 인터페이스에 searchMoviesByTitle 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796688849</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796688849</updated>
+      <workItem from="1717051709079" duration="20810000" />
     </task>
     <task id="LOCAL-00007" summary="[add] : UserServieImpl에 searchMoviesByTitle 영화검색 인터페이스 구현코드 추가">
       <option name="closed" value="true" />
@@ -597,7 +581,23 @@
       <option name="project" value="LOCAL" />
       <updated>1717128035129</updated>
     </task>
-    <option name="localTasksCounter" value="54" />
+    <task id="LOCAL-00054" summary="[add/#25] 사용자 맞춤형 알고리즘 영화">
+      <option name="closed" value="true" />
+      <created>1717134985370</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1717134985370</updated>
+    </task>
+    <task id="LOCAL-00055" summary="[add/#25] 사용자 맞춤형 알고리즘 영화">
+      <option name="closed" value="true" />
+      <created>1717134988578</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1717134988578</updated>
+    </task>
+    <option name="localTasksCounter" value="56" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
