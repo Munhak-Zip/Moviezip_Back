@@ -15,10 +15,9 @@ import scala.Tuple3;
 import java.util.*;
 import java.util.stream.Collectors;
 
-
 @Service
 public class MovieRecommenderService {
-        public static void main(String[] args) {
+        public static List<String> recommendMovies(int userId)  {
             SparkSession spark = SparkSession.builder()
                     .appName("MovieRecommenderWithDirectors")
                     .config("spark.master", "local")
@@ -43,10 +42,10 @@ public class MovieRecommenderService {
             JavaRDD<Rating> ratings = filteredData.map(line -> {
                 try {
                     String[] parts = line.split(",");
-                    int userId = Integer.parseInt(parts[4]);
+                    int userId2 = Integer.parseInt(parts[4]);
                     int movieId = parts[0].hashCode();
                     double rating = Double.parseDouble(parts[1]);
-                    return new Rating(userId, movieId, rating);
+                    return new Rating(userId2, movieId, rating);
                 } catch (Exception e) {
                     return null;
                 }
@@ -124,7 +123,7 @@ public class MovieRecommenderService {
             System.out.println("Average RMSE: " + avgRMSE);
 
             // 사용자 추천을 위해 마지막 모델을 사용
-            int userId = 3;
+            //int userId = 3;
             List<Integer> watchedMovies = new ArrayList<>();
             if (userWatchedMovies.lookup(userId).size() > 0) {
                 watchedMovies.addAll((Collection<? extends Integer>) userWatchedMovies.lookup(userId).iterator().next());
@@ -169,6 +168,7 @@ public class MovieRecommenderService {
             recommendationResults.forEach(System.out::println);
 
             jsc.close();
+            return recommendationResults;
         }
 
 }
