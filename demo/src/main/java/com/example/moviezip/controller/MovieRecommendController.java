@@ -48,6 +48,8 @@ public class MovieRecommendController {
         for(Movie s : movieList){
             System.out.println("영화명: " + s.getMvTitle() + " 별점: " + s.getMvStar());
         }
+
+        //return값을 movieList로 바꾸면 됨  retrurn movieList
         return recommendations;
     }
 }
