@@ -23,7 +23,7 @@ public class MovieRecommendController {
     }
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/main/recommend")
-    public List<String> recommendMovies(@RequestParam int userId) throws Exception {
+    public List<Movie> recommendMovies(@RequestParam int userId) throws Exception {
         // MovieRecommender 실행
         List<String> recommendations = recommenderService.recommendMovies(userId); // 수정된 부분
         if (recommendations.isEmpty()) {
@@ -50,6 +50,7 @@ public class MovieRecommendController {
         }
 
         //return값을 movieList로 바꾸면 됨  retrurn movieList
-        return recommendations;
+        //return recommendations;
+        return movieList;
     }
 }
