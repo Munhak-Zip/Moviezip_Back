@@ -9,7 +9,7 @@ import java.util.List;
 
 @Mapper
 public interface UserMapper {
-    User getUserById(Long id);
+    User getUserById(String id);
 
     void updateUserPassword(@Param("id") Long id, @Param("newPassword") String newPassword);
 
@@ -34,6 +34,7 @@ public interface UserMapper {
 
     void updateInterest(@Param("id")Long id, @Param("genre")String genre);
 
+    //회원가입
     void addUser(User user);
 
     User findAllUserInterest(@Param("id") Long id);
