@@ -17,7 +17,7 @@ public class MybatisUserDao implements UserDao {
     private UserMapper userMapper;
 
     @Override
-    public User getUserById(Long id) throws DataAccessException {
+    public User getUserById(String id) throws DataAccessException {
         return userMapper.getUserById(id);
     }
 
@@ -77,7 +77,7 @@ public class MybatisUserDao implements UserDao {
 
     @Override
     public void addUser(User user) throws DataAccessException{
-        System.out.println("MybatisUserDao - addUser" + user.getId() + user.getUser_id() + user.getPassword() + user.getHint() + user.getNickname());
+        System.out.println("MybatisUserDao - addUser" + user.getId() + user.getUserId() + user.getPassword() + user.getHint() + user.getNickname());
         userMapper.addUser(user);
     }
 

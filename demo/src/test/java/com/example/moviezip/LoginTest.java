@@ -7,9 +7,6 @@ import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
-import org.springframework.test.context.junit4.SpringRunner;
-
-import static junit.framework.TestCase.assertNotNull;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)
@@ -27,7 +24,7 @@ public class LoginTest {
         //assertNotNull(user2);
 
 
-        System.out.println("userId: " + user1.getUser_id() + " nickName: " + user1.getNickname());
+        System.out.println("userId: " + user1.getUserId() + " nickName: " + user1.getNickname());
         //System.out.println("userId: " + user2.getUser_id() + " nickName: " + user2.getNickname());
     }
 

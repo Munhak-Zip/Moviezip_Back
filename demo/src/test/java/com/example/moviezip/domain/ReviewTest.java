@@ -1,10 +1,7 @@
 package com.example.moviezip.domain;
 
-import ch.qos.logback.core.encoder.EchoEncoder;
 import com.example.moviezip.dao.ReviewDao;
-import com.example.moviezip.dao.UserDao;
 import com.example.moviezip.dao.mybatis.MybatisReviewDao;
-import com.example.moviezip.dao.mybatis.MybatisUserDao;
 import com.example.moviezip.service.ReviewImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
