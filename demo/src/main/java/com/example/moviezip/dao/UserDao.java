@@ -32,5 +32,7 @@ public interface UserDao {
 
     public User findAllUserInterest(Long id) throws DataAccessException;
 
+    public User findByUserId(String userId) throws DataAccessException;
+    boolean existsByUserId(String userId) throws DataAccessException;
 
 }

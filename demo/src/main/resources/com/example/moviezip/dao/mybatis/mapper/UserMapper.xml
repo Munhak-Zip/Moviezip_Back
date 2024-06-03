@@ -60,4 +60,14 @@
         FROM MOVIE
         WHERE MOVIE_TITLE LIKE '%' || #{keyword} || '%'
     </select>
+
+    <select id="findByUserId" resultType="User">
+        SELECT * FROM USER_TABLE WHERE USER_ID = #{userId}
+    </select>
+
+    <select id="existsByUserId" resultType="boolean">
+        SELECT CASE WHEN COUNT(*) > 0 THEN true ELSE false END AS result
+        FROM USER_TABLE WHERE USER_ID = #{userId}
+    </select>
+
 </mapper>

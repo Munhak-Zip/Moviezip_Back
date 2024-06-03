@@ -2,23 +2,19 @@ package com.example.moviezip.controller;
 
 
 import com.example.moviezip.domain.User;
-import com.example.moviezip.service.UserService;
 import com.example.moviezip.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DuplicateKeyException;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.web.bind.annotation.RestController;
 
-@Controller
+@RestController
 public class UserController {
     @Autowired
-   private UserService userService;
+   private UserServiceImpl userService;
+
 
 //    @GetMapping("/")
 //    public String home() {
@@ -88,24 +84,18 @@ public class UserController {
 
     @GetMapping("/login")
     public String loginP() {
-
         return "login.html";
     }
-    
-    //회원가입
+
     @GetMapping("/join")
     public String joinP() {
-
         return "join";
     }
 
-    // 회원가입 데이터 받기
     @PostMapping("/joinProc")
     public ResponseEntity<String> joinProcess(@RequestBody User joinDTO) {
         System.out.println(joinDTO.getUserId());
-
-
-
         return userService.joinProcess(joinDTO);
     }
+
 }

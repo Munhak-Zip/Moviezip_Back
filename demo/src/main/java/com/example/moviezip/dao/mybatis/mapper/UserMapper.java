@@ -40,4 +40,7 @@ public interface UserMapper {
     User findAllUserInterest(@Param("id") Long id);
 
 
+    User findByUserId(@Param("userId") String userId);
+
+    boolean existsByUserId(@Param("userId") String userId);
 }

@@ -87,5 +87,14 @@ public class MybatisUserDao implements UserDao {
         return userMapper.findAllUserInterest(id);
     }
 
+    //로그인 할 때 해당 유저가 있는지 없는지 확인용
+    @Override
+    public User findByUserId(String userId) throws DataAccessException {
+        return userMapper.findByUserId(userId);
+    }
 
+    @Override
+    public boolean existsByUserId(String userId) throws DataAccessException {
+        return userMapper.existsByUserId(userId);
+    }
 }
