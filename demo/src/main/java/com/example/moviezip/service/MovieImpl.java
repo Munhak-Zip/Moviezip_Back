@@ -31,4 +31,9 @@ public class MovieImpl {
     public Movie getMoviedetail(int movie_id){
         return mybatisMovieDao.getMoviedetail(movie_id);
     }
+
+    //영화 제목으로 검색
+    public Movie getMovieTitle(String movie_title){
+        return mybatisMovieDao.getMovieTitle(movie_title);
+    }
 }

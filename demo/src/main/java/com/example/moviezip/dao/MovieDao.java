@@ -15,4 +15,6 @@ public interface MovieDao {
 
     //영화 상세 정보 조회
     Movie getMoviedetail(int movie_id);
+
+    Movie getMovieTitle(String movie_title);
 }
