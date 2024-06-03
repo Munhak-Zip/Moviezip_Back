@@ -1,15 +1,13 @@
 package com.example.moviezip.dao;
 
 import com.example.moviezip.domain.Interest;
-import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.User;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.dao.DataAccessException;
 
 import java.util.List;
 
 public interface UserDao {
-    public User getUserById(Long id) throws DataAccessException;
+    public User getUserById(String id) throws DataAccessException;
 
     //비번 변경
     public void updatePassword(Long id, String newPassword) throws DataAccessException;
