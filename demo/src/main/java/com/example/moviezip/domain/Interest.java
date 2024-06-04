@@ -1,8 +1,13 @@
 package com.example.moviezip.domain;
 
 public class Interest extends User {
+
     private Long id;
     private String genre;
+
+    public Interest(Long id){
+        super(id);
+    }
 
     public Long getId() {
         return id;
