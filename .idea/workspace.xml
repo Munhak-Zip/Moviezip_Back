@@ -4,21 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[fix] : pom.xml 수정 #27">
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/CustomUserDetails.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/WebConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/CustomUserDetailsService.java" afterDir="false" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : WebConfig 추가 #27">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/User.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Interest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Interest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/User.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/SecurityConfig.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +55,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "spring__security",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Moviezip_Back",
+    "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Munhak.Zip_Front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -74,7 +64,7 @@
     "project.structure.last.edited": "Project",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices",
+    "settings.editor.selected.configurable": "preferences.applicationServers",
     "spring.configuration.checksum": "fe01ce2a7fbac8fafaed7c982a04e229",
     "vue.rearranger.settings.migration": "true"
   },
@@ -192,10 +182,29 @@
       <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.moviezip.MoviezipApplication" />
+      <option name="VM_PARAMETERS" value="--add-exports java.base/sun.nio.ch=ALL-UNNAMED" />
+      <extension name="net.ashald.envfile">
+        <option name="IS_ENABLED" value="false" />
+        <option name="IS_SUBST" value="false" />
+        <option name="IS_PATH_MACRO_SUPPORTED" value="false" />
+        <option name="IS_IGNORE_MISSING_FILES" value="false" />
+        <option name="IS_ENABLE_EXPERIMENTAL_INTEGRATIONS" value="false" />
+        <ENTRIES>
+          <ENTRY IS_ENABLED="true" PARSER="runconfig" IS_EXECUTABLE="false" />
+        </ENTRIES>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.MovieTest.getMoviedetail" />
+      <item itemvalue="JUnit.MovieTest.RecentMoviesTest" />
+      <item itemvalue="JUnit.ReservationTest.testReservation" />
+      <item itemvalue="JUnit.WishTest" />
+      <item itemvalue="JUnit.WishTest.testSaveWishMovie" />
+      <item itemvalue="Spring Boot.MoviezipApplication" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.MovieTest.getMoviedetail" />
@@ -232,103 +241,8 @@
       <workItem from="1716818473210" duration="15456000" />
       <workItem from="1717155336541" duration="12581000" />
       <workItem from="1717391371401" duration="12279000" />
-      <workItem from="1717404019919" duration="18838000" />
-    </task>
-    <task id="LOCAL-00003" summary="[add] : UserDao에 searchMovieByKeyword 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796587624</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796587624</updated>
-    </task>
-    <task id="LOCAL-00004" summary="[add] : UserMapper에 searchMovieByKeyword 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796611714</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796611714</updated>
-    </task>
-    <task id="LOCAL-00005" summary="[add] : UserMapper.xml에 영화검색 쿼리 추가">
-      <option name="closed" value="true" />
-      <created>1715796641383</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796641383</updated>
-    </task>
-    <task id="LOCAL-00006" summary="[add] : UserServie 인터페이스에 searchMoviesByTitle 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796688849</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796688849</updated>
-    </task>
-    <task id="LOCAL-00007" summary="[add] : UserServieImpl에 searchMoviesByTitle 영화검색 인터페이스 구현코드 추가">
-      <option name="closed" value="true" />
-      <created>1715796726017</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796726017</updated>
-    </task>
-    <task id="LOCAL-00008" summary="[add] : 영화검색 테스트코드 추가 #12">
-      <option name="closed" value="true" />
-      <created>1715796792284</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796792284</updated>
-    </task>
-    <task id="LOCAL-00009" summary="pull 받기..1">
-      <option name="closed" value="true" />
-      <created>1715912090429</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1715912090429</updated>
-    </task>
-    <task id="LOCAL-00010" summary="pull 받기..2">
-      <option name="closed" value="true" />
-      <created>1715912247401</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1715912247401</updated>
-    </task>
-    <task id="LOCAL-00011" summary="[add/#9] LoginDao 추가">
-      <option name="closed" value="true" />
-      <created>1715916277179</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1715916277179</updated>
-    </task>
-    <task id="LOCAL-00012" summary="[add] : pull/review 도메인 충돌 수정 #17">
-      <option name="closed" value="true" />
-      <created>1716016414327</created>
-      <option name="number" value="00012" />
-      <option name="presentableId" value="LOCAL-00012" />
-      <option name="project" value="LOCAL" />
-      <updated>1716016414327</updated>
-    </task>
-    <task id="LOCAL-00013" summary="[add] : updateReservation 추가 #17">
-      <option name="closed" value="true" />
-      <created>1716017327322</created>
-      <option name="number" value="00013" />
-      <option name="presentableId" value="LOCAL-00013" />
-      <option name="project" value="LOCAL" />
-      <updated>1716017327322</updated>
-    </task>
-    <task id="LOCAL-00014" summary="[add] : updateReservation 추가 #17">
-      <option name="closed" value="true" />
-      <created>1716017331979</created>
-      <option name="number" value="00014" />
-      <option name="presentableId" value="LOCAL-00014" />
-      <option name="project" value="LOCAL" />
-      <updated>1716017331979</updated>
+      <workItem from="1717404019919" duration="19766000" />
+      <workItem from="1717482497318" duration="4339000" />
     </task>
     <task id="LOCAL-00015" summary="[add] : updateReservation 추가 #17">
       <option name="closed" value="true" />
@@ -626,25 +540,109 @@
       <option name="project" value="LOCAL" />
       <updated>1717404919460</updated>
     </task>
-    <option name="localTasksCounter" value="52" />
+    <task id="LOCAL-00052" summary="[add] : CustomUserDetails 추가 #27">
+      <option name="closed" value="true" />
+      <created>1717471526083</created>
+      <option name="number" value="00052" />
+      <option name="presentableId" value="LOCAL-00052" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471526083</updated>
+    </task>
+    <task id="LOCAL-00053" summary="[add] : CustomUserDetailsService 추가 #27">
+      <option name="closed" value="true" />
+      <created>1717471537639</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471537639</updated>
+    </task>
+    <task id="LOCAL-00054" summary="[fix] : User domain 수정 #27">
+      <option name="closed" value="true" />
+      <created>1717471579107</created>
+      <option name="number" value="00054" />
+      <option name="presentableId" value="LOCAL-00054" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471579107</updated>
+    </task>
+    <task id="LOCAL-00055" summary="[fix] : User controller ?, User.xml 파일 삭제 #27">
+      <option name="closed" value="true" />
+      <created>1717471609001</created>
+      <option name="number" value="00055" />
+      <option name="presentableId" value="LOCAL-00055" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471609001</updated>
+    </task>
+    <task id="LOCAL-00056" summary="[fix] : MybatisUserDao 수정 #27">
+      <option name="closed" value="true" />
+      <created>1717471642871</created>
+      <option name="number" value="00056" />
+      <option name="presentableId" value="LOCAL-00056" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471642871</updated>
+    </task>
+    <task id="LOCAL-00057" summary="[fix] : UserDao 수정 #27">
+      <option name="closed" value="true" />
+      <created>1717471659311</created>
+      <option name="number" value="00057" />
+      <option name="presentableId" value="LOCAL-00057" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471659311</updated>
+    </task>
+    <task id="LOCAL-00058" summary="[fix] : UserMapper 수정 #27">
+      <option name="closed" value="true" />
+      <created>1717471672437</created>
+      <option name="number" value="00058" />
+      <option name="presentableId" value="LOCAL-00058" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471672437</updated>
+    </task>
+    <task id="LOCAL-00059" summary="[add] : UserMapper.xml  findByUserId 추가 #27">
+      <option name="closed" value="true" />
+      <created>1717471695753</created>
+      <option name="number" value="00059" />
+      <option name="presentableId" value="LOCAL-00059" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471695753</updated>
+    </task>
+    <task id="LOCAL-00060" summary="[fix] : UserController 수정 #27">
+      <option name="closed" value="true" />
+      <created>1717471729188</created>
+      <option name="number" value="00060" />
+      <option name="presentableId" value="LOCAL-00060" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471729188</updated>
+    </task>
+    <task id="LOCAL-00061" summary="[fix] : Interest 수정 #27">
+      <option name="closed" value="true" />
+      <created>1717471736971</created>
+      <option name="number" value="00061" />
+      <option name="presentableId" value="LOCAL-00061" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471736971</updated>
+    </task>
+    <task id="LOCAL-00062" summary="[add] : SecurityConfig 수정 #27">
+      <option name="closed" value="true" />
+      <created>1717471750968</created>
+      <option name="number" value="00062" />
+      <option name="presentableId" value="LOCAL-00062" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471750968</updated>
+    </task>
+    <task id="LOCAL-00063" summary="[add] : WebConfig 추가 #27">
+      <option name="closed" value="true" />
+      <created>1717471769066</created>
+      <option name="number" value="00063" />
+      <option name="presentableId" value="LOCAL-00063" />
+      <option name="project" value="LOCAL" />
+      <updated>1717471769066</updated>
+    </task>
+    <option name="localTasksCounter" value="64" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : update test #2" />
-    <MESSAGE value="[add] : pull/review 도메인 충돌 수정 #17" />
-    <MESSAGE value="[add] : updateReservation 추가 #17" />
-    <MESSAGE value="[add] : Review 도메인 수정 #2" />
-    <MESSAGE value="[add] : deleteReservation 추가 #17" />
-    <MESSAGE value="[add] : getReservationById 추가 #17" />
-    <MESSAGE value="[add] : import java.io.Serializable; #17" />
-    <MESSAGE value="[add] : update workspace #15" />
-    <MESSAGE value="[fix] : 데이터베이스 환경" />
-    <MESSAGE value="[add] : MybatisWishDao saveWishMovie 영화찜하기 추가 #21" />
-    <MESSAGE value="[add] : WishDao interface saveWishMovie 영화찜하기 추가 #21" />
-    <MESSAGE value="[add] : WishMapper interface saveWishMovie 영화 찜하기 추가 #21" />
     <MESSAGE value="[add] : WishMapper.xml 영화 찜하기 쿼리 추가 #21" />
     <MESSAGE value="[add] : WishImpl service saveWishMovie 추가 #21" />
     <MESSAGE value="[add] : WishTest Code 추가, 중복 값 예외 처리코드 추가 #21" />
@@ -659,6 +657,18 @@
     <MESSAGE value="[fix] : update workspace" />
     <MESSAGE value="[add] : Spring security,JPA 의존성 추가" />
     <MESSAGE value="[fix] : pom.xml 수정 #27" />
-    <option name="LAST_COMMIT_MESSAGE" value="[fix] : pom.xml 수정 #27" />
+    <MESSAGE value="[add] : CustomUserDetails 추가 #27" />
+    <MESSAGE value="[add] : CustomUserDetailsService 추가 #27" />
+    <MESSAGE value="[fix] : User domain 수정 #27" />
+    <MESSAGE value="[fix] : User controller ?, User.xml 파일 삭제 #27" />
+    <MESSAGE value="[fix] : MybatisUserDao 수정 #27" />
+    <MESSAGE value="[fix] : UserDao 수정 #27" />
+    <MESSAGE value="[fix] : UserMapper 수정 #27" />
+    <MESSAGE value="[add] : UserMapper.xml  findByUserId 추가 #27" />
+    <MESSAGE value="[fix] : UserController 수정 #27" />
+    <MESSAGE value="[fix] : Interest 수정 #27" />
+    <MESSAGE value="[add] : SecurityConfig 수정 #27" />
+    <MESSAGE value="[add] : WebConfig 추가 #27" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : WebConfig 추가 #27" />
   </component>
 </project>
