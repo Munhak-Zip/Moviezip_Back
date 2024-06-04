@@ -49,7 +49,7 @@
 
     <select id="findAllUserInterest" resultType="User">
         --         SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS user_id, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, INTEREST.GENRE AS interest
-        SELECT USER_TABLE.ID AS id, USER_TABLE.USER_ID AS UserId, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, GENRE AS "interest.genre"
+        SELECT USER_TABLE.ID AS id, USER_TABLE.UserId AS UserId, USER_TABLE.PASSWORD AS password, USER_TABLE.NICKNAME AS nickname, USER_TABLE.HINT AS hint, GENRE AS "interest.genre"
         FROM USER_TABLE
                  JOIN INTEREST ON INTEREST.ID = USER_TABLE.ID
         WHERE INTEREST.ID = #{id}
@@ -62,12 +62,8 @@
     </select>
 
     <select id="findByUserId" resultType="User">
-        SELECT * FROM USER_TABLE WHERE USER_ID = #{userId}
+        SELECT *
+        FROM USER_TABLE
+        WHERE USERID =  #{userId, jdbcType=VARCHAR}
     </select>
-
-    <select id="existsByUserId" resultType="boolean">
-        SELECT CASE WHEN COUNT(*) > 0 THEN true ELSE false END AS result
-        FROM USER_TABLE WHERE USER_ID = #{userId}
-    </select>
-
 </mapper>
