@@ -2,23 +2,22 @@ package com.example.moviezip.controller;
 
 
 import com.example.moviezip.domain.User;
-import com.example.moviezip.service.UserService;
+import com.example.moviezip.service.CustomUserDetailsService;
 import com.example.moviezip.service.UserServiceImpl;
+import jakarta.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.dao.DuplicateKeyException;
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.authentication.AnonymousAuthenticationToken;
-import org.springframework.security.core.Authentication;
-import org.springframework.security.core.context.SecurityContextHolder;
-import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
+import org.springframework.security.core.userdetails.UserDetails;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
+import org.springframework.web.bind.annotation.*;
 
-@Controller
+@RestController
+@CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
     @Autowired
-   private UserService userService;
+   private UserServiceImpl userService;
+
 
 //    @GetMapping("/")
 //    public String home() {
@@ -86,26 +85,36 @@ public class UserController {
 //    @Autowired
 //    private UserServiceImpl userService;  //나중에는 생성자방식 주입으로 바꾸기
 
-    @GetMapping("/login")
-    public String loginP() {
+//    @GetMapping("/login")
+//    public String loginP() {
+//        return "login.html";
+//    }
+//
+//    @GetMapping("/signup")
+//    public String joinP() {
+//        return "join";
+//    }
 
-        return "login.html";
-    }
-    
-    //회원가입
-    @GetMapping("/join")
-    public String joinP() {
+    @Autowired
+    private CustomUserDetailsService customUserDetailsService;
+    @Autowired
+    private BCryptPasswordEncoder passwordEncoder;
+    @Autowired
+    private HttpSession httpSession; // HttpSession 주입
 
-        return "join";
-    }
-
-    // 회원가입 데이터 받기
     @PostMapping("/joinProc")
     public ResponseEntity<String> joinProcess(@RequestBody User joinDTO) {
         System.out.println(joinDTO.getUserId());
-
-
-
         return userService.joinProcess(joinDTO);
     }
+
+    // 로그아웃 처리
+//    @PostMapping("/logout")
+//    public ResponseEntity<String> logout() {
+//        // 세션에서 사용자 정보 삭제
+//        httpSession.removeAttribute("user");
+//
+//        // 로그아웃 성공 메시지를 클라이언트에 반환
+//        return ResponseEntity.ok("Logout successful");
+//    }
 }

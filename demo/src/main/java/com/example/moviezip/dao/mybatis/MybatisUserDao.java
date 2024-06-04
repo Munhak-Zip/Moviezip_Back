@@ -2,9 +2,7 @@ package com.example.moviezip.dao.mybatis;
 
 import com.example.moviezip.dao.UserDao;
 import com.example.moviezip.dao.mybatis.mapper.UserMapper;
-import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
-import org.apache.ibatis.annotations.Param;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
 import org.springframework.stereotype.Repository;
@@ -57,17 +55,17 @@ public class MybatisUserDao implements UserDao {
         return userMapper.findAllUser();
     }
 
-    @Override
-    public void addInterest(Interest interest) throws DataAccessException{
-        System.out.println("MybatisUserDao - addInterest");
-        userMapper.addInterest(interest);
-    }
-
-    @Override
-    public Interest findInterest(Long id) throws DataAccessException{
-        System.out.println("MybatisUserDao - findInterest");
-        return userMapper.findInterest(id);
-    }
+//    @Override
+//    public void addInterest(Interest interest) throws DataAccessException{
+//        System.out.println("MybatisUserDao - addInterest");
+//        userMapper.addInterest(interest);
+//    }
+//
+//    @Override
+//    public Interest findInterest(Long id) throws DataAccessException{
+//        System.out.println("MybatisUserDao - findInterest");
+//        return userMapper.findInterest(id);
+//    }
 
     @Override
     public void updateInterest(Long id, String genre) throws DataAccessException{
@@ -87,5 +85,10 @@ public class MybatisUserDao implements UserDao {
         return userMapper.findAllUserInterest(id);
     }
 
+    //로그인 할 때 해당 유저가 있는지 없는지 확인용
+    @Override
+    public User findByUserId(String userId) throws DataAccessException {
+        return userMapper.findByUserId(userId);
+    }
 
 }
