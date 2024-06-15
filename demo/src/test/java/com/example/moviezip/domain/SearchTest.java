@@ -1,7 +1,6 @@
 package com.example.moviezip.domain;
 
 import com.example.moviezip.dao.mybatis.MybatisMovieDao;
-import com.example.moviezip.dao.mybatis.MybatisUserDao;
 import org.springframework.test.context.junit.jupiter.SpringExtension;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
@@ -10,7 +9,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 
 import java.util.List;
 
-import static junit.framework.TestCase.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
 @SpringBootTest
 @ExtendWith(SpringExtension.class)

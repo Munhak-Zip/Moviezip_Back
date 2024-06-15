@@ -1,35 +1,91 @@
 package com.example.moviezip.service;
 
-import com.example.moviezip.dao.mybatis.MybatisReviewDao;
 import com.example.moviezip.dao.mybatis.MybatisUserDao;
+import com.example.moviezip.dao.mybatis.mapper.UserMapper;
 import com.example.moviezip.domain.Movie;
-import com.example.moviezip.domain.Review;
 import com.example.moviezip.domain.User;
+import org.springframework.beans.factory.annotation.Autowired;
+
+import org.springframework.http.ResponseEntity;
+import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class UserServiceImpl{
-    private final MybatisUserDao mybatisUserDao;
+public class UserServiceImpl implements UserService {
+    @Autowired
+    private UserMapper userMapper;
 
-//    public UserServiceImpl(MybatisMypageDao mybatisMypageDao) {
-//        this.mybatisUserDao = mybatisUserDao;
+    @Autowired
+    private MybatisUserDao mybatisUserDao;
+
+    @Autowired
+    private BCryptPasswordEncoder bCryptPasswordEncoder;
+    
+//    //회원가입
+//    public ResponseEntity<String> joinProcess(User user){
+//
+//        //db에 이미 있다면
+//
+//       User newuser = new User();
+//        newuser.setUser_id(user.getUser_id());
+//        newuser.setPassword(bCryptPasswordEncoder.encode(user.getPassword())); //암호화
+//        newuser.setNickname(user.getNickname());
+//        newuser.setHint(user.getHint());
+//        mybatisUserDao.addUser(newuser);
+//        return null;
 //    }
-    public UserServiceImpl(MybatisUserDao mybatisUserDao) {
-    this.mybatisUserDao = mybatisUserDao;
+// 회원가입
+public ResponseEntity<String> joinProcess(User user) {
+    // Validate user input
+    if (user.getUserId() == null || user.getPassword() == null || user.getNickname() == null || user.getHint() == null) {
+        return ResponseEntity.badRequest().body("All fields are required.");
+    }
+
+    // Encrypt the password
+    String encryptedPassword = bCryptPasswordEncoder.encode(user.getPassword());
+
+    // Create a new User object with the provided details
+    User newUser = new User();
+    newUser.setUserId(user.getUserId());
+    newUser.setPassword(encryptedPassword); // 암호화
+    newUser.setNickname(user.getNickname());
+    newUser.setHint(user.getHint());
+
+    // Insert the new user into the database
+    mybatisUserDao.addUser(newUser);
+
+    return ResponseEntity.ok("User registered successfully.");
 }
-    public User getUserById(Long id) {
-        return mybatisUserDao.getUserById(id);
-    }
 
+    @Override
     public void updatePassword(Long id, String newPassword) {
-        mybatisUserDao.updatePassword(id, newPassword);
+
     }
 
-    public void updateNickname(Long id, String newNickname) { mybatisUserDao.updateNickname(id, newNickname); }
+    @Override
+    public void updateNickname(Long id, String newNickname) {
 
-    public void deleteUser(Long id) { mybatisUserDao.deleteUser(id); }
+    }
 
+    @Override
+    public void deleteUser(Long id) {
 
+    }
+
+    @Override
+    public List<Movie> searchMoviesByTitle(String keyword) {
+        return null;
+    }
+
+    @Override
+    public void signup(User user) {
+
+    }
+
+    @Override
+    public User getUserById(String id) {
+        return null;
+    }
 }

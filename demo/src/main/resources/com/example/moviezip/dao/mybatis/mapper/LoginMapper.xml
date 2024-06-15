@@ -9,4 +9,9 @@
     WHERE USER_TABLE.USER_ID = #{userId} and USER_TABLE.PASSWORD = #{password}
     </select>
 
+  <select id="getUserById" resultType="com.example.moviezip.domain.User">
+    SELECT *
+    FROM USER_TABLE
+    WHERE USER_TABLE.USER_ID = #{userId}
+  </select>
 </mapper>
