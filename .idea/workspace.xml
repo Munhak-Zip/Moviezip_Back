@@ -243,14 +243,6 @@
       <workItem from="1717404019919" duration="19766000" />
       <workItem from="1717482497318" duration="4339000" />
     </task>
-    <task id="LOCAL-00019" summary="[add] : Review 도메인 수정 #2">
-      <option name="closed" value="true" />
-      <created>1716017384419</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1716017384419</updated>
-    </task>
     <task id="LOCAL-00020" summary="[add] : deleteReservation 추가 #17">
       <option name="closed" value="true" />
       <created>1716018000842</created>
@@ -635,7 +627,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718421160719</updated>
     </task>
-    <option name="localTasksCounter" value="68" />
+    <task id="LOCAL-00068" summary="[add] : mvImg 추가 #36">
+      <option name="closed" value="true" />
+      <created>1718424264233</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1718424264233</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
