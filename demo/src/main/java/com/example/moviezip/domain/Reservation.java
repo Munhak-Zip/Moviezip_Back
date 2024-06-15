@@ -15,8 +15,8 @@ public class Reservation extends Movie implements Serializable {
         this.date = date;
         this.seat = seat;
     }
-    public Reservation(Long mvId, String mvTitle, Integer mvStar, String mvDetail, String mvDirector, Long reserveId, Long id, Date date, String seat) {
-        super(mvId, mvTitle, mvStar, mvDetail, mvDirector);
+    public Reservation(Long mvId, String mvTitle, Integer mvStar, String mvDetail, String mvDirector, String mvImg, Long reserveId, Long id, Date date, String seat) {
+        super(mvId, mvTitle, mvStar, mvDetail, mvDirector, mvImg);
         this.reserveId = reserveId;
         this.id = id;
         this.date = date;
