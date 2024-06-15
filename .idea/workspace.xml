@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : WebConfig 추가 #27">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="workspace" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -233,15 +231,7 @@
       <workItem from="1717155336541" duration="12581000" />
       <workItem from="1717391371401" duration="12279000" />
       <workItem from="1717404019919" duration="18838000" />
-      <workItem from="1718418855746" duration="2922000" />
-    </task>
-    <task id="LOCAL-00004" summary="[add] : UserMapper에 searchMovieByKeyword 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796611714</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796611714</updated>
+      <workItem from="1718418855746" duration="3308000" />
     </task>
     <task id="LOCAL-00005" summary="[add] : UserMapper.xml에 영화검색 쿼리 추가">
       <option name="closed" value="true" />
@@ -627,14 +617,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717582405382</updated>
     </task>
-    <option name="localTasksCounter" value="53" />
+    <task id="LOCAL-00053" summary="workspace">
+      <option name="closed" value="true" />
+      <created>1718424327568</created>
+      <option name="number" value="00053" />
+      <option name="presentableId" value="LOCAL-00053" />
+      <option name="project" value="LOCAL" />
+      <updated>1718424327568</updated>
+    </task>
+    <option name="localTasksCounter" value="54" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : updateReservation 추가 #17" />
     <MESSAGE value="[add] : Review 도메인 수정 #2" />
     <MESSAGE value="[add] : deleteReservation 추가 #17" />
     <MESSAGE value="[add] : getReservationById 추가 #17" />
@@ -660,6 +657,7 @@
     <MESSAGE value="[fix] : pom.xml 수정 #27" />
     <MESSAGE value="[feat/#25] movie객체 프론트에 보내기" />
     <MESSAGE value="[add] : WebConfig 추가 #27" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] : WebConfig 추가 #27" />
+    <MESSAGE value="workspace" />
+    <option name="LAST_COMMIT_MESSAGE" value="workspace" />
   </component>
 </project>
