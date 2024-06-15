@@ -11,18 +11,20 @@ public class Movie {
     private List<Review> review;
     private String mvDirector;
     private String openDate;
+    private String mvImg;
 
 
     public Movie() {
 
     }
 
-    public Movie(Long mvId, String mvTitle, Integer mvStar, String mvDetail, String mvDirector) {
+    public Movie(Long mvId, String mvTitle, Integer mvStar, String mvDetail, String mvDirector,String mvImg) {
         this.mvId = mvId;
         this.mvTitle = mvTitle;
         this.mvStar = mvStar;
         this.mvDetail = mvDetail;
         this.mvDirector = mvDirector;
+        this.mvImg = mvImg;
     }
 
     public void setMvId(Long mvId) {
@@ -60,6 +62,7 @@ public class Movie {
     public void setMvDirector(String mvDirector) {
         this.mvDirector = mvDirector;
     }
+    public void setMvImg(String mvImg) {this.mvImg = mvImg; }
 
     public Long getMvId() {
         return mvId;
@@ -92,4 +95,5 @@ public class Movie {
     public String getOpenDate() {
         return openDate;
     }
+    public String getMvImg() { return mvImg; }
 }
