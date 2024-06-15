@@ -44,4 +44,9 @@ public class MybatisMovieDao implements MovieDao {
         return moviemapper.getMovieTitle(movie_title);
     }
 
+    @Transactional
+    @Override
+    public Movie getAllMoviedetail(int movie_id) throws DataAccessException {
+        return moviemapper.getAllMoviedetail(movie_id);
+    }
 }
