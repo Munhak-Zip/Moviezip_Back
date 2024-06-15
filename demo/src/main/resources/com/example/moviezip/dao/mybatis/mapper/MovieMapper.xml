@@ -21,7 +21,7 @@
     </select>
 
     <select id="getMovieTitle" resultType="Movie">
-        SELECT MOVIE.MOVIE_TITLE AS mvTitle, MOVIE.MOVIE_STAR AS mvStar, MOVIE.MOVIE_DETAIL AS mvDetail , MOVIE.MOVIE_DIRECTOR AS mvDirector, MOVIE.MOVIE_ID AS mvId, MOVIE.MOVIE_OPENDATE AS openDate
+        SELECT MOVIE.MOVIE_TITLE AS mvTitle, MOVIE.MOVIE_STAR AS mvStar, MOVIE.MOVIE_DETAIL AS mvDetail , MOVIE.MOVIE_DIRECTOR AS mvDirector, MOVIE.MOVIE_ID AS mvId, MOVIE.MOVIE_IMG AS mvImg, MOVIE.MOVIE_OPENDATE AS openDate
         FROM MOVIE
         WHERE MOVIE.MOVIE_TITLE = #{movie_title}
     </select>

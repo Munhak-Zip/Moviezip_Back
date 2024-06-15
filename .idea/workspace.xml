@@ -4,11 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : WebConfig 추가 #27">
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : mvImg 추가 #36">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/SecurityConfig.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,10 +50,11 @@
     "RequestMappingsPanelWidth1": "75",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "Spring Boot.MoviezipApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "spring__security",
+    "git-widget-placeholder": "add/recommAI",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Munhak.Zip_Front",
+    "last_opened_file_path": "D:/movie_zip/Munhak.Zip_Front",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -243,46 +242,6 @@
       <workItem from="1717391371401" duration="12279000" />
       <workItem from="1717404019919" duration="19766000" />
       <workItem from="1717482497318" duration="4339000" />
-    </task>
-    <task id="LOCAL-00015" summary="[add] : updateReservation 추가 #17">
-      <option name="closed" value="true" />
-      <created>1716017335648</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1716017335648</updated>
-    </task>
-    <task id="LOCAL-00016" summary="[add] : updateReservation 추가 #17">
-      <option name="closed" value="true" />
-      <created>1716017339395</created>
-      <option name="number" value="00016" />
-      <option name="presentableId" value="LOCAL-00016" />
-      <option name="project" value="LOCAL" />
-      <updated>1716017339395</updated>
-    </task>
-    <task id="LOCAL-00017" summary="[add] : updateReservation 추가 #17">
-      <option name="closed" value="true" />
-      <created>1716017342959</created>
-      <option name="number" value="00017" />
-      <option name="presentableId" value="LOCAL-00017" />
-      <option name="project" value="LOCAL" />
-      <updated>1716017342959</updated>
-    </task>
-    <task id="LOCAL-00018" summary="[add] : updateReservation 추가 #17">
-      <option name="closed" value="true" />
-      <created>1716017353644</created>
-      <option name="number" value="00018" />
-      <option name="presentableId" value="LOCAL-00018" />
-      <option name="project" value="LOCAL" />
-      <updated>1716017353644</updated>
-    </task>
-    <task id="LOCAL-00019" summary="[add] : Review 도메인 수정 #2">
-      <option name="closed" value="true" />
-      <created>1716017384419</created>
-      <option name="number" value="00019" />
-      <option name="presentableId" value="LOCAL-00019" />
-      <option name="project" value="LOCAL" />
-      <updated>1716017384419</updated>
     </task>
     <task id="LOCAL-00020" summary="[add] : deleteReservation 추가 #17">
       <option name="closed" value="true" />
@@ -636,16 +595,53 @@
       <option name="project" value="LOCAL" />
       <updated>1717471769066</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="pull">
+      <option name="closed" value="true" />
+      <created>1718419099144</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1718419099144</updated>
+    </task>
+    <task id="LOCAL-00065" summary="[add] : mvImg 추가 #36">
+      <option name="closed" value="true" />
+      <created>1718420986650</created>
+      <option name="number" value="00065" />
+      <option name="presentableId" value="LOCAL-00065" />
+      <option name="project" value="LOCAL" />
+      <updated>1718420986650</updated>
+    </task>
+    <task id="LOCAL-00066" summary="[add] : mvImg 추가 #36">
+      <option name="closed" value="true" />
+      <created>1718420992629</created>
+      <option name="number" value="00066" />
+      <option name="presentableId" value="LOCAL-00066" />
+      <option name="project" value="LOCAL" />
+      <updated>1718420992629</updated>
+    </task>
+    <task id="LOCAL-00067" summary="[add] : mvImg 추가 #36">
+      <option name="closed" value="true" />
+      <created>1718421160719</created>
+      <option name="number" value="00067" />
+      <option name="presentableId" value="LOCAL-00067" />
+      <option name="project" value="LOCAL" />
+      <updated>1718421160719</updated>
+    </task>
+    <task id="LOCAL-00068" summary="[add] : mvImg 추가 #36">
+      <option name="closed" value="true" />
+      <created>1718424264233</created>
+      <option name="number" value="00068" />
+      <option name="presentableId" value="LOCAL-00068" />
+      <option name="project" value="LOCAL" />
+      <updated>1718424264233</updated>
+    </task>
+    <option name="localTasksCounter" value="69" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : WishMapper.xml 영화 찜하기 쿼리 추가 #21" />
-    <MESSAGE value="[add] : WishImpl service saveWishMovie 추가 #21" />
-    <MESSAGE value="[add] : WishTest Code 추가, 중복 값 예외 처리코드 추가 #21" />
     <MESSAGE value="[fix] : update workspace.xml" />
     <MESSAGE value="[add] : MovieDao interface 영화 상세 정보 조회 getMoviedetail 추가 #23" />
     <MESSAGE value="[add] : MovieMapper interface 영화 상세 정보 조회 getMoviedetail 추가 #23" />
@@ -669,6 +665,8 @@
     <MESSAGE value="[fix] : Interest 수정 #27" />
     <MESSAGE value="[add] : SecurityConfig 수정 #27" />
     <MESSAGE value="[add] : WebConfig 추가 #27" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] : WebConfig 추가 #27" />
+    <MESSAGE value="pull" />
+    <MESSAGE value="[add] : mvImg 추가 #36" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : mvImg 추가 #36" />
   </component>
 </project>
