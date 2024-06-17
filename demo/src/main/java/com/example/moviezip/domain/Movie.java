@@ -1,6 +1,9 @@
 package com.example.moviezip.domain;
 
+import jdk.jfr.Enabled;
+
 import java.util.List;
+
 
 public class Movie {
     private Long mvId;

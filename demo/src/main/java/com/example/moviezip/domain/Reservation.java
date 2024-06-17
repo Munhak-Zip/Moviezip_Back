@@ -8,6 +8,15 @@ public class Reservation extends Movie implements Serializable {
     private Long id;
     private Date date;
     private String seat;
+    private String time;
+
+    public Reservation(Long mvId, Long id, Date date, String seat, String time) {
+        super.setMvId(mvId);
+        this.id = id;
+        this.date = date;
+        this.seat = seat;
+        this.time = time;
+    }
 
     public Reservation(Long mvId, Long id, Date date, String seat) {
         super.setMvId(mvId);
@@ -49,5 +58,13 @@ public class Reservation extends Movie implements Serializable {
 
     public void setSeat(String seat) {
         this.seat = seat;
+    }
+
+    public String getTime() {
+        return time;
+    }
+
+    public void setTime(String time) {
+        this.time = time;
     }
 }
