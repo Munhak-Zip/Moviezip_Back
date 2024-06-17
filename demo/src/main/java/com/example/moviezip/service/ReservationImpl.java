@@ -1,11 +1,11 @@
 package com.example.moviezip.service;
 
-import com.example.moviezip.dao.ReservationDao;
+
 import com.example.moviezip.dao.mybatis.MybatisReservationDao;
 import com.example.moviezip.domain.Reservation;
-
+import org.springframework.stereotype.Service;
 import java.util.List;
-
+@Service
 public class ReservationImpl {
     private final MybatisReservationDao mybatisReservationDao;
     public ReservationImpl(MybatisReservationDao mybatisReservationDao) {

@@ -1,8 +1,10 @@
 package com.example.moviezip.domain;
 
+import java.io.Serializable;
 import java.util.List;
 
-public class Movie {
+public class Movie implements Serializable {
+
     private Long mvId;
     private String mvTitle;
     private int mvStar;
