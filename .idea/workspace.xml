@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[add] : WebConfig 추가 #27">
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[fix] : 스프링 버전 맞추고, 시큐리티 버전 낮춤 #27">
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/AuthCheckController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/SessionController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/UserController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/SecurityConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/SecurityConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/WebConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/WebConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,7 +58,7 @@
     "WebServerToolWindowFactoryState": "false",
     "git-widget-placeholder": "spring__security",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Munhak.Zip_Front",
+    "last_opened_file_path": "D:/4th_grade/1st_semester/MunhakZip/Moviezip_Back",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -242,15 +245,9 @@
       <workItem from="1717155336541" duration="12581000" />
       <workItem from="1717391371401" duration="12279000" />
       <workItem from="1717404019919" duration="19766000" />
-      <workItem from="1717482497318" duration="4339000" />
-    </task>
-    <task id="LOCAL-00015" summary="[add] : updateReservation 추가 #17">
-      <option name="closed" value="true" />
-      <created>1716017335648</created>
-      <option name="number" value="00015" />
-      <option name="presentableId" value="LOCAL-00015" />
-      <option name="project" value="LOCAL" />
-      <updated>1716017335648</updated>
+      <workItem from="1717482497318" duration="5733000" />
+      <workItem from="1718419964771" duration="5729000" />
+      <workItem from="1718632522741" duration="11190000" />
     </task>
     <task id="LOCAL-00016" summary="[add] : updateReservation 추가 #17">
       <option name="closed" value="true" />
@@ -636,14 +633,21 @@
       <option name="project" value="LOCAL" />
       <updated>1717471769066</updated>
     </task>
-    <option name="localTasksCounter" value="64" />
+    <task id="LOCAL-00064" summary="[fix] : 스프링 버전 맞추고, 시큐리티 버전 낮춤 #27">
+      <option name="closed" value="true" />
+      <created>1717487194826</created>
+      <option name="number" value="00064" />
+      <option name="presentableId" value="LOCAL-00064" />
+      <option name="project" value="LOCAL" />
+      <updated>1717487194826</updated>
+    </task>
+    <option name="localTasksCounter" value="65" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : WishMapper.xml 영화 찜하기 쿼리 추가 #21" />
     <MESSAGE value="[add] : WishImpl service saveWishMovie 추가 #21" />
     <MESSAGE value="[add] : WishTest Code 추가, 중복 값 예외 처리코드 추가 #21" />
     <MESSAGE value="[fix] : update workspace.xml" />
@@ -669,6 +673,7 @@
     <MESSAGE value="[fix] : Interest 수정 #27" />
     <MESSAGE value="[add] : SecurityConfig 수정 #27" />
     <MESSAGE value="[add] : WebConfig 추가 #27" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add] : WebConfig 추가 #27" />
+    <MESSAGE value="[fix] : 스프링 버전 맞추고, 시큐리티 버전 낮춤 #27" />
+    <option name="LAST_COMMIT_MESSAGE" value="[fix] : 스프링 버전 맞추고, 시큐리티 버전 낮춤 #27" />
   </component>
 </project>
