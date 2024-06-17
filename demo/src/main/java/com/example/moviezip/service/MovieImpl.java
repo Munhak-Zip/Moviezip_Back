@@ -35,4 +35,8 @@ public class MovieImpl {
     public Movie getMovieTitle(String movie_title){
         return mybatisMovieDao.getMovieTitle(movie_title);
     }
+
+    public Movie getAllMoviedetail(int movie_id){
+        return mybatisMovieDao.getAllMoviedetail(movie_id);
+    }
 }
