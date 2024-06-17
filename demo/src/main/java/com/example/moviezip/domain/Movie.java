@@ -12,7 +12,7 @@ public class Movie {
     private String mvDirector;
     private String openDate;
     private String mvImg;
-
+    private String genre2;
 
     public Movie() {
 
@@ -25,6 +25,16 @@ public class Movie {
         this.mvDetail = mvDetail;
         this.mvDirector = mvDirector;
         this.mvImg = mvImg;
+    }
+
+    public Movie(Long mvId, String mvTitle, Integer mvStar, String mvDetail, String mvDirector,String mvImg, String genre) {
+        this.mvId = mvId;
+        this.mvTitle = mvTitle;
+        this.mvStar = mvStar;
+        this.mvDetail = mvDetail;
+        this.mvDirector = mvDirector;
+        this.mvImg = mvImg;
+        this.genre2 = genre;
     }
 
     public void setMvId(Long mvId) {
@@ -63,6 +73,7 @@ public class Movie {
         this.mvDirector = mvDirector;
     }
     public void setMvImg(String mvImg) {this.mvImg = mvImg; }
+    public void setGenre2(String genre2) {this.genre2 = genre2; }
 
     public Long getMvId() {
         return mvId;
@@ -96,4 +107,5 @@ public class Movie {
         return openDate;
     }
     public String getMvImg() { return mvImg; }
+    public String getGenre2() { return genre2; }
 }

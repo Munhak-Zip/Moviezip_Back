@@ -5,9 +5,7 @@ import com.example.moviezip.domain.User;
 import com.example.moviezip.service.CustomUserDetailsService;
 import com.example.moviezip.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
@@ -17,7 +15,7 @@ import javax.servlet.http.HttpSession;
 @CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
     @Autowired
-   private UserServiceImpl userService;
+    private UserServiceImpl userService;
 
 
 //    @GetMapping("/")

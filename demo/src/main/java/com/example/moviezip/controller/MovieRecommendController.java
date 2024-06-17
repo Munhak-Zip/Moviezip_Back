@@ -21,6 +21,7 @@ public class MovieRecommendController {
         this.recommenderService = recommenderService;
         this.movieService = movieService;
     }
+
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/main/recommend")
     public List<Movie> recommendMovies(@RequestParam int userId) throws Exception {
