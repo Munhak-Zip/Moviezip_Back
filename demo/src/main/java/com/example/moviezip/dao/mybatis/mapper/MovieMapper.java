@@ -16,4 +16,5 @@ public interface MovieMapper {
     Movie getMoviedetail(int movie_id);
 
     Movie getMovieTitle(String movie_title);
+    Movie getAllMoviedetail(int movie_id);
 }
