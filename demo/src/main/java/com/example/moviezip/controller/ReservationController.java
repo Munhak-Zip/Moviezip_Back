@@ -8,6 +8,8 @@ import org.apache.hadoop.yarn.api.records.ReservationRequest;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
 
+import java.util.List;
+
 @RestController
 @RequestMapping("/")
 public class ReservationController {
@@ -24,13 +26,25 @@ public class ReservationController {
         System.out.println("Entering getMovie method with mvId: " + request);
         Reservation reservation = new Reservation(
                 request.getMvId(),
-                156L, // 예약 ID (임의로 설정하거나 관리할 수 있는 방법으로 설정)
+        156L, // 예약 ID (임의로 설정하거나 관리할 수 있는 방법으로 설정)
                 request.getDate(),
-                request.getSeat()
-        );
+                request.getSeat(),
+                request.getTime()
+                );
 
         reservationImpl.insertReservation(reservation);
 
         return 1;
+    }
+
+    @GetMapping("user/mypage")
+    public List<Reservation> getReservationById() throws Exception {
+        Long userId = 156L; // 고정된 userId로 설정
+
+        List<Reservation> reservations = reservationImpl.getReservationById(userId);
+        for(Reservation res : reservations) {
+            System.out.println(res.getMvTitle());
+        }
+        return reservations;
     }
 }
