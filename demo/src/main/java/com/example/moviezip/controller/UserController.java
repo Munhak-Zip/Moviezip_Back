@@ -1,6 +1,7 @@
 package com.example.moviezip.controller;
 
 
+import com.example.moviezip.domain.CustomUserDetails;
 import com.example.moviezip.domain.User;
 import com.example.moviezip.service.CustomUserDetailsService;
 import com.example.moviezip.service.UserService;
@@ -13,6 +14,7 @@ import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpSession;
+import java.util.Map;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
@@ -109,7 +111,7 @@ public class UserController {
         System.out.println(joinDTO.getUserId());
         return userService.joinProcess(joinDTO);
     }
-    //로그인한 사용자의 아이디 반환
+    //로그인한 사용자의 아이디 반환  -> 사실상 필요 없음
     @GetMapping("/user-id")
     public String getCurrentUserId(@AuthenticationPrincipal UserDetails userDetails) {
        if(userDetails!=null){
@@ -117,10 +119,12 @@ public class UserController {
        }
        return null;
     }
-    @PostMapping("/getUserIdByUsername")
-    public User getUserIdByUsername(@RequestBody String userId) {
-        System.out.println("사용자 아이디:"+userId);
-        return userService.getUserById(userId);
-    }
+
+    // 사용자 고유 아이디 받아오는 컨트롤러
+@GetMapping("/getId")
+public ResponseEntity<Long> getCurrentUser(@AuthenticationPrincipal CustomUserDetails userDetails) {
+    Long Id = userDetails.getUser(); // CustomUserDetails에서 User 객체 추출
+    return ResponseEntity.ok().body(Id);
+}
 
 }
