@@ -40,5 +40,8 @@ public interface UserMapper {
 
 
     User findByUserId(@Param("userId") String userId);
+    
+    //입력된 유저 아이디로 사용자 고유번호 가져오기
+    Long findIdByUsername(@Param("userId") String userId);
 
 }
