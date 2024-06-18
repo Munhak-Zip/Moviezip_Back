@@ -1,3 +1,61 @@
-"MOVIE_TITLE","MOVIE_STAR","MOVIE_DIRECTOR","GENRE","GENRE_1"
-"��",4,"����2","������","[0, 1]"
-"�Ĺ�",5,"����3","������","[0, 1]"
+"MOVIE_TITLE","MOVIE_STAR","MOVIE_DIRECTOR","GENRE","ID"
+"듄",4,"감독2","스릴러",3
+"파묘",5,"감독3","스릴러",3
+"그녀가 죽었다",4,"감독2","스릴러",3
+"웡카",3,"감독1","코믹",
+"미녀는괴로워",2,"33","로맨스",""
+"dfsf",3,"감독3","스릴러",""
+"ㅌㅊㅍㅌ",2,"ㅊㅍㅌ","애니메이션",
+"그대들은 어떻게 살 것ㅇㄴ가",3,"미야자키 하야오","애니메이션",1
+"태극기 휘날리며",5,"강제규",1,1
+"미션 임파서블: 데드 레코닝 PART ONE",4,"크리스토퍼 맥쿼리","애니메이션",1
+"겨울왕국",4,"크리스벅","애니메이션",1
+"범죄도시4",4,"허명행","애니메이션",1
+"오펜하이머",4,"크리스토퍼 놀란","스릴러",
+"시민덕희",4,"박영주","스릴러",3
+"서울의 봄",5,"김성수","로맨스",2
+"겨울왕국2",4,"크리스 벅","로맨스",2
+"인셉션",5,"크리스토퍼 놀란","스릴러",
+"라라랜드",4,"데이미언 셔젤","로맨스",
+"조커",5,"토드 필립스","드라마",4
+"어벤져스: 엔드게임",5,"안소니 루소, 조 루소","액션",5
+"기생충",5,"봉준호","드라마",6
+"보헤미안 랩소디",4,"브라이언 싱어","드라마",7
+"검은 사제들",4,"장재현","스릴러",8
+"해리 포터와 마법사의 돌",5,"크리스 콜럼버스","판타지",9
+"매트릭스",5,"랠리 워쇼스키, 라나 워쇼스키","액션",10
+"인터스텔라",5,"크리스토퍼 놀란","SF",11
+"더 킹: 영원의 군주",3,"백상훈","드라마",12
+"더 퀸",4,"스티븐 프리어스","드라마",13
+"덩케르크",5,"크리스토퍼 놀란","전쟁",14
+"1917",5,"샘 멘데스","전쟁",15
+"죠스",4,"스티븐 스필버그","스릴러",3
+"이터널스",3,"클로이 자오","액션",17
+"소울",5,"피트 닥터","애니메이션",18
+"모아나",4,"론 클레멘츠, 존 머스커","애니메이션",19
+"토이 스토리",5,"존 라세터","애니메이션",20
+"Shutter Island",5,"Martin Scorsese","스릴러",21
+"Se7en",5,"David Fincher","스릴러",22
+"Fight Club",4,"David Fincher","스릴러",23
+"Gone Girl",4,"David Fincher","스릴러",24
+"The Silence of the Lambs",5,"Jonathan Demme","스릴러",25
+"Prisoners",5,"Denis Villeneuve","스릴러",26
+"The Girl with the Dragon Tattoo",4,"David Fincher","스릴러",27
+"Memento",5,"Christopher Nolan","스릴러",28
+"The Sixth Sense",4,"M. Night Shyamalan","스릴러",29
+"No Country for Old Men",4,"Ethan Coen, Joel Coen","스릴러",30
+"The Notebook","Ryan Gosling","Nick Cassavetes","로맨스",
+"Pride and Prejudice","Keira Knightley","Joe Wright","로맨스",
+"La La Land","Ryan Gosling","Damien Chazelle","로맨스",
+"Titanic","Leonardo DiCaprio","James Cameron","로맨스",
+"A Walk to Remember","Mandy Moore","Adam Shankman","로맨스",
+"Me Before You","Emilia Clarke","Thea Sharrock","로맨스",
+"The Fault in Our Stars","Shailene Woodley","Josh Boone","로맨스",
+"Before Sunrise","Ethan Hawke","Richard Linklater","로맨스",
+"Romeo + Juliet","Leonardo DiCaprio","Baz Luhrmann","로맨스",
+"Love Actually","Hugh Grant","Richard Curtis","로맨스",
+"Pretty Woman","Julia Roberts","Garry Marshall","로맨스",
+"The Holiday","Cameron Diaz","Nancy Meyers","로맨스",
+"Crazy Rich Asians","Constance Wu","Jon M. Chu","로맨스",
+"To All the Boys I've Loved Before","Lana Condor","Susan Johnson","로맨스",
+"About Time","Domhnall Gleeson","Richard Curtis","로맨스",

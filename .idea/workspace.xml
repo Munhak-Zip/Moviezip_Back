@@ -4,317 +4,87 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[fix] : update workspace.xml">
+    <list default="true" id="cf569b26-a3af-418a-a3e6-24b203b14ee7" name="Changes" comment="[add] : 스프링시큐리티 pull 받으려고 메인 커밋">
+      <change afterPath="$PROJECT_DIR$/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/MovieRecommendController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/UserController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/CustomUserDetails.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/SecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/security/WebConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/CustomUserDetailsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/recommend/MovieRecommenderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/csv/rating.csv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/join.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/demo/src/main/resources/templates/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/User.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/User.xml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/LoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/LoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/MovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/UserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisLoginDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisLoginDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisMovieDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisUserDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/LoginMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/LoginMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/MovieMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/UserMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Interest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Interest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/MovieImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserServiceImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/UserServiceImpl.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/WishImpl.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/LoginMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/LoginMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/UserMapper.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/csv/recommend_movie.csv" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/csv/recommend_movie.csv" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/LoginTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/MoviezipApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/MoviezipApplicationTests.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/WishTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/WishTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/ReviewTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/SearchTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/SearchTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/UserTest22.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/test/java/com/example/moviezip/domain/UserTest22.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Interface" />
-        <option value="Class" />
-      </list>
-    </option>
+  <component name="ProblemsViewState">
+    <option name="selectedTabId" value="ProjectErrors" />
   </component>
-  <component name="Git.Settings">
-    <option name="RECENT_BRANCH_BY_REPOSITORY">
-      <map>
-        <entry key="$PROJECT_DIR$" value="SpringSecurity" />
-      </map>
-    </option>
-    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GithubDefaultAccount">
-    <option name="defaultAccountId" value="1be1d789-f1f4-4152-8103-fe128d6e8c16" />
-  </component>
-  <component name="MarkdownSettingsMigration">
-    <option name="stateVersion" value="1" />
-  </component>
-  <component name="ProjectColorInfo">{
-  &quot;associatedIndex&quot;: 0
-}</component>
-  <component name="ProjectId" id="2gFw7a5oiNtVyPt5d0HMF2mJ7Ma" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
-  <component name="ProjectViewState">
-    <option name="showLibraryContents" value="true" />
-  </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;JUnit.LoginTest.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.LoginTest.testLogin.executor&quot;: &quot;Run&quot;,
-    &quot;JUnit.WishTest.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;Spring Boot.MoviezipApplication.executor&quot;: &quot;Run&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;D:/4th_grade/1st_semester/MunhakZip/Moviezip_Back/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Project&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.lookFeel&quot;,
-    &quot;spring.configuration.checksum&quot;: &quot;fe01ce2a7fbac8fafaed7c982a04e229&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
-  },
-  &quot;keyToStringList&quot;: {
-    &quot;DatabaseDriversLRU&quot;: [
-      &quot;oracle&quot;
-    ]
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RequestMappingsPanelOrder0": "0",
+    "RequestMappingsPanelOrder1": "1",
+    "RequestMappingsPanelWidth0": "75",
+    "RequestMappingsPanelWidth1": "75",
+    "Spring Boot.MoviezipApplication.executor": "Run",
+    "git-widget-placeholder": "Merging main",
+    "node.js.selected.package.tslint": "(autodetect)"
   }
-}</component>
-  <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="D:\4th_grade\1st_semester\MunhakZip\Moviezip_Back\demo\src\main\resources\com\example\moviezip\dao\mybatis\mapper" />
-    </key>
-  </component>
-  <component name="RunManager" selected="Spring Boot.MoviezipApplication">
-    <configuration name="LoginTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.moviezip.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.LoginTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="LoginTest.testLogin" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.moviezip.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.LoginTest" />
-      <option name="METHOD_NAME" value="testLogin" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="SearchTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.moviezip.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.SearchTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="UserTest22.testUser" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.moviezip.domain.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip.domain" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.domain.UserTest22" />
-      <option name="METHOD_NAME" value="testUser" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WishTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="demo" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="com.example.moviezip.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="com.example.moviezip" />
-      <option name="MAIN_CLASS_NAME" value="com.example.moviezip.WishTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name="demo (1)" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="demo (1)" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+}]]></component>
+  <component name="RunManager">
     <configuration name="MoviezipApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot" nameIsGenerated="true">
-      <option name="FRAME_DEACTIVATION_UPDATE_POLICY" value="UpdateClassesAndResources" />
       <module name="demo" />
       <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.moviezip.MoviezipApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <list>
-      <item itemvalue="JUnit.LoginTest" />
-      <item itemvalue="JUnit.SearchTest" />
-      <item itemvalue="JUnit.UserTest22.testUser" />
-      <item itemvalue="JUnit.LoginTest.testLogin" />
-      <item itemvalue="JUnit.WishTest" />
-      <item itemvalue="Spring Boot.MoviezipApplication" />
-    </list>
-    <recent_temporary>
-      <list>
-        <item itemvalue="JUnit.WishTest" />
-        <item itemvalue="JUnit.LoginTest.testLogin" />
-        <item itemvalue="JUnit.UserTest22.testUser" />
-        <item itemvalue="JUnit.SearchTest" />
-        <item itemvalue="JUnit.LoginTest" />
-      </list>
-    </recent_temporary>
   </component>
-  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
-    <task active="true" id="Default" summary="Default task">
-      <changelist id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="" />
-      <created>1715306467063</created>
-      <option name="number" value="Default" />
-      <option name="presentableId" value="Default" />
-      <updated>1715306467063</updated>
-      <workItem from="1715306469179" duration="738000" />
-      <workItem from="1715307804229" duration="95000" />
-      <workItem from="1715307911383" duration="8000" />
-      <workItem from="1715780642806" duration="598000" />
-      <workItem from="1715791503922" duration="5527000" />
-    </task>
-    <task id="LOCAL-00001" summary="[add] : Movie 클래스 생성">
-      <option name="closed" value="true" />
-      <created>1715796505057</created>
-      <option name="number" value="00001" />
-      <option name="presentableId" value="LOCAL-00001" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796505057</updated>
-    </task>
-    <task id="LOCAL-00002" summary="[add] : MybatisUserDao 생성">
-      <option name="closed" value="true" />
-      <created>1715796528532</created>
-      <option name="number" value="00002" />
-      <option name="presentableId" value="LOCAL-00002" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796528532</updated>
-    </task>
-    <task id="LOCAL-00003" summary="[add] : UserDao에 searchMovieByKeyword 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796587624</created>
-      <option name="number" value="00003" />
-      <option name="presentableId" value="LOCAL-00003" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796587624</updated>
-    </task>
-    <task id="LOCAL-00004" summary="[add] : UserMapper에 searchMovieByKeyword 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796611714</created>
-      <option name="number" value="00004" />
-      <option name="presentableId" value="LOCAL-00004" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796611714</updated>
-    </task>
-    <task id="LOCAL-00005" summary="[add] : UserMapper.xml에 영화검색 쿼리 추가">
-      <option name="closed" value="true" />
-      <created>1715796641383</created>
-      <option name="number" value="00005" />
-      <option name="presentableId" value="LOCAL-00005" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796641383</updated>
-    </task>
-    <task id="LOCAL-00006" summary="[add] : UserServie 인터페이스에 searchMoviesByTitle 영화검색 인터페이스 추가">
-      <option name="closed" value="true" />
-      <created>1715796688849</created>
-      <option name="number" value="00006" />
-      <option name="presentableId" value="LOCAL-00006" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796688849</updated>
-    </task>
-    <task id="LOCAL-00007" summary="[add] : UserServieImpl에 searchMoviesByTitle 영화검색 인터페이스 구현코드 추가">
-      <option name="closed" value="true" />
-      <created>1715796726017</created>
-      <option name="number" value="00007" />
-      <option name="presentableId" value="LOCAL-00007" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796726017</updated>
-    </task>
-    <task id="LOCAL-00008" summary="[add] : 영화검색 테스트코드 추가 #12">
-      <option name="closed" value="true" />
-      <created>1715796792284</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1715796792284</updated>
-    </task>
-    <task id="LOCAL-00009" summary="pull 받기..1">
-      <option name="closed" value="true" />
-      <created>1715912090429</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1715912090429</updated>
-    </task>
-    <task id="LOCAL-00010" summary="pull 받기..2">
-      <option name="closed" value="true" />
-      <created>1715912247401</created>
-      <option name="number" value="00010" />
-      <option name="presentableId" value="LOCAL-00010" />
-      <option name="project" value="LOCAL" />
-      <updated>1715912247401</updated>
-    </task>
-    <task id="LOCAL-00011" summary="[add/#9] LoginDao 추가">
-      <option name="closed" value="true" />
-      <created>1715916277179</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1715916277179</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
-  <component name="TypeScriptGeneratedFilesManager">
-    <option name="version" value="3" />
-  </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : Movie 클래스 생성" />
-    <MESSAGE value="[add] : MybatisUserDao 생성" />
-    <MESSAGE value="[add] : UserDao에 searchMovieByKeyword 영화검색 인터페이스 추가" />
-    <MESSAGE value="[add] : UserMapper에 searchMovieByKeyword 영화검색 인터페이스 추가" />
-    <MESSAGE value="[add] : UserMapper.xml에 영화검색 쿼리 추가" />
-    <MESSAGE value="[add] : UserServie 인터페이스에 searchMoviesByTitle 영화검색 인터페이스 추가" />
-    <MESSAGE value="[add] : UserServieImpl에 searchMoviesByTitle 영화검색 인터페이스 구현코드 추가" />
-    <MESSAGE value="[add] : 영화검색 테스트코드 추가 #12" />
-    <MESSAGE value="[add/#10] Login Test Error add" />
-    <MESSAGE value="pull 받기..1" />
-    <MESSAGE value="pull 받기..2" />
-    <MESSAGE value="[add/#9] LoginDao 추가" />
-    <option name="LAST_COMMIT_MESSAGE" value="[add/#9] LoginDao 추가" />
+    <MESSAGE value="[add] : 스프링시큐리티 pull 받으려고 메인 커밋" />
+    <option name="LAST_COMMIT_MESSAGE" value="[add] : 스프링시큐리티 pull 받으려고 메인 커밋" />
   </component>
 </project>

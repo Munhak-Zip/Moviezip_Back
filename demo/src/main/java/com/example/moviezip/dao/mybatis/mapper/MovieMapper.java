@@ -14,4 +14,6 @@ public interface MovieMapper {
     List<Movie> getRecentMovie();
 
     Movie getMoviedetail(int movie_id);
+
+    Movie getMovieTitle(String movie_title);
 }

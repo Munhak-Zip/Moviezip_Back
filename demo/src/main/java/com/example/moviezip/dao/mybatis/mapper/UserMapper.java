@@ -1,6 +1,5 @@
 package com.example.moviezip.dao.mybatis.mapper;
 
-import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
@@ -9,7 +8,7 @@ import java.util.List;
 
 @Mapper
 public interface UserMapper {
-    User getUserById(Long id);
+    User getUserById(String id);
 
     void updateUserPassword(@Param("id") Long id, @Param("newPassword") String newPassword);
 
@@ -28,15 +27,18 @@ public interface UserMapper {
     //사용자 전체 리스트 출력
     List<User> findAllUser();
 
-    void addInterest(Interest interest);
-
-    Interest findInterest(@Param("id") Long id);
+//    void addInterest(Interest interest);
+//
+//    Interest findInterest(@Param("id") Long id);
 
     void updateInterest(@Param("id")Long id, @Param("genre")String genre);
 
+    //회원가입
     void addUser(User user);
 
     User findAllUserInterest(@Param("id") Long id);
 
+
+    User findByUserId(@Param("userId") String userId);
 
 }
