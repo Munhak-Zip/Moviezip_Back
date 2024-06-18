@@ -1,5 +1,6 @@
 package com.example.moviezip.service.recommend;
 
+import lombok.RequiredArgsConstructor;
 import org.apache.spark.api.java.JavaPairRDD;
 import org.apache.spark.api.java.JavaRDD;
 import org.apache.spark.api.java.JavaSparkContext;
@@ -9,6 +10,7 @@ import org.apache.spark.mllib.recommendation.MatrixFactorizationModel;
 import org.apache.spark.mllib.recommendation.Rating;
 import org.apache.spark.sql.SparkSession;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import scala.Tuple2;
 import scala.Tuple3;
 

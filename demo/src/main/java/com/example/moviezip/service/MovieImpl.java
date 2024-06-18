@@ -27,13 +27,16 @@ public class MovieImpl {
 
 
     //영화 디테일 조회
-
-    public Movie getMoviedetail(int movie_id){
-        return mybatisMovieDao.getMoviedetail(movie_id);
+    public Movie getMoviedetail(int mvId){
+        return mybatisMovieDao.getMoviedetail(mvId);
     }
 
     //영화 제목으로 검색
     public Movie getMovieTitle(String movie_title){
         return mybatisMovieDao.getMovieTitle(movie_title);
+    }
+
+    public Movie getAllMoviedetail(int movie_id){
+        return mybatisMovieDao.getAllMoviedetail(movie_id);
     }
 }
