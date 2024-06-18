@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] : 영화 예매 #36">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] : 영화 예매 #36" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -245,15 +243,7 @@
       <workItem from="1717391371401" duration="12279000" />
       <workItem from="1717404019919" duration="19766000" />
       <workItem from="1717482497318" duration="4339000" />
-      <workItem from="1718623673485" duration="9232000" />
-    </task>
-    <task id="LOCAL-00035" summary="[add] : WishDao interface saveWishMovie 영화찜하기 추가 #21">
-      <option name="closed" value="true" />
-      <created>1716387440217</created>
-      <option name="number" value="00035" />
-      <option name="presentableId" value="LOCAL-00035" />
-      <option name="project" value="LOCAL" />
-      <updated>1716387440217</updated>
+      <workItem from="1718623673485" duration="9321000" />
     </task>
     <task id="LOCAL-00036" summary="[add] : WishMapper interface saveWishMovie 영화 찜하기 추가 #21">
       <option name="closed" value="true" />
@@ -639,7 +629,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718629605401</updated>
     </task>
-    <option name="localTasksCounter" value="84" />
+    <task id="LOCAL-00084" summary="[feat] : 영화 예매 #36">
+      <option name="closed" value="true" />
+      <created>1718674610639</created>
+      <option name="number" value="00084" />
+      <option name="presentableId" value="LOCAL-00084" />
+      <option name="project" value="LOCAL" />
+      <updated>1718674610639</updated>
+    </task>
+    <option name="localTasksCounter" value="85" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
