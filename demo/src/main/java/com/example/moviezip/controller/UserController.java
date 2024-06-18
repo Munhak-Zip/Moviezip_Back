@@ -3,9 +3,12 @@ package com.example.moviezip.controller;
 
 import com.example.moviezip.domain.User;
 import com.example.moviezip.service.CustomUserDetailsService;
+import com.example.moviezip.service.UserService;
 import com.example.moviezip.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
@@ -106,14 +109,18 @@ public class UserController {
         System.out.println(joinDTO.getUserId());
         return userService.joinProcess(joinDTO);
     }
+    //로그인한 사용자의 아이디 반환
+    @GetMapping("/user-id")
+    public String getCurrentUserId(@AuthenticationPrincipal UserDetails userDetails) {
+       if(userDetails!=null){
+        return userDetails.getUsername();
+       }
+       return null;
+    }
+    @PostMapping("/getUserIdByUsername")
+    public User getUserIdByUsername(@RequestBody String userId) {
+        System.out.println("사용자 아이디:"+userId);
+        return userService.getUserById(userId);
+    }
 
-    // 로그아웃 처리
-//    @PostMapping("/logout")
-//    public ResponseEntity<String> logout() {
-//        // 세션에서 사용자 정보 삭제
-//        httpSession.removeAttribute("user");
-//
-//        // 로그아웃 성공 메시지를 클라이언트에 반환
-//        return ResponseEntity.ok("Logout successful");
-//    }
 }
