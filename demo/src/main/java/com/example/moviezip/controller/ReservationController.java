@@ -24,9 +24,11 @@ public class ReservationController {
     @PostMapping("movie/reserve")
     public int insertReserve(@RequestBody Reservation request) throws Exception {
         System.out.println("Entering getMovie method with mvId: " + request);
+
+        System.out.println("아이디사용ㄷ자" + request.getId());
         Reservation reservation = new Reservation(
                 request.getMvId(),
-        156L, // 예약 ID (임의로 설정하거나 관리할 수 있는 방법으로 설정)
+                request.getId(),
                 request.getDateR(),
                 request.getSeat(),
                 request.getTime()
@@ -38,11 +40,9 @@ public class ReservationController {
     }
 
     @GetMapping("user/mypage")
-    public List<Reservation> getReservationById() throws Exception {
-        Long userId = 156L; // 고정된 userId로 설정
-
+    public List<Reservation> getReservationById(@RequestParam Long userId) throws Exception {
         List<Reservation> reservations = reservationImpl.getReservationById(userId);
-        for(Reservation res : reservations) {
+        for (Reservation res : reservations) {
             System.out.println("Title: " + res.getMvTitle());
             System.out.println("Date: " + res.getDateR());
             System.out.println("Time: " + res.getTime());
