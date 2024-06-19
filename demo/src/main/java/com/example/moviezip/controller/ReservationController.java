@@ -42,6 +42,7 @@ public class ReservationController {
     @GetMapping("user/mypage")
     public List<Reservation> getReservationById(@RequestParam Long userId) throws Exception {
         List<Reservation> reservations = reservationImpl.getReservationById(userId);
+        System.out.println("아이디사용ㄷ자" + userId);
         for (Reservation res : reservations) {
             System.out.println("Title: " + res.getMvTitle());
             System.out.println("Date: " + res.getDateR());
