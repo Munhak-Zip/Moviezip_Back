@@ -1,23 +1,29 @@
 package com.example.moviezip.controller;
 
 
+import com.example.moviezip.domain.CustomUserDetails;
 import com.example.moviezip.domain.User;
 import com.example.moviezip.service.CustomUserDetailsService;
+import com.example.moviezip.service.UserService;
 import com.example.moviezip.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
+import org.springframework.security.core.annotation.AuthenticationPrincipal;
+import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpSession;
 import java.util.Date;
+import java.util.Map;
 
 @RestController
 @CrossOrigin(origins = "http://localhost:3000")
 public class UserController {
     @Autowired
     private UserServiceImpl userService;
+
 
 //    @GetMapping("/")
 //    public String home() {
@@ -116,4 +122,20 @@ public class UserController {
 //        // 로그아웃 성공 메시지를 클라이언트에 반환
 //        return ResponseEntity.ok("Logout successful");
 //    }
+    //로그인한 사용자의 아이디 반환  -> 사실상 필요 없음
+    @GetMapping("/user-id")
+    public String getCurrentUserId(@AuthenticationPrincipal UserDetails userDetails) {
+       if(userDetails!=null){
+        return userDetails.getUsername();
+       }
+       return null;
+    }
+
+    // 사용자 고유 아이디 받아오는 컨트롤러
+@GetMapping("/getId")
+public ResponseEntity<Long> getCurrentUser(@AuthenticationPrincipal CustomUserDetails userDetails) {
+    Long Id = userDetails.getUser(); // CustomUserDetails에서 User 객체 추출
+    return ResponseEntity.ok().body(Id);
+}
+
 }

@@ -86,6 +86,10 @@ public class UserServiceImpl implements UserService {
 
     @Override
     public User getUserById(String id) {
-        return null;
+        return mybatisUserDao.getUserById(id);
+    }
+    @Override
+    public Long getIdByUsername(String username) {
+        return mybatisUserDao.getIdByUsername(username);
     }
 }
