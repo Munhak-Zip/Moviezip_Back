@@ -9,9 +9,9 @@ import java.util.List;
 
 @Mapper
 public interface WishMapper {
-     List<Movie> getWishMovie(int id);
-     List<Review> getWishReview(int id);
-     int deleteWishReview(@Param("id") int id, @Param("rvId") int rvId);
+     List<Movie> getWishMovie(long id);
+     List<Review> getWishReview(long id);
+     int deleteWishReview(@Param("id") long id, @Param("rvId") long rvId);
      List<Review> getMyReview(String userId);
 
      //영화 찜하기

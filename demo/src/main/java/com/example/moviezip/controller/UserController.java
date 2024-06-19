@@ -132,10 +132,11 @@ public class UserController {
     }
 
     // 사용자 고유 아이디 받아오는 컨트롤러
-@GetMapping("/getId")
-public ResponseEntity<Long> getCurrentUser(@AuthenticationPrincipal CustomUserDetails userDetails) {
-    Long Id = userDetails.getUser(); // CustomUserDetails에서 User 객체 추출
-    return ResponseEntity.ok().body(Id);
-}
+    @GetMapping("/getId")
+    public ResponseEntity<Long> getCurrentUser(@AuthenticationPrincipal CustomUserDetails userDetails) {
+        Long Id = userDetails.getUser(); // CustomUserDetails에서 User 객체 추출
+        return ResponseEntity.ok().body(Id);
+    }
+
 
 }
