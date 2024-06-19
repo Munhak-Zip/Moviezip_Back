@@ -8,7 +8,7 @@
         INSERT INTO RESERVATION
             (RESERVATE_DATE, SEAT, TIME, MOVIE_ID, ID)
         VALUES
-            (#{date}, #{seat}, #{time}, #{mvId}, #{id})
+            (#{dateR}, #{seat}, #{time}, #{mvId}, #{id})
     </insert>
 
     <update id="updateReservation" parameterType="Reservation">
@@ -24,7 +24,7 @@
     </delete>
 
     <select id="getReservationById" resultType="Reservation">
-        SELECT RESERVATION.RESERVATE_DATE, RESERVATION.SEAT, MOVIE.MOVIE_TITLE
+        SELECT RESERVATION.RESERVATE_DATE AS dateR, RESERVATION.SEAT AS seat, RESERVATION.TIME AS time, MOVIE.MOVIE_TITLE AS mvTitle
         FROM RESERVATION
         INNER JOIN MOVIE ON RESERVATION.MOVIE_ID = MOVIE.MOVIE_ID
         WHERE RESERVATION.ID = #{id}

@@ -91,4 +91,9 @@ public class MybatisUserDao implements UserDao {
         return userMapper.findByUserId(userId);
     }
 
+    @Override
+    public Long getIdByUsername(String username) throws DataAccessException {
+        return userMapper.findIdByUsername(username);
+    }
+
 }

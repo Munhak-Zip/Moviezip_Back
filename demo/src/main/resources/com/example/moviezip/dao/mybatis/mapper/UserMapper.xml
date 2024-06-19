@@ -7,6 +7,11 @@
     <select id="getUserById" resultType="User">
         SELECT * FROM USER_TABLE WHERE ID = #{id}
     </select>
+
+    <select id="findIdByUsername">
+        SELECT ID FROM USER_TABLE WHERE USERID = #{userId}
+    </select>
+
     <update id="updateUserPassword">
         UPDATE USER_TABLE SET PASSWORD = #{newPassword} WHERE ID = #{id}
     </update>

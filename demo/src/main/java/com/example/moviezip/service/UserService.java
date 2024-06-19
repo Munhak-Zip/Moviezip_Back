@@ -20,4 +20,6 @@ public interface UserService {
 
     //회원가입
     ResponseEntity<String> joinProcess(User user);
+
+    Long getIdByUsername(String username);
 }

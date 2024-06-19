@@ -36,6 +36,8 @@ public class CustomUserDetails implements UserDetails {
         return user.getUserId();
     }
 
+
+
     @Override
     public boolean isAccountNonExpired() {
         return true;
@@ -54,5 +56,9 @@ public class CustomUserDetails implements UserDetails {
     @Override
     public boolean isEnabled() {
         return true;
+    }
+
+    public Long getUser() {
+        return user.getId();
     }
 }
