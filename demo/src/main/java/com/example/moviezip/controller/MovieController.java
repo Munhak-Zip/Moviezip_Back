@@ -38,4 +38,14 @@ public class MovieController {
         }
         return mv;
     }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("/main")
+    public List<Movie> getRecentMovie() {
+        List<Movie> movieList = movieService.getRecentMovie();
+        for(Movie movie : movieList) {
+            System.out.println("최신영화"+movie.getMvTitle());
+        }
+        return movieList;
+    }
 }
