@@ -4,7 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] : 영화 예매 내역 출력 #36" />
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="pull">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/domain/Review.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -53,7 +57,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.MoviezipApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "add/algorithm",
+    "git-widget-placeholder": "feat/recentMovie",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/movie_zip/Munhak.Zip_Front",
     "node.js.detected.package.eslint": "true",
@@ -244,14 +248,6 @@
       <workItem from="1717404019919" duration="19766000" />
       <workItem from="1717482497318" duration="4339000" />
       <workItem from="1718623673485" duration="5001000" />
-    </task>
-    <task id="LOCAL-00034" summary="[add] : MybatisWishDao saveWishMovie 영화찜하기 추가 #21">
-      <option name="closed" value="true" />
-      <created>1716387417213</created>
-      <option name="number" value="00034" />
-      <option name="presentableId" value="LOCAL-00034" />
-      <option name="project" value="LOCAL" />
-      <updated>1716387417213</updated>
     </task>
     <task id="LOCAL-00035" summary="[add] : WishDao interface saveWishMovie 영화찜하기 추가 #21">
       <option name="closed" value="true" />
@@ -637,7 +633,15 @@
       <option name="project" value="LOCAL" />
       <updated>1718719902655</updated>
     </task>
-    <option name="localTasksCounter" value="83" />
+    <task id="LOCAL-00083" summary="pull">
+      <option name="closed" value="true" />
+      <created>1718784634820</created>
+      <option name="number" value="00083" />
+      <option name="presentableId" value="LOCAL-00083" />
+      <option name="project" value="LOCAL" />
+      <updated>1718784634820</updated>
+    </task>
+    <option name="localTasksCounter" value="84" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -662,14 +666,14 @@
     <MESSAGE value="[fix] : Interest 수정 #27" />
     <MESSAGE value="[add] : SecurityConfig 수정 #27" />
     <MESSAGE value="[add] : WebConfig 추가 #27" />
-    <MESSAGE value="pull" />
     <MESSAGE value="[add] : mvImg 추가 #36" />
     <MESSAGE value="workspace" />
     <MESSAGE value="[feat] : 영화 디테일 연결 #36" />
     <MESSAGE value="[feat] : 수정 #36" />
     <MESSAGE value="머지" />
     <MESSAGE value="[feat] : 영화 예매 내역 출력 #36" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] : 영화 예매 내역 출력 #36" />
+    <MESSAGE value="pull" />
+    <option name="LAST_COMMIT_MESSAGE" value="pull" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
