@@ -38,27 +38,27 @@ public class UserServiceImpl implements UserService {
 //        return null;
 //    }
 // 회원가입
-public ResponseEntity<String> joinProcess(User user) {
-    // Validate user input
-    if (user.getUserId() == null || user.getPassword() == null || user.getNickname() == null || user.getHint() == null) {
-        return ResponseEntity.badRequest().body("All fields are required.");
+    public ResponseEntity<String> joinProcess(User user) {
+        // Validate user input
+        if (user.getUserId() == null || user.getPassword() == null || user.getNickname() == null || user.getHint() == null) {
+            return ResponseEntity.badRequest().body("All fields are required.");
+        }
+
+        // Encrypt the password
+        String encryptedPassword = bCryptPasswordEncoder.encode(user.getPassword());
+
+        // Create a new User object with the provided details
+        User newUser = new User();
+        newUser.setUserId(user.getUserId());
+        newUser.setPassword(encryptedPassword); // 암호화
+        newUser.setNickname(user.getNickname());
+        newUser.setHint(user.getHint());
+
+        // Insert the new user into the database
+        mybatisUserDao.addUser(newUser);
+
+        return ResponseEntity.ok("User registered successfully.");
     }
-
-    // Encrypt the password
-    String encryptedPassword = bCryptPasswordEncoder.encode(user.getPassword());
-
-    // Create a new User object with the provided details
-    User newUser = new User();
-    newUser.setUserId(user.getUserId());
-    newUser.setPassword(encryptedPassword); // 암호화
-    newUser.setNickname(user.getNickname());
-    newUser.setHint(user.getHint());
-
-    // Insert the new user into the database
-    mybatisUserDao.addUser(newUser);
-
-    return ResponseEntity.ok("User registered successfully.");
-}
 
     @Override
     public void updatePassword(Long id, String newPassword) {
