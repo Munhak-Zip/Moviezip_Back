@@ -3,19 +3,19 @@ package com.example.moviezip.domain;
 import java.io.Serializable;
 
 public class Review extends Movie {
-    private int rvId;
+    private Long rvId;
     private int rvStar;
     private String writer;
     private String mvTitle;
     private String content;
     private String rvTitle;
-        private String is_Critic;
+    private String is_Critic;
 
     public Review(){
 
     }
 
-    public Review(int rvId, int rvStar, String mvTitle, String content, String is_Critic, Long mvId) {
+    public Review(Long rvId, int rvStar, String mvTitle, String content, String is_Critic, Long mvId) {
         this.rvId = rvId;
         this.rvStar = rvStar;
         this.mvTitle = mvTitle;
@@ -49,11 +49,11 @@ public class Review extends Movie {
     }
 
 
-    public int getRvId() {
+    public Long getRvId() {
         return rvId;
     }
 
-    public void setRvId(int rvId) {
+    public void setRvId(Long rvId) {
         this.rvId = rvId;
     }
 
