@@ -17,6 +17,12 @@ public class MybatisReviewDao implements ReviewDao {
     public void insertMyReview(Review review) throws DataAccessException {
         reviewMapper.insertMyReview(review);
     }
+
+    @Override
+    public List<Review> getMyReviewList(String userId) throws DataAccessException {
+        return reviewMapper.getMyReviewList(userId);
+    }
+
     @Override
     public void deleteReview(long rvId) throws DataAccessException{
         reviewMapper.deleteReview(rvId);
