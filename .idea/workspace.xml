@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="pull">
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="머지">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" afterDir="false" />
     </list>
@@ -56,7 +56,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "Spring Boot.MoviezipApplication.executor": "Run",
     "WebServerToolWindowFactoryState": "false",
-    "git-widget-placeholder": "feat/recentMovie",
+    "git-widget-placeholder": "add/algorithm",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "D:/movie_zip/Munhak.Zip_Front",
     "node.js.detected.package.eslint": "true",
@@ -669,10 +669,10 @@
     <MESSAGE value="workspace" />
     <MESSAGE value="[feat] : 영화 디테일 연결 #36" />
     <MESSAGE value="[feat] : 수정 #36" />
-    <MESSAGE value="머지" />
     <MESSAGE value="[feat] : 영화 예매 내역 출력 #36" />
     <MESSAGE value="pull" />
-    <option name="LAST_COMMIT_MESSAGE" value="pull" />
+    <MESSAGE value="머지" />
+    <option name="LAST_COMMIT_MESSAGE" value="머지" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
