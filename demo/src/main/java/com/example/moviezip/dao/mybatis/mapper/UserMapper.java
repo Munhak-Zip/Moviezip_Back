@@ -1,6 +1,7 @@
 package com.example.moviezip.dao.mybatis.mapper;
 
 import com.example.moviezip.domain.User;
+import com.example.moviezip.domain.Interest;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
@@ -27,7 +28,7 @@ public interface UserMapper {
     //사용자 전체 리스트 출력
     List<User> findAllUser();
 
-//    void addInterest(Interest interest);
+   void addInterest(@Param("id")Long id, @Param("genre")String genre);
 //
 //    Interest findInterest(@Param("id") Long id);
 
@@ -42,6 +43,6 @@ public interface UserMapper {
     User findByUserId(@Param("userId") String userId);
     
     //입력된 유저 아이디로 사용자 고유번호 가져오기
-    Long findIdByUsername(@Param("userId") String userId);
+    Long getIdByUsername(@Param("username") String username);
 
 }

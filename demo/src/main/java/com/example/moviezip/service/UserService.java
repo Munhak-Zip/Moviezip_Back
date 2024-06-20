@@ -1,5 +1,6 @@
 package com.example.moviezip.service;
 
+import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.User;
 import org.springframework.http.ResponseEntity;
@@ -18,8 +19,12 @@ public interface UserService {
 
     User getUserById(String id);
 
+    User findByUserId(String userId);
+
     //회원가입
     ResponseEntity<String> joinProcess(User user);
 
     Long getIdByUsername(String username);
+
+    void addInterest(Long id, String genre);
 }
