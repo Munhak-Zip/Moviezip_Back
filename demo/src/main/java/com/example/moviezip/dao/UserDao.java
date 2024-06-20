@@ -35,4 +35,7 @@ public interface UserDao {
     public User findByUserId(String userId) throws DataAccessException;
 
     Long getIdByUsername(String username) throws DataAccessException;
+
+    String findUserIdByInfo(String nickname, String hint) throws DataAccessException;
+
 }
