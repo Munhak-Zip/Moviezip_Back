@@ -11,6 +11,13 @@
             (#{content}, #{rvStar}, #{mvId}, #{is_Critic})
     </insert>
 
+    <select id="getMyReviewList" parameterType="String" resultType="Review">
+        SELECT CONTENT, STAR as rvStar, MOVIE.MOVIE_TITLE AS mvTitle
+        FROM REVIEW
+        JOIN MOVIE ON MOVIE.MOVIE_ID = REVIEW.MOVIE_ID
+        WHERE WRITER = #{writer}
+    </select>
+
 
     <delete id="deleteReview" parameterType="long">
         DELETE FROM REVIEW
