@@ -4,6 +4,7 @@ import com.example.moviezip.domain.CustomUserDetails;
 import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.Review;
 import com.example.moviezip.service.WishImpl;
+import org.apache.hadoop.yarn.exceptions.ResourceNotFoundException;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -23,33 +24,42 @@ public class WishController {
 
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/movies")
-    public ResponseEntity<List<Movie>> getWishMovies(@AuthenticationPrincipal CustomUserDetails user) {
-        List<Movie> movies = wishService.getWishMovie(user.getUser());
-        return ResponseEntity.ok(movies);
+    public List<Movie> getWishMovies(@AuthenticationPrincipal CustomUserDetails user) {
+        List<Movie> movieList = wishService.getWishMovie(user.getUser());
+        for(Movie movie :movieList){
+            System.out.println("찜한영화 : "+movie.getMvTitle());
+        }
+
+        return wishService.getWishMovie(user.getUser());
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/reviews")
-    public ResponseEntity<List<Review>> getWishReviews(@AuthenticationPrincipal CustomUserDetails user) {
-        List<Review> reviews = wishService.getWishReview(user.getUser());
-        return ResponseEntity.ok(reviews);
+    public List<Review> getWishReviews(@AuthenticationPrincipal CustomUserDetails user) {
+        List<Review> reviewList = wishService.getWishReview(user.getUser());
+        for(Review review : reviewList){
+            System.out.println("찜한리뷰 : "+review.getMvTitle() + "\n" + review.getWriter() + "\n" + review.getContent());
+        }
+        return wishService.getWishReview(user.getUser());
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/myreviews")
-    public ResponseEntity<List<Review>> getMyReviews(@AuthenticationPrincipal CustomUserDetails user) {
-        List<Review> reviews = wishService.getMyReview(user.getUsername());
-        return ResponseEntity.ok(reviews);
+    public List<Review> getMyReviews(@AuthenticationPrincipal CustomUserDetails user) {
+        List<Review> reviewList = wishService.getMyReview(user.getUsername());
+        for(Review review : reviewList){
+            System.out.println("나의리뷰 : "+review.getMvTitle() + "\n" + review.getContent());
+        }
+
+        return wishService.getMyReview(user.getUsername());
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
     @DeleteMapping("/{rvId}")
-    public ResponseEntity<Void> deleteWishReview(@AuthenticationPrincipal CustomUserDetails user, @PathVariable int rvId) {
+    public void deleteWishReview(@AuthenticationPrincipal CustomUserDetails user, @PathVariable int rvId) {
         int result = wishService.deleteWishReview(user.getUser(), rvId);
-        if (result > 0) {
-            return ResponseEntity.noContent().build();
-        } else {
-            return ResponseEntity.notFound().build();
+        if (result <= 0) {
+            throw new ResourceNotFoundException("Review not found with id " + rvId);
         }
     }
 }
