@@ -8,6 +8,7 @@ import java.util.List;
 @Mapper
 public interface ReviewMapper {
     void insertMyReview(Review review);
+    List<Review> getMyReviewList(String userId);
     void deleteReview(long rvId);
     List<Review> getReviewList(long mvId);
     Review getReviewDetail(long rvId);
