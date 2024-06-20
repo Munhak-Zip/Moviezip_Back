@@ -72,4 +72,14 @@
         WHERE USERID =  #{userId, jdbcType=VARCHAR}
     </select>
 
+    <!-- UserMapper.xml -->
+    <resultMap id="userResultMap" type="com.example.moviezip.domain.UserDto">
+        <result property="nickname" column="nickname"/>
+        <result property="hint" column="hint"/>
+    </resultMap>
+    <select id="findUserIdByInfo" resultType="java.lang.String">
+        SELECT USERID
+        FROM USER_TABLE
+        WHERE NICKNAME = #{nickname} AND HINT = #{hint}
+    </select>
 </mapper>

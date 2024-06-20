@@ -45,4 +45,7 @@ public interface UserMapper {
     //입력된 유저 아이디로 사용자 고유번호 가져오기
     Long getIdByUsername(@Param("username") String username);
 
+    String findUserIdByInfo(@Param("nickname") String nickname,@Param("hint") String hint);
+
+
 }
