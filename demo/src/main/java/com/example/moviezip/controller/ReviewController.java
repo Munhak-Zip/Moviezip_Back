@@ -55,4 +55,18 @@ public class ReviewController {
         }
         return myReviewList;
     }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("{mvId}/critics")
+    public List<Review> getCriticsReview(@PathVariable int mvId) throws Exception {
+        System.out.println("Entering getMovie method with mvId: " + mvId);
+        List<Review> rv = reviewImpl.getCriticReviews(mvId);
+
+        for (Review r : rv) {
+            System.out.println("내용" + r.getContent());
+            System.out.println("이름" + r.getRvTitle());
+            System.out.println("별점" + r.getRvStar());
+        }
+        return rv;
+    }
 }

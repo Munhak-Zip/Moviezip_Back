@@ -2,6 +2,7 @@ package com.example.moviezip.controller;
 
 
 import com.example.moviezip.domain.CustomUserDetails;
+import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
 import com.example.moviezip.service.CustomUserDetailsService;
 import com.example.moviezip.service.UserService;
@@ -114,17 +115,22 @@ public class UserController {
     //로그인한 사용자의 아이디 반환  -> 사실상 필요 없음
     @GetMapping("/user-id")
     public String getCurrentUserId(@AuthenticationPrincipal UserDetails userDetails) {
-       if(userDetails!=null){
-        return userDetails.getUsername();
-       }
-       return null;
+        if(userDetails!=null){
+            return userDetails.getUsername();
+        }
+        return null;
     }
 
     // 사용자 고유 아이디 받아오는 컨트롤러
-@GetMapping("/getId")
-public ResponseEntity<Long> getCurrentUser(@AuthenticationPrincipal CustomUserDetails userDetails) {
-    Long Id = userDetails.getUser(); // CustomUserDetails에서 User 객체 추출
-    return ResponseEntity.ok().body(Id);
-}
+    @GetMapping("/getId")
+    public ResponseEntity<Long> getCurrentUser(@AuthenticationPrincipal CustomUserDetails userDetails) {
+        Long Id = userDetails.getUser(); // CustomUserDetails에서 User 객체 추출
+        return ResponseEntity.ok().body(Id);
+    }
 
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/addInterest")
+    public void addInterest(@RequestBody Interest interest) {
+        userService.addInterest(interest.getId(), interest.getGenre());
+    }
 }

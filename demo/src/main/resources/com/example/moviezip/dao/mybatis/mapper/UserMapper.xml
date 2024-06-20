@@ -8,8 +8,8 @@
         SELECT * FROM USER_TABLE WHERE ID = #{id}
     </select>
 
-    <select id="findIdByUsername">
-        SELECT ID FROM USER_TABLE WHERE USERID = #{userId}
+    <select id="getIdByUsername">
+        SELECT ID FROM USER_TABLE WHERE USERID = #{username}
     </select>
 
     <update id="updateUserPassword">
@@ -30,7 +30,7 @@
     <select id="findAllUser" resultType="User">
         SELECT * FROM USER_TABLE
     </select>
-    <insert id="addInterest" parameterType="Interest">
+    <insert id="addInterest">
         INSERT INTO INTEREST (ID, GENRE)
         VALUES
             (#{id}, #{genre})
@@ -71,4 +71,5 @@
         FROM USER_TABLE
         WHERE USERID =  #{userId, jdbcType=VARCHAR}
     </select>
+
 </mapper>
