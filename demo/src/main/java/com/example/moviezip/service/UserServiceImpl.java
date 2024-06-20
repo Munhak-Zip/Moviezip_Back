@@ -2,7 +2,6 @@ package com.example.moviezip.service;
 
 import com.example.moviezip.dao.mybatis.MybatisUserDao;
 import com.example.moviezip.dao.mybatis.mapper.UserMapper;
-import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -105,5 +104,10 @@ public ResponseEntity<String> joinProcess(User user) {
     public void addInterest(Long id, String genre) {
         mybatisUserDao.addInterest(id, genre);
 
+    }
+
+    @Override
+    public String findUserIdByInfo(String nickname, String hint) {
+       return mybatisUserDao.findUserIdByInfo(nickname, hint);
     }
 }
