@@ -6,10 +6,13 @@ public class Review extends Movie {
     private Long rvId;
     private int rvStar;
     private String writer;
-    private String mvTitle;
     private String content;
     private String rvTitle;
     private String is_Critic;
+
+    private int mvId;
+    private String mvTitle;
+    private String mvImg;
 
     public Review(){
 
@@ -24,6 +27,16 @@ public class Review extends Movie {
         super.setMvId(mvId);
         super.setMvImg(mvImg);
 
+    }
+
+    public Review(int rvStar, String content, String rvTitle, String writer, int mvId, String mvTitle, String mvImg) {
+        this.rvStar = rvStar;
+        this.content = content;
+        this.rvTitle = rvTitle;
+        this.writer = writer;
+        this.mvId = mvId;
+        this.mvImg = mvImg;
+        this.mvTitle = mvTitle;
     }
 
 
