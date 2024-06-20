@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] 영화 찜, 삭제 #56">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/WishDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/WishDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisWishDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisWishDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/WishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/WishMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/WishImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/WishImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/WishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/WishMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] 영화 찜, 삭제 #56" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,62 +244,6 @@
       <workItem from="1717404019919" duration="19766000" />
       <workItem from="1717482497318" duration="4339000" />
       <workItem from="1718623673485" duration="5001000" />
-    </task>
-    <task id="LOCAL-00044" summary="[add] : MovieImpl service 영화 상세 정보 조회 getMoviedetail 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716388958358</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1716388958358</updated>
-    </task>
-    <task id="LOCAL-00045" summary="[add] : MybatisMovieDao 영화 상세 정보 조회 getMoviedetail 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716388989456</created>
-      <option name="number" value="00045" />
-      <option name="presentableId" value="LOCAL-00045" />
-      <option name="project" value="LOCAL" />
-      <updated>1716388989456</updated>
-    </task>
-    <task id="LOCAL-00046" summary="[add] : MovieTest 영화 상세 정보 조회 테스트코드 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716389014982</created>
-      <option name="number" value="00046" />
-      <option name="presentableId" value="LOCAL-00046" />
-      <option name="project" value="LOCAL" />
-      <updated>1716389014982</updated>
-    </task>
-    <task id="LOCAL-00047" summary="[add] : MovieMapper.xml 영화 상세 조회 쿼리 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716389035574</created>
-      <option name="number" value="00047" />
-      <option name="presentableId" value="LOCAL-00047" />
-      <option name="project" value="LOCAL" />
-      <updated>1716389035574</updated>
-    </task>
-    <task id="LOCAL-00048" summary="[fix] : update workspace">
-      <option name="closed" value="true" />
-      <created>1716389053235</created>
-      <option name="number" value="00048" />
-      <option name="presentableId" value="LOCAL-00048" />
-      <option name="project" value="LOCAL" />
-      <updated>1716389053235</updated>
-    </task>
-    <task id="LOCAL-00049" summary="[add] : Spring security,JPA 의존성 추가">
-      <option name="closed" value="true" />
-      <created>1716804056431</created>
-      <option name="number" value="00049" />
-      <option name="presentableId" value="LOCAL-00049" />
-      <option name="project" value="LOCAL" />
-      <updated>1716804056431</updated>
-    </task>
-    <task id="LOCAL-00050" summary="[fix] : pom.xml 수정 #27">
-      <option name="closed" value="true" />
-      <created>1717392633746</created>
-      <option name="number" value="00050" />
-      <option name="presentableId" value="LOCAL-00050" />
-      <option name="project" value="LOCAL" />
-      <updated>1717392633746</updated>
     </task>
     <task id="LOCAL-00051" summary="[fix] : pom.xml 수정 #27">
       <option name="closed" value="true" />
@@ -645,7 +581,63 @@
       <option name="project" value="LOCAL" />
       <updated>1718868448649</updated>
     </task>
-    <option name="localTasksCounter" value="93" />
+    <task id="LOCAL-00093" summary="[feat] 영화 찜, 삭제 #56">
+      <option name="closed" value="true" />
+      <created>1718868452058</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868452058</updated>
+    </task>
+    <task id="LOCAL-00094" summary="[feat] 영화 찜, 삭제 #56">
+      <option name="closed" value="true" />
+      <created>1718868458906</created>
+      <option name="number" value="00094" />
+      <option name="presentableId" value="LOCAL-00094" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868458906</updated>
+    </task>
+    <task id="LOCAL-00095" summary="[feat] 영화 찜, 삭제 #56">
+      <option name="closed" value="true" />
+      <created>1718868462837</created>
+      <option name="number" value="00095" />
+      <option name="presentableId" value="LOCAL-00095" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868462837</updated>
+    </task>
+    <task id="LOCAL-00096" summary="[feat] 영화 찜, 삭제 #56">
+      <option name="closed" value="true" />
+      <created>1718868466980</created>
+      <option name="number" value="00096" />
+      <option name="presentableId" value="LOCAL-00096" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868466980</updated>
+    </task>
+    <task id="LOCAL-00097" summary="[feat] 영화 찜, 삭제 #56">
+      <option name="closed" value="true" />
+      <created>1718868471114</created>
+      <option name="number" value="00097" />
+      <option name="presentableId" value="LOCAL-00097" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868471114</updated>
+    </task>
+    <task id="LOCAL-00098" summary="[feat] 영화 찜, 삭제 #56">
+      <option name="closed" value="true" />
+      <created>1718868722534</created>
+      <option name="number" value="00098" />
+      <option name="presentableId" value="LOCAL-00098" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868722534</updated>
+    </task>
+    <task id="LOCAL-00099" summary="[feat] 영화 찜, 삭제 #56">
+      <option name="closed" value="true" />
+      <created>1718868726901</created>
+      <option name="number" value="00099" />
+      <option name="presentableId" value="LOCAL-00099" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868726901</updated>
+    </task>
+    <option name="localTasksCounter" value="100" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
