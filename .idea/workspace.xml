@@ -4,15 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] : insertMyReview수정 #46">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/ReviewDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReviewDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisReviewDao.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReviewImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/ReviewImpl.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/ReviewMapper.xml" afterDir="false" />
-    </list>
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] : getMyReviewList 추가 #46" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -252,55 +244,7 @@
       <workItem from="1717404019919" duration="19766000" />
       <workItem from="1717482497318" duration="4339000" />
       <workItem from="1718623673485" duration="5001000" />
-      <workItem from="1718849719476" duration="5809000" />
-    </task>
-    <task id="LOCAL-00039" summary="[add] : WishTest Code 추가, 중복 값 예외 처리코드 추가 #21">
-      <option name="closed" value="true" />
-      <created>1716387590073</created>
-      <option name="number" value="00039" />
-      <option name="presentableId" value="LOCAL-00039" />
-      <option name="project" value="LOCAL" />
-      <updated>1716387590073</updated>
-    </task>
-    <task id="LOCAL-00040" summary="[fix] : update workspace.xml">
-      <option name="closed" value="true" />
-      <created>1716387629383</created>
-      <option name="number" value="00040" />
-      <option name="presentableId" value="LOCAL-00040" />
-      <option name="project" value="LOCAL" />
-      <updated>1716387629383</updated>
-    </task>
-    <task id="LOCAL-00041" summary="[add] : MovieDao interface 영화 상세 정보 조회 getMoviedetail 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716388888415</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1716388888415</updated>
-    </task>
-    <task id="LOCAL-00042" summary="[add] : MovieMapper interface 영화 상세 정보 조회 getMoviedetail 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716388905709</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1716388905709</updated>
-    </task>
-    <task id="LOCAL-00043" summary="[add] : MovieMapper service 영화 상세 정보 조회 getMoviedetail 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716388929553</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1716388929553</updated>
-    </task>
-    <task id="LOCAL-00044" summary="[add] : MovieImpl service 영화 상세 정보 조회 getMoviedetail 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716388958358</created>
-      <option name="number" value="00044" />
-      <option name="presentableId" value="LOCAL-00044" />
-      <option name="project" value="LOCAL" />
-      <updated>1716388958358</updated>
+      <workItem from="1718849719476" duration="6181000" />
     </task>
     <task id="LOCAL-00045" summary="[add] : MybatisMovieDao 영화 상세 정보 조회 getMoviedetail 추가 #23">
       <option name="closed" value="true" />
@@ -646,14 +590,61 @@
       <option name="project" value="LOCAL" />
       <updated>1718791450249</updated>
     </task>
-    <option name="localTasksCounter" value="88" />
+    <task id="LOCAL-00088" summary="[feat] : getMyReviewList 추가 #46">
+      <option name="closed" value="true" />
+      <created>1718857157959</created>
+      <option name="number" value="00088" />
+      <option name="presentableId" value="LOCAL-00088" />
+      <option name="project" value="LOCAL" />
+      <updated>1718857157960</updated>
+    </task>
+    <task id="LOCAL-00089" summary="[feat] : getMyReviewList 추가 #46">
+      <option name="closed" value="true" />
+      <created>1718857169580</created>
+      <option name="number" value="00089" />
+      <option name="presentableId" value="LOCAL-00089" />
+      <option name="project" value="LOCAL" />
+      <updated>1718857169580</updated>
+    </task>
+    <task id="LOCAL-00090" summary="[feat] : getMyReviewList 추가 #46">
+      <option name="closed" value="true" />
+      <created>1718857175723</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1718857175723</updated>
+    </task>
+    <task id="LOCAL-00091" summary="[feat] : getMyReviewList 추가 #46">
+      <option name="closed" value="true" />
+      <created>1718857182098</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1718857182098</updated>
+    </task>
+    <task id="LOCAL-00092" summary="[feat] : getMyReviewList 추가 #46">
+      <option name="closed" value="true" />
+      <created>1718857188091</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1718857188091</updated>
+    </task>
+    <task id="LOCAL-00093" summary="[feat] : getMyReviewList 추가 #46">
+      <option name="closed" value="true" />
+      <created>1718857204231</created>
+      <option name="number" value="00093" />
+      <option name="presentableId" value="LOCAL-00093" />
+      <option name="project" value="LOCAL" />
+      <updated>1718857204231</updated>
+    </task>
+    <option name="localTasksCounter" value="94" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : MovieMapper.xml 영화 상세 조회 쿼리 추가 #23" />
     <MESSAGE value="[fix] : update workspace" />
     <MESSAGE value="[add] : Spring security,JPA 의존성 추가" />
     <MESSAGE value="[fix] : pom.xml 수정 #27" />
@@ -678,7 +669,8 @@
     <MESSAGE value="pull" />
     <MESSAGE value="[feat] : insertMyReview 추가 #46" />
     <MESSAGE value="[feat] : insertMyReview수정 #46" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] : insertMyReview수정 #46" />
+    <MESSAGE value="[feat] : getMyReviewList 추가 #46" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] : getMyReviewList 추가 #46" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
