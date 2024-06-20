@@ -158,4 +158,25 @@ public class UserController {
             return ResponseEntity.notFound().build();
         }
     }
+
+    //입력한 id가 db에 있는지? true or false 넘겨주기
+
+    @PostMapping("/checkExistsId")
+    public ResponseEntity<Boolean> findPwStepOne(@RequestBody Map<String, String> payload) {
+        String userId = payload.get("userId");
+        System.out.println("사용자 아이디: " + userId);
+        boolean userExists = userService.checkUserExistsById(userId);
+        return ResponseEntity.ok(userExists);
+    }
+
+    @PostMapping("/changePassword")
+    public void changePassword(@RequestBody Map<String, String> payload) {
+        String userId = payload.get("userId");
+        String newPw = payload.get("newPassword");
+        String newPassword = passwordEncoder.encode(newPw);
+        System.out.println("사용자 아이디: " + userId);
+        System.out.println("새 비밀번호: " + newPassword);
+        userService.updateUserPassword(userId,newPassword);
+    }
+
 }
