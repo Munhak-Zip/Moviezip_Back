@@ -79,4 +79,12 @@ public class ReviewController {
         return rv;
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/wish/MyReviewBoxUpdate/{rvId}")
+    public int updateReview(@PathVariable int rvId, @RequestBody Review rv) throws Exception {
+        int cnt = reviewImpl.updateReview(rv);
+        System.out.println("리뷰 수정 결과:" + rv.getContent());
+        return cnt;
+    }
+
 }
