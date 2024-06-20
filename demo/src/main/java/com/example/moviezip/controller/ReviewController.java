@@ -57,7 +57,7 @@ public class ReviewController {
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
-    @GetMapping("{mvId}/critics")
+    @GetMapping("movie/{mvId}/critics")
     public List<Review> getCriticsReview(@PathVariable int mvId) throws Exception {
         System.out.println("Entering getMovie method with mvId: " + mvId);
         List<Review> rv = reviewImpl.getCriticReviews(mvId);
