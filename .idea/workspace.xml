@@ -4,9 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="머지">
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] 평론가 리뷰 제공 #48">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/MovieController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/MovieController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/MovieMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -247,22 +248,6 @@
       <workItem from="1717404019919" duration="19766000" />
       <workItem from="1717482497318" duration="4339000" />
       <workItem from="1718623673485" duration="5001000" />
-    </task>
-    <task id="LOCAL-00036" summary="[add] : WishMapper interface saveWishMovie 영화 찜하기 추가 #21">
-      <option name="closed" value="true" />
-      <created>1716387465958</created>
-      <option name="number" value="00036" />
-      <option name="presentableId" value="LOCAL-00036" />
-      <option name="project" value="LOCAL" />
-      <updated>1716387465958</updated>
-    </task>
-    <task id="LOCAL-00037" summary="[add] : WishMapper.xml 영화 찜하기 쿼리 추가 #21">
-      <option name="closed" value="true" />
-      <created>1716387525766</created>
-      <option name="number" value="00037" />
-      <option name="presentableId" value="LOCAL-00037" />
-      <option name="project" value="LOCAL" />
-      <updated>1716387525766</updated>
     </task>
     <task id="LOCAL-00038" summary="[add] : WishImpl service saveWishMovie 추가 #21">
       <option name="closed" value="true" />
@@ -640,14 +625,29 @@
       <option name="project" value="LOCAL" />
       <updated>1718789956466</updated>
     </task>
-    <option name="localTasksCounter" value="85" />
+    <task id="LOCAL-00085" summary="[feat] 평론가 리뷰 제공 #48">
+      <option name="closed" value="true" />
+      <created>1718800539990</created>
+      <option name="number" value="00085" />
+      <option name="presentableId" value="LOCAL-00085" />
+      <option name="project" value="LOCAL" />
+      <updated>1718800539990</updated>
+    </task>
+    <task id="LOCAL-00086" summary="[feat] 평론가 리뷰 제공 #48">
+      <option name="closed" value="true" />
+      <created>1718800543478</created>
+      <option name="number" value="00086" />
+      <option name="presentableId" value="LOCAL-00086" />
+      <option name="project" value="LOCAL" />
+      <updated>1718800543478</updated>
+    </task>
+    <option name="localTasksCounter" value="87" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : MybatisMovieDao 영화 상세 정보 조회 getMoviedetail 추가 #23" />
     <MESSAGE value="[add] : MovieTest 영화 상세 정보 조회 테스트코드 추가 #23" />
     <MESSAGE value="[add] : MovieMapper.xml 영화 상세 조회 쿼리 추가 #23" />
     <MESSAGE value="[fix] : update workspace" />
@@ -672,7 +672,8 @@
     <MESSAGE value="[feat] : 영화 예매 내역 출력 #36" />
     <MESSAGE value="pull" />
     <MESSAGE value="머지" />
-    <option name="LAST_COMMIT_MESSAGE" value="머지" />
+    <MESSAGE value="[feat] 평론가 리뷰 제공 #48" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] 평론가 리뷰 제공 #48" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
