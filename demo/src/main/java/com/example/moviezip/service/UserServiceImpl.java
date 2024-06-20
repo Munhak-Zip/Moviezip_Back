@@ -59,9 +59,10 @@ public ResponseEntity<String> joinProcess(User user) {
     return ResponseEntity.ok("User registered successfully.");
 }
 
+//비밀번호 변경
     @Override
-    public void updatePassword(Long id, String newPassword) {
-
+    public void updateUserPassword(String userId, String newPassword) {
+        mybatisUserDao.updateUserPassword(userId, newPassword);
     }
 
     @Override
@@ -109,5 +110,10 @@ public ResponseEntity<String> joinProcess(User user) {
     @Override
     public String findUserIdByInfo(String nickname, String hint) {
        return mybatisUserDao.findUserIdByInfo(nickname, hint);
+    }
+
+    @Override
+    public Boolean checkUserExistsById(String userId) {
+        return mybatisUserDao.checkUserExistsById(userId);
     }
 }
