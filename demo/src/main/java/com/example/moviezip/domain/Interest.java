@@ -1,14 +1,10 @@
 package com.example.moviezip.domain;
 
-public class Interest extends User {
-
+public class Interest {
     private Long id;
     private String genre;
 
-    public Interest(Long id){
-        super(id);
-    }
-
+    // Getters and setters
     public Long getId() {
         return id;
     }
@@ -23,9 +19,5 @@ public class Interest extends User {
 
     public void setGenre(String genre) {
         this.genre = genre;
-    }
-
-    public String getInterestsAsString() {
-        return String.join(", ", genre);
     }
 }

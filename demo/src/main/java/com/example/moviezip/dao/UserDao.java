@@ -1,5 +1,6 @@
 package com.example.moviezip.dao;
 
+import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
 import org.springframework.dao.DataAccessException;
 
@@ -21,7 +22,7 @@ public interface UserDao {
 
     public List<User> findAllUser() throws DataAccessException;
 
-//    public void addInterest(Interest interest) throws DataAccessException;
+   public void addInterest(Long id, String genre) throws DataAccessException;
 //
 //    public Interest findInterest(Long id) throws DataAccessException;
 
