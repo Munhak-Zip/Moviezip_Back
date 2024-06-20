@@ -13,7 +13,7 @@
     </select>
 
     <update id="updateUserPassword">
-        UPDATE USER_TABLE SET PASSWORD = #{newPassword} WHERE ID = #{id}
+        UPDATE USER_TABLE SET PASSWORD = #{newPassword} WHERE USERID = #{userId}
     </update>
     <select id="findUser" resultType="User">
         SELECT * FROM USER_TABLE WHERE HINT = #{hint} AND NICKNAME = #{nickname}
@@ -77,9 +77,20 @@
         <result property="nickname" column="nickname"/>
         <result property="hint" column="hint"/>
     </resultMap>
+
     <select id="findUserIdByInfo" resultType="java.lang.String">
         SELECT USERID
         FROM USER_TABLE
         WHERE NICKNAME = #{nickname} AND HINT = #{hint}
     </select>
+
+    <select id="checkUserExistsById" resultType="boolean">
+        SELECT CASE WHEN COUNT(*) > 0 THEN 1 ELSE 0 END
+        FROM USER_TABLE
+        WHERE USERID = #{userId}
+    </select>
+
+
+
+
 </mapper>
