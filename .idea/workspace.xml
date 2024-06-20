@@ -4,8 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] 검색하기 #53">
+    <list default="true" id="6a7d57ef-2873-46e8-8ed0-390a1bfd60d1" name="Changes" comment="[feat] 영화 찜, 삭제 #56">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/controller/ReviewController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/WishDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/WishDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisWishDao.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/MybatisWishDao.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/WishMapper.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/dao/mybatis/mapper/WishMapper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/WishImpl.java" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/java/com/example/moviezip/service/WishImpl.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/WishMapper.xml" beforeDir="false" afterPath="$PROJECT_DIR$/demo/src/main/resources/com/example/moviezip/dao/mybatis/mapper/WishMapper.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -247,30 +252,6 @@
       <workItem from="1717404019919" duration="19766000" />
       <workItem from="1717482497318" duration="4339000" />
       <workItem from="1718623673485" duration="5001000" />
-    </task>
-    <task id="LOCAL-00041" summary="[add] : MovieDao interface 영화 상세 정보 조회 getMoviedetail 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716388888415</created>
-      <option name="number" value="00041" />
-      <option name="presentableId" value="LOCAL-00041" />
-      <option name="project" value="LOCAL" />
-      <updated>1716388888415</updated>
-    </task>
-    <task id="LOCAL-00042" summary="[add] : MovieMapper interface 영화 상세 정보 조회 getMoviedetail 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716388905709</created>
-      <option name="number" value="00042" />
-      <option name="presentableId" value="LOCAL-00042" />
-      <option name="project" value="LOCAL" />
-      <updated>1716388905709</updated>
-    </task>
-    <task id="LOCAL-00043" summary="[add] : MovieMapper service 영화 상세 정보 조회 getMoviedetail 추가 #23">
-      <option name="closed" value="true" />
-      <created>1716388929553</created>
-      <option name="number" value="00043" />
-      <option name="presentableId" value="LOCAL-00043" />
-      <option name="project" value="LOCAL" />
-      <updated>1716388929553</updated>
     </task>
     <task id="LOCAL-00044" summary="[add] : MovieImpl service 영화 상세 정보 조회 getMoviedetail 추가 #23">
       <option name="closed" value="true" />
@@ -640,14 +621,37 @@
       <option name="project" value="LOCAL" />
       <updated>1718856894825</updated>
     </task>
-    <option name="localTasksCounter" value="90" />
+    <task id="LOCAL-00090" summary="[feat] 검색하기 #53">
+      <option name="closed" value="true" />
+      <created>1718859993361</created>
+      <option name="number" value="00090" />
+      <option name="presentableId" value="LOCAL-00090" />
+      <option name="project" value="LOCAL" />
+      <updated>1718859993361</updated>
+    </task>
+    <task id="LOCAL-00091" summary="[feat] 영화 찜, 삭제 #56">
+      <option name="closed" value="true" />
+      <created>1718868445331</created>
+      <option name="number" value="00091" />
+      <option name="presentableId" value="LOCAL-00091" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868445331</updated>
+    </task>
+    <task id="LOCAL-00092" summary="[feat] 영화 찜, 삭제 #56">
+      <option name="closed" value="true" />
+      <created>1718868448648</created>
+      <option name="number" value="00092" />
+      <option name="presentableId" value="LOCAL-00092" />
+      <option name="project" value="LOCAL" />
+      <updated>1718868448649</updated>
+    </task>
+    <option name="localTasksCounter" value="93" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="[add] : MovieMapper.xml 영화 상세 조회 쿼리 추가 #23" />
     <MESSAGE value="[fix] : update workspace" />
     <MESSAGE value="[add] : Spring security,JPA 의존성 추가" />
     <MESSAGE value="[fix] : pom.xml 수정 #27" />
@@ -672,7 +676,8 @@
     <MESSAGE value="머지" />
     <MESSAGE value="[feat] 평론가 리뷰 제공 #48" />
     <MESSAGE value="[feat] 검색하기 #53" />
-    <option name="LAST_COMMIT_MESSAGE" value="[feat] 검색하기 #53" />
+    <MESSAGE value="[feat] 영화 찜, 삭제 #56" />
+    <option name="LAST_COMMIT_MESSAGE" value="[feat] 영화 찜, 삭제 #56" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
