@@ -17,17 +17,17 @@ public class MybatisWishDao implements WishDao {
     private WishMapper wishMapper;
 
     @Override
-    public List<Movie> getWishMovie(int id) throws DataAccessException{
+    public List<Movie> getWishMovie(long id) throws DataAccessException{
         return wishMapper.getWishMovie(id);
     }
 
     @Override
-    public List<Review> getWishReview(int id) throws DataAccessException{
+    public List<Review> getWishReview(long id) throws DataAccessException{
         return wishMapper.getWishReview(id);
     }
 
     @Override
-    public int deleteWishReview(int id, int rvId) throws DataAccessException{
+    public int deleteWishReview(long id, long rvId) throws DataAccessException{
         return wishMapper.deleteWishReview(id, rvId);
     }
 
