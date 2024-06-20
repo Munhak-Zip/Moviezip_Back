@@ -20,10 +20,11 @@ public class MybatisUserDao implements UserDao {
         return userMapper.getUserById(id);
     }
 
+    //비밀번호 변경
     @Override
-    public void updatePassword(Long id, String newPassword) throws DataAccessException {
-        System.out.println("MybatisUserDao - updatePassword - id: " + id + ", newPassword: " + newPassword);
-        userMapper.updateUserPassword(id, newPassword);
+    public void updateUserPassword(String userId, String newPassword) throws DataAccessException {
+        System.out.println("MybatisUserDao - updatePassword - id: " + userId + ", newPassword: " + newPassword);
+        userMapper.updateUserPassword(userId, newPassword);
     }
 
     @Override
@@ -105,5 +106,12 @@ public class MybatisUserDao implements UserDao {
     @Override
     public String findUserIdByInfo(String nickname, String hint) throws DataAccessException {
         return userMapper.findUserIdByInfo(nickname, hint);
+    }
+
+
+    //비밀번호 변경 step1
+    @Override
+    public Boolean checkUserExistsById(String userId) throws DataAccessException {
+        return userMapper.checkUserExistsById(userId);
     }
 }

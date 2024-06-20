@@ -10,7 +10,7 @@ public interface UserDao {
     public User getUserById(String id) throws DataAccessException;
 
     //비번 변경
-    public void updatePassword(Long id, String newPassword) throws DataAccessException;
+    public void updateUserPassword(String userId, String newPassword) throws DataAccessException;
 
     public User findUser(String hint, String nickname) throws DataAccessException;
 
@@ -37,5 +37,7 @@ public interface UserDao {
     Long getIdByUsername(String username) throws DataAccessException;
 
     String findUserIdByInfo(String nickname, String hint) throws DataAccessException;
+
+    Boolean checkUserExistsById(String userId) throws DataAccessException;
 
 }
