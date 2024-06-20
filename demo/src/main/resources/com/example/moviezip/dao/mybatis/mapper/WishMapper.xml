@@ -34,6 +34,17 @@
   <!--영화 찜하기-->
   <insert id="saveWishMovie">
     INSERT INTO MOVIE_WISH(ID,MOVIE_ID)
-    VALUES (#{userid} , #{movie_id})
+    VALUES (#{id} , #{movieId})
   </insert>
+  <!--영화 찜했는지 아닌지-->
+  <select id="checkMyWish" resultType="int">
+    SELECT COUNT(*)
+    FROM MOVIE_WISH
+    WHERE ID = #{id} AND MOVIE_ID = #{movieId}
+  </select>
+  <!--영화 찜취소-->
+  <delete id="deleteWishMovie">
+    DELETE FROM MOVIE_WISH
+    WHERE ID = #{id} AND MOVIE_ID = #{movieId}
+  </delete>
 </mapper>
