@@ -48,4 +48,18 @@ public class MovieController {
         }
         return movieList;
     }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("search/{mvTitle}")
+    public List<Movie> getSearchMovie(@PathVariable String mvTitle) throws Exception {
+        System.out.println("Entering getMovie method with mvTitle: " + mvTitle);
+        List<Movie> movieList = movieService.searchMoviesByTitle(mvTitle);
+        for(Movie mv : movieList) {
+            System.out.println("검색제목검색: " + mv.getMvTitle());
+            System.out.println("검색제목별점: " + mv.getMvStar());
+            System.out.println(mv.getMvId());
+            System.out.println(mv.getMvDirector());
+        }
+        return movieList;
+    }
 }
