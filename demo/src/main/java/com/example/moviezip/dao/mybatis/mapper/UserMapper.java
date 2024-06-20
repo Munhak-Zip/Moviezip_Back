@@ -11,7 +11,8 @@ import java.util.List;
 public interface UserMapper {
     User getUserById(String id);
 
-    void updateUserPassword(@Param("id") Long id, @Param("newPassword") String newPassword);
+    //비밀번호 변경하기
+    void updateUserPassword(@Param("userId") String userId, @Param("newPassword") String newPassword);
 
     //힌트 통해 사용자 찾기
     User findUser(@Param("hint") String hint, @Param("nickname") String nickname);
@@ -46,6 +47,8 @@ public interface UserMapper {
     Long getIdByUsername(@Param("username") String username);
 
     String findUserIdByInfo(@Param("nickname") String nickname,@Param("hint") String hint);
+
+    Boolean checkUserExistsById(@Param("userId") String userId);
 
 
 }
