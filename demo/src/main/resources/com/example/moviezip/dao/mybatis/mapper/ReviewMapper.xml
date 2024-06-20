@@ -31,7 +31,7 @@
     </select>
 
     <select id="getReviewDetail" parameterType="int" resultType="Review">
-        SELECT CONTENT, STAR as rvStar, MOVIE.MOVIE_TITLE AS mvTitle, REVIEW_ID as rvId
+        SELECT CONTENT, STAR as rvStar, MOVIE.MOVIE_TITLE AS mvTitle, REVIEW_ID as rvId, MOVIE.MOVIE_IMG AS mvImg
         FROM REVIEW
                  JOIN MOVIE ON MOVIE.MOVIE_ID = REVIEW.MOVIE_ID
         WHERE REVIEW_ID = #{rvId}
@@ -41,8 +41,7 @@
     <update id="updateReview" parameterType="Review">
         UPDATE REVIEW SET
             CONTENT = #{content},
-            STAR = #{rvStar},
-            REVIEW_TITLE = #{rvTitle,jdbcType=VARCHAR}
+            STAR = #{rvStar}
         WHERE REVIEW_ID = #{rvId}
     </update>
 
