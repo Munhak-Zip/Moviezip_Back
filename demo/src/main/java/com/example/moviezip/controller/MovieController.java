@@ -102,4 +102,16 @@ public class MovieController {
         }
         return ch;
     }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("/movie/wish")
+    public List<Movie> getWishMovie(@RequestParam int userId) {
+        List<Movie> movieList = wishService.getWishMovie(userId);
+        for (Movie movie : movieList) {
+            System.out.println("보관함 영화: " + movie.getMvTitle());
+        }
+        // movieList 중 5개만 movieList2에 넣어서 return
+        List<Movie> movieList2 = movieList.stream().limit(5).toList();
+        return movieList2;
+    }
 }
