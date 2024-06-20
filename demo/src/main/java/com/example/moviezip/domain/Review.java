@@ -15,21 +15,23 @@ public class Review extends Movie {
 
     }
 
-    public Review(Long rvId, int rvStar, String mvTitle, String content, String is_Critic, Long mvId) {
+    public Review(Long rvId, int rvStar, String mvTitle, String content, String is_Critic, Long mvId, String mvImg) {
         this.rvId = rvId;
         this.rvStar = rvStar;
         this.mvTitle = mvTitle;
         this.content = content;
         this.is_Critic = is_Critic;
         super.setMvId(mvId);
+        super.setMvImg(mvImg);
 
     }
 
 
-    public Review(String content, int rvStar, Long mvId) { // id 지웠음, 예진이 수정 필요 -> 완료
+    public Review(String content, int rvStar, Long mvId, String mvImg) { // id 지웠음, 예진이 수정 필요 -> 완료
         this.content = content;
         this.rvStar = rvStar;
         super.setMvId(mvId);
+        super.setMvImg(mvImg);
     }
 
     public void setContent(String content) {
