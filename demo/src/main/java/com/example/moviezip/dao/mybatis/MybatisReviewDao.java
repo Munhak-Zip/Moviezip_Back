@@ -32,7 +32,7 @@ public class MybatisReviewDao implements ReviewDao {
         return reviewMapper.getReviewList(mvId);
     }
     @Override
-    public Review getReviewDetail(long rvId) throws DataAccessException {
+    public Review getReviewDetail(int rvId) throws DataAccessException {
         return reviewMapper.getReviewDetail(rvId);
     }
     @Override
