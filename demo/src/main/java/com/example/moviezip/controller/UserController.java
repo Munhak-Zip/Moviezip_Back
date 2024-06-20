@@ -4,9 +4,11 @@ package com.example.moviezip.controller;
 import com.example.moviezip.domain.CustomUserDetails;
 import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
+import com.example.moviezip.domain.UserDto;
 import com.example.moviezip.service.CustomUserDetailsService;
 import com.example.moviezip.service.UserService;
 import com.example.moviezip.service.UserServiceImpl;
+import org.apache.ibatis.annotations.ResultMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -132,5 +134,28 @@ public class UserController {
     @PostMapping("/addInterest")
     public void addInterest(@RequestBody Interest interest) {
         userService.addInterest(interest.getId(), interest.getGenre());
+    }
+
+    // 사용자 아이디 찾기
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/findUserId")
+    public ResponseEntity<String> findUserIdByInfo(@RequestBody UserDto userDto) {
+        // 디버깅을 위해 입력값을 출력합니다.
+
+        String nickname = userDto.getNickname();
+        String hint = userDto.getHint();
+        System.out.println("Received nickname: " + nickname);
+        System.out.println("Received hint: " + hint);
+
+        String userId = userService.findUserIdByInfo(nickname, hint);
+
+        // Debugging: 조회된 userId 확인
+        System.out.println("Found userId: " + userId);
+
+        if (userId != null) {
+            return ResponseEntity.ok(userId); // userId를 문자열로 반환
+        } else {
+            return ResponseEntity.notFound().build();
+        }
     }
 }
