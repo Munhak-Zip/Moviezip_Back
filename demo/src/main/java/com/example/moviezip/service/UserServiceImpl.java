@@ -2,11 +2,10 @@ package com.example.moviezip.service;
 
 import com.example.moviezip.dao.mybatis.MybatisUserDao;
 import com.example.moviezip.dao.mybatis.mapper.UserMapper;
-import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import com.example.moviezip.domain.Interest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -60,9 +59,10 @@ public class UserServiceImpl implements UserService {
         return ResponseEntity.ok("User registered successfully.");
     }
 
+//비밀번호 변경
     @Override
-    public void updatePassword(Long id, String newPassword) {
-
+    public void updateUserPassword(String userId, String newPassword) {
+        mybatisUserDao.updateUserPassword(userId, newPassword);
     }
 
     @Override
@@ -106,4 +106,30 @@ public class UserServiceImpl implements UserService {
         mybatisUserDao.addInterest(id, genre);
 
     }
+
+    @Override
+    public String findUserIdByInfo(String nickname, String hint) {
+       return mybatisUserDao.findUserIdByInfo(nickname, hint);
+    }
+
+    @Override
+    public Boolean checkUserExistsById(String userId) {
+        return mybatisUserDao.checkUserExistsById(userId);
+    }
+
+    @Override
+    public Boolean findInterest(Long id) {
+        return mybatisUserDao.findInterest(id);
+    }
+
+    @Override
+    public User getUserById2(Long id) {
+        return mybatisUserDao.getUserById2(id);
+    }
+
+    @Override
+    public Interest findInterest2(Long id) {
+        return mybatisUserDao.findInterest2(id);
+    }
+
 }

@@ -1,8 +1,7 @@
 package com.example.moviezip.dao.mybatis;
-
+import com.example.moviezip.domain.Interest;
 import com.example.moviezip.dao.UserDao;
 import com.example.moviezip.dao.mybatis.mapper.UserMapper;
-import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
@@ -20,10 +19,11 @@ public class MybatisUserDao implements UserDao {
         return userMapper.getUserById(id);
     }
 
+    //비밀번호 변경
     @Override
-    public void updatePassword(Long id, String newPassword) throws DataAccessException {
-        System.out.println("MybatisUserDao - updatePassword - id: " + id + ", newPassword: " + newPassword);
-        userMapper.updateUserPassword(id, newPassword);
+    public void updateUserPassword(String userId, String newPassword) throws DataAccessException {
+        System.out.println("MybatisUserDao - updatePassword - id: " + userId + ", newPassword: " + newPassword);
+        userMapper.updateUserPassword(userId, newPassword);
     }
 
     @Override
@@ -67,11 +67,11 @@ public class MybatisUserDao implements UserDao {
 //        userMapper.addInterest(interest);
 //    }
 //
-//    @Override
-//    public Interest findInterest(Long id) throws DataAccessException{
-//        System.out.println("MybatisUserDao - findInterest");
-//        return userMapper.findInterest(id);
-//    }
+    @Override
+    public Boolean findInterest(Long id) throws DataAccessException{
+        System.out.println("MybatisUserDao - findInterest");
+        return userMapper.findInterest(id);
+    }
 
     @Override
     public void updateInterest(Long id, String genre) throws DataAccessException{
@@ -102,4 +102,25 @@ public class MybatisUserDao implements UserDao {
         return userMapper.getIdByUsername(username);
     }
 
+    @Override
+    public User getUserById2(Long id) throws DataAccessException {
+        return userMapper.getUserById2(id);
+    }
+
+    @Override
+    public String findUserIdByInfo(String nickname, String hint) throws DataAccessException {
+        return userMapper.findUserIdByInfo(nickname, hint);
+    }
+
+
+    //비밀번호 변경 step1
+    @Override
+    public Boolean checkUserExistsById(String userId) throws DataAccessException {
+        return userMapper.checkUserExistsById(userId);
+    }
+
+    @Override
+    public Interest findInterest2(Long id) throws DataAccessException {
+        return userMapper.findInterest2(id);
+    }
 }
