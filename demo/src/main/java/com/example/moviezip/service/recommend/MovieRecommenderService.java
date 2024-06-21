@@ -159,7 +159,7 @@ public class MovieRecommenderService {
             List<Tuple2<Tuple2<Integer, Integer>, Double>> sortedRecommendations = recommendations.collect()
                     .stream()
                     .sorted((r1, r2) -> r2._2.compareTo(r1._2)) // 평점에 따라 내림차순 정렬
-                    .limit(8) // 상위 8개만 선택
+                    .limit(5) // 상위 5개만 선택
                     .collect(Collectors.toList());
 
             sortedRecommendations.forEach(recommendation -> {

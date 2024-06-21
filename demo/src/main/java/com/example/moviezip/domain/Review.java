@@ -3,33 +3,48 @@ package com.example.moviezip.domain;
 import java.io.Serializable;
 
 public class Review extends Movie {
-    private int rvId;
+    private Long rvId;
     private int rvStar;
     private String writer;
-    private String mvTitle;
     private String content;
     private String rvTitle;
-        private String is_Critic;
+    private String is_Critic;
+
+    private int mvId;
+    private String mvTitle;
+    private String mvImg;
 
     public Review(){
 
     }
 
-    public Review(int rvId, int rvStar, String mvTitle, String content, String is_Critic, Long mvId) {
+    public Review(Long rvId, int rvStar, String mvTitle, String content, String is_Critic, Long mvId, String mvImg) {
         this.rvId = rvId;
         this.rvStar = rvStar;
         this.mvTitle = mvTitle;
         this.content = content;
         this.is_Critic = is_Critic;
         super.setMvId(mvId);
+        super.setMvImg(mvImg);
 
     }
 
+    public Review(int rvStar, String content, String rvTitle, String writer, int mvId, String mvTitle, String mvImg) {
+        this.rvStar = rvStar;
+        this.content = content;
+        this.rvTitle = rvTitle;
+        this.writer = writer;
+        this.mvId = mvId;
+        this.mvImg = mvImg;
+        this.mvTitle = mvTitle;
+    }
 
-    public Review(String content, int rvStar, Long mvId) { // id 지웠음, 예진이 수정 필요 -> 완료
+
+    public Review(String content, int rvStar, Long mvId, String mvImg) { // id 지웠음, 예진이 수정 필요 -> 완료
         this.content = content;
         this.rvStar = rvStar;
         super.setMvId(mvId);
+        super.setMvImg(mvImg);
     }
 
     public void setContent(String content) {
@@ -49,11 +64,11 @@ public class Review extends Movie {
     }
 
 
-    public int getRvId() {
+    public Long getRvId() {
         return rvId;
     }
 
-    public void setRvId(int rvId) {
+    public void setRvId(Long rvId) {
         this.rvId = rvId;
     }
 

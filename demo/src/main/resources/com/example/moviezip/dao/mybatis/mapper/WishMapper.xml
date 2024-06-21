@@ -4,7 +4,13 @@
 <mapper namespace="com.example.moviezip.dao.mybatis.mapper.WishMapper">
   <!-- 찜한 영화 가져오기, 영화의 제목과 별점을 Movie List 객체 형태로 가져옴-->
   <select id="getWishMovie" resultType="com.example.moviezip.domain.Movie">
-    SELECT MOVIE.MOVIE_TITLE AS mvTitle, MOVIE.MOVIE_STAR AS mvStar
+    SELECT MOVIE.MOVIE_TITLE AS mvTitle,
+           MOVIE.MOVIE_STAR AS mvStar,
+           MOVIE.MOVIE_DETAIL AS mvDetail,
+           MOVIE.MOVIE_DIRECTOR AS mvDirector,
+           MOVIE.MOVIE_ID AS mvId,
+           MOVIE.MOVIE_OPENDATE AS openDate,
+           MOVIE.MOVIE_IMG AS mvImg
     FROM MOVIE
     JOIN MOVIE_WISH ON MOVIE.MOVIE_ID = MOVIE_WISH.MOVIE_ID
     WHERE MOVIE_WISH.ID = #{id}
@@ -12,9 +18,16 @@
 
   <!-- 찜한 리뷰 가져오기, 리뷰의 작성자, 별점, 제목, 내용을 Review List 객체 형태로 가져옴-->
   <select id="getWishReview" resultType="com.example.moviezip.domain.Review">
-    SELECT REVIEW.WRITER AS writer, REVIEW.STAR AS rvStar, REVIEW.REVIEW_TITLE AS rvTitle, REVIEW.CONTENT AS content
-    FROM REVIEW
-    JOIN REVIEW_WISH ON REVIEW.REVIEW_ID = REVIEW_WISH.REVIEW_ID
+    SELECT REVIEW.CONTENT AS content,
+           REVIEW.STAR AS rvStar,
+           REVIEW.REVIEW_TITLE AS rvTitle,
+           REVIEW.WRITER AS writer,
+           REVIEW.MOVIE_ID AS mvId,
+           MOVIE.MOVIE_TITLE AS mvTitle,
+           MOVIE.MOVIE_IMG AS mvImg
+    FROM REVIEW_WISH
+           JOIN REVIEW ON REVIEW_WISH.REVIEW_ID = REVIEW.REVIEW_ID
+           JOIN MOVIE ON REVIEW.MOVIE_ID = MOVIE.MOVIE_ID
     WHERE REVIEW_WISH.USER_ID = #{id}
   </select>
 
@@ -26,14 +39,32 @@
 
   <!-- 내가 쓴 리뷰 가져오기, 영화 제목, 별점, 내용을 Review List 형태로 가져옴-->
   <select id="getMyReview" resultType="com.example.moviezip.domain.Review">
-    SELECT MOVIE.MOVIE_TITLE As mvTitle, REVIEW.STAR As rvStar, REVIEW.CONTENT As content
+    SELECT REVIEW.CONTENT AS content,
+           REVIEW.STAR AS rvStart,
+           REVIEW.REVIEW_TITLE AS rvTitle,
+           REVIEW.WRITER AS writer,
+           REVIEW.MOVIE_ID AS mvId,
+           MOVIE.MOVIE_TITLE AS mvTitle,
+           MOVIE.MOVIE_IMG AS mvImg
     FROM REVIEW
            JOIN MOVIE ON REVIEW.MOVIE_ID = MOVIE.MOVIE_ID
     WHERE REVIEW.WRITER = #{userId}
   </select>
+
   <!--영화 찜하기-->
   <insert id="saveWishMovie">
     INSERT INTO MOVIE_WISH(ID,MOVIE_ID)
-    VALUES (#{userid} , #{movie_id})
+    VALUES (#{id} , #{movieId})
   </insert>
+  <!--영화 찜했는지 아닌지-->
+  <select id="checkMyWish" resultType="int">
+    SELECT COUNT(*)
+    FROM MOVIE_WISH
+    WHERE ID = #{id} AND MOVIE_ID = #{movieId}
+  </select>
+  <!--영화 찜취소-->
+  <delete id="deleteWishMovie">
+    DELETE FROM MOVIE_WISH
+    WHERE ID = #{id} AND MOVIE_ID = #{movieId}
+  </delete>
 </mapper>

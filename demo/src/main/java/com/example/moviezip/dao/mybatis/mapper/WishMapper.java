@@ -9,11 +9,14 @@ import java.util.List;
 
 @Mapper
 public interface WishMapper {
-     List<Movie> getWishMovie(int id);
-     List<Review> getWishReview(int id);
-     int deleteWishReview(@Param("id") int id, @Param("rvId") int rvId);
+     List<Movie> getWishMovie(long id);
+     List<Review> getWishReview(long id);
+     int deleteWishReview(@Param("id") long id, @Param("rvId") long rvId);
      List<Review> getMyReview(String userId);
 
      //영화 찜하기
-     int saveWishMovie(int userid, int movie_id);
+     int saveWishMovie(@Param("id")long id, @Param("movieId")long movieId);
+
+     int checkMyWish(@Param("id")long id, @Param("movieId")long movieId);
+     int deleteWishMovie(@Param("id")long id, @Param("movieId")long movieId);
 }
