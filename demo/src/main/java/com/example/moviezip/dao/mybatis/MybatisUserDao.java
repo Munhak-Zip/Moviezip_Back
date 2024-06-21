@@ -118,4 +118,9 @@ public class MybatisUserDao implements UserDao {
     public Boolean checkUserExistsById(String userId) throws DataAccessException {
         return userMapper.checkUserExistsById(userId);
     }
+
+    @Override
+    public Interest findInterest2(Long id) throws DataAccessException {
+        return userMapper.findInterest2(id);
+    }
 }
