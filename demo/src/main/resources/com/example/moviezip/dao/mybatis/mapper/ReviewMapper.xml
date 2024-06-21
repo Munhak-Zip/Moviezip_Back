@@ -6,9 +6,9 @@
 
     <insert id="insertMyReview" parameterType="Review">
         INSERT INTO REVIEW
-            (CONTENT, STAR, MOVIE_ID, IS_CRITIC)
+            (CONTENT, STAR, MOVIE_ID, IS_CRITIC, WRITER)
         VALUES
-            (#{content}, #{rvStar}, #{mvId}, #{is_Critic})
+            (#{content}, #{rvStar}, #{mvId}, #{is_Critic}, #{writer})
     </insert>
 
     <select id="getMyReviewList" parameterType="String" resultType="Review">

@@ -28,6 +28,9 @@ public class ReviewController {
     @PostMapping("movie/{mvId}/regReview")
     public void insertMyReview(@RequestBody Review review, @PathVariable Long mvId) {
         try {
+            User user = userService.getUserById(review.getWriter());
+            String wrtier = user.getUserId();
+            review.setWriter(wrtier);
             review.setMvId(mvId);
             review.setIs_Critic("N");
             reviewImpl.insertMyReview(review);
