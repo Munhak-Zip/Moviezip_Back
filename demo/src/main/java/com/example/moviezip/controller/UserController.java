@@ -14,6 +14,7 @@ import org.springframework.security.core.userdetails.UserDetails;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
+import javax.persistence.criteria.CriteriaBuilder;
 import javax.servlet.http.HttpSession;
 import java.util.Map;
 
@@ -132,5 +133,23 @@ public class UserController {
     @PostMapping("/addInterest")
     public void addInterest(@RequestBody Interest interest) {
         userService.addInterest(interest.getId(), interest.getGenre());
+    }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("/mypage/user")
+    public User findMypageUser(@RequestParam long userId) {
+        System.out.println("마이페이지 사용자"+userId);
+        User u = userService.getUserById2(userId);
+        System.out.println("사용자"+ u.getUserId());
+        return u;
+    }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("/mypage/user/interest")
+    public Interest findMypageInterest(@RequestParam long userId) {
+        System.out.println("마이페이지 사용자"+userId);
+        Interest i = userService.ffindInterest(userId);
+        System.out.println("사용자"+ i.getGenre());
+        return i;
     }
 }
