@@ -11,7 +11,8 @@ import java.util.List;
 public interface UserMapper {
     User getUserById(String id);
 
-    void updateUserPassword(@Param("id") Long id, @Param("newPassword") String newPassword);
+    //비밀번호 변경하기
+    void updateUserPassword(@Param("userId") String userId, @Param("newPassword") String newPassword);
 
     //힌트 통해 사용자 찾기
     User findUser(@Param("hint") String hint, @Param("nickname") String nickname);
@@ -29,8 +30,9 @@ public interface UserMapper {
     List<User> findAllUser();
 
    void addInterest(@Param("id")Long id, @Param("genre")String genre);
-//
-//    Interest findInterest(@Param("id") Long id);
+
+   //해당 아이디를 가진 사용자의 취향이 있는지
+    Boolean findInterest(@Param("id") Long id);
 
     void updateInterest(@Param("id")Long id, @Param("genre")String genre);
 
@@ -44,5 +46,10 @@ public interface UserMapper {
     
     //입력된 유저 아이디로 사용자 고유번호 가져오기
     Long getIdByUsername(@Param("username") String username);
+
+    String findUserIdByInfo(@Param("nickname") String nickname,@Param("hint") String hint);
+
+    Boolean checkUserExistsById(@Param("userId") String userId);
+
 
 }

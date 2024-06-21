@@ -4,8 +4,8 @@ package com.example.moviezip.controller;
 import com.example.moviezip.domain.CustomUserDetails;
 import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
+import com.example.moviezip.domain.UserDto;
 import com.example.moviezip.service.CustomUserDetailsService;
-import com.example.moviezip.service.UserService;
 import com.example.moviezip.service.UserServiceImpl;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -133,4 +133,56 @@ public class UserController {
     public void addInterest(@RequestBody Interest interest) {
         userService.addInterest(interest.getId(), interest.getGenre());
     }
+
+    // 사용자 아이디 찾기
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/findUserId")
+    public ResponseEntity<String> findUserIdByInfo(@RequestBody UserDto userDto) {
+        // 디버깅을 위해 입력값을 출력합니다.
+
+        String nickname = userDto.getNickname();
+        String hint = userDto.getHint();
+        System.out.println("Received nickname: " + nickname);
+        System.out.println("Received hint: " + hint);
+
+        String userId = userService.findUserIdByInfo(nickname, hint);
+
+        // Debugging: 조회된 userId 확인
+        System.out.println("Found userId: " + userId);
+
+        if (userId != null) {
+            return ResponseEntity.ok(userId); // userId를 문자열로 반환
+        } else {
+            return ResponseEntity.notFound().build();
+        }
+    }
+
+    //입력한 id가 db에 있는지? true or false 넘겨주기
+
+    @PostMapping("/checkExistsId")
+    public ResponseEntity<Boolean> findPwStepOne(@RequestBody Map<String, String> payload) {
+        String userId = payload.get("userId");
+        System.out.println("사용자 아이디: " + userId);
+        boolean userExists = userService.checkUserExistsById(userId);
+        return ResponseEntity.ok(userExists);
+    }
+
+    @PostMapping("/changePassword")
+    public void changePassword(@RequestBody Map<String, String> payload) {
+        String userId = payload.get("userId");
+        String newPw = payload.get("newPassword");
+        String newPassword = passwordEncoder.encode(newPw);
+        System.out.println("사용자 아이디: " + userId);
+        System.out.println("새 비밀번호: " + newPassword);
+        userService.updateUserPassword(userId,newPassword);
+    }
+
+    @PostMapping("/checkExistInterestById")
+    public Boolean checkExistInterestById(@RequestBody Map<String, Long> payload) {
+        Long id = payload.get("id");
+        System.out.println("사용자 아이디: " + id);
+        return userService.findInterest(id);
+    }
+
+
 }

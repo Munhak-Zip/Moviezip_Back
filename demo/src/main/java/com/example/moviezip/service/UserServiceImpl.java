@@ -2,7 +2,6 @@ package com.example.moviezip.service;
 
 import com.example.moviezip.dao.mybatis.MybatisUserDao;
 import com.example.moviezip.dao.mybatis.mapper.UserMapper;
-import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -60,9 +59,10 @@ public class UserServiceImpl implements UserService {
         return ResponseEntity.ok("User registered successfully.");
     }
 
+//비밀번호 변경
     @Override
-    public void updatePassword(Long id, String newPassword) {
-
+    public void updateUserPassword(String userId, String newPassword) {
+        mybatisUserDao.updateUserPassword(userId, newPassword);
     }
 
     @Override
@@ -105,5 +105,20 @@ public class UserServiceImpl implements UserService {
     public void addInterest(Long id, String genre) {
         mybatisUserDao.addInterest(id, genre);
 
+    }
+
+    @Override
+    public String findUserIdByInfo(String nickname, String hint) {
+       return mybatisUserDao.findUserIdByInfo(nickname, hint);
+    }
+
+    @Override
+    public Boolean checkUserExistsById(String userId) {
+        return mybatisUserDao.checkUserExistsById(userId);
+    }
+
+    @Override
+    public Boolean findInterest(Long id) {
+        return mybatisUserDao.findInterest(id);
     }
 }
