@@ -200,7 +200,7 @@ public class UserController {
     @GetMapping("/mypage/user/interest")
     public Interest findMypageInterest(@RequestParam long userId) {
         System.out.println("마이페이지 사용자"+userId);
-        Interest i = userService.ffindInterest(userId);
+        Interest i = userService.findInterest2(userId);
         System.out.println("사용자"+ i.getGenre());
         return i;
     }
