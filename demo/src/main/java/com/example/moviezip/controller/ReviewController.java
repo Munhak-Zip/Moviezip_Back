@@ -87,4 +87,11 @@ public class ReviewController {
         return cnt;
     }
 
+    @CrossOrigin(origins = "http://localhost:3000")
+    @DeleteMapping("wish/myReviewList/delete")
+    public void deleteReview(@RequestParam int rvId) throws Exception {
+        System.out.println("삭제");
+        reviewImpl.deleteReview(rvId);
+    }
+
 }
