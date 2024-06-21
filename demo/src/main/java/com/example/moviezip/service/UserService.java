@@ -27,4 +27,8 @@ public interface UserService {
     Long getIdByUsername(String username);
 
     void addInterest(Long id, String genre);
+
+    User getUserById2(Long id);
+
+    Interest ffindInterest(Long id);
 }
