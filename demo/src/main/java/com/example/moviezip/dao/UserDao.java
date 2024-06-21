@@ -42,4 +42,6 @@ public interface UserDao {
 
     Boolean checkUserExistsById(String userId) throws DataAccessException;
 
+    Interest findInterest2(Long id) throws DataAccessException;
+
 }
