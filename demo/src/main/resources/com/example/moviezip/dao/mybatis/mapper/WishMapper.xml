@@ -19,7 +19,7 @@
   <!-- 찜한 리뷰 가져오기, 리뷰의 작성자, 별점, 제목, 내용을 Review List 객체 형태로 가져옴-->
   <select id="getWishReview" resultType="com.example.moviezip.domain.Review">
     SELECT REVIEW.CONTENT AS content,
-           REVIEW.STAR AS rvStart,
+           REVIEW.STAR AS rvStar,
            REVIEW.REVIEW_TITLE AS rvTitle,
            REVIEW.WRITER AS writer,
            REVIEW.MOVIE_ID AS mvId,
