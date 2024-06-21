@@ -52,10 +52,10 @@ public class ReviewTest {
         System.out.println(review.getContent()+", "+review.getRvId());*/
 
         /* updateReviewTest */
-        Review newRv = new Review("이 리뷰 수정하겠음", 4, 2L);
-        newRv.setRvId(105);
-        int updatedRv = rvImpl.updateReview(newRv);
-        System.out.println(updatedRv);
+//        Review newRv = new Review("이 리뷰 수정하겠음", 4, 2L);
+//        newRv.setRvId(105L);
+//        int updatedRv = rvImpl.updateReview(newRv);
+//        System.out.println(updatedRv);
 
     }
 

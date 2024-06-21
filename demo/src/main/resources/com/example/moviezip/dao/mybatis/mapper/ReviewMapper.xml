@@ -12,35 +12,36 @@
     </insert>
 
     <select id="getMyReviewList" parameterType="String" resultType="Review">
-        SELECT CONTENT, STAR as rvStar, MOVIE.MOVIE_TITLE AS mvTitle
+        SELECT CONTENT, STAR as rvStar, MOVIE.MOVIE_TITLE AS mvTitle, REVIEW_ID AS rvId
         FROM REVIEW
         JOIN MOVIE ON MOVIE.MOVIE_ID = REVIEW.MOVIE_ID
         WHERE WRITER = #{writer}
     </select>
 
 
-    <delete id="deleteReview" parameterType="long">
+    <delete id="deleteReview" parameterType="Long">
         DELETE FROM REVIEW
         WHERE REVIEW_ID = #{rvId}
     </delete>
     
     <select id="getReviewList" resultType="Review">
-        SELECT CONTENT, STAR, REVIEW_TITLE, WRITER, REVIEW_ID
+        SELECT CONTENT, STAR, REVIEW_TITLE, WRITER, REVIEW_ID as rvId
         FROM REVIEW
         WHERE MOVIE_ID = #{mvId}
     </select>
 
-    <select id="getReviewDetail" resultType="Review">
-        SELECT CONTENT, STAR, REVIEW_TITLE, WRITER
+    <select id="getReviewDetail" parameterType="int" resultType="Review">
+        SELECT CONTENT, STAR as rvStar, MOVIE.MOVIE_TITLE AS mvTitle, REVIEW_ID as rvId, MOVIE.MOVIE_IMG AS mvImg
         FROM REVIEW
+                 JOIN MOVIE ON MOVIE.MOVIE_ID = REVIEW.MOVIE_ID
         WHERE REVIEW_ID = #{rvId}
     </select>
+
 
     <update id="updateReview" parameterType="Review">
         UPDATE REVIEW SET
             CONTENT = #{content},
-            STAR = #{rvStar},
-            REVIEW_TITLE = #{rvTitle,jdbcType=VARCHAR}
+            STAR = #{rvStar}
         WHERE REVIEW_ID = #{rvId}
     </update>
 

@@ -40,7 +40,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
                 .cors(withDefaults()) // CORS 설정 활성화
                 .authorizeRequests(authorizeRequests ->
                         authorizeRequests
-                                .antMatchers("/", "/loginProc", "/join", "/joinProc","/session-expired").permitAll()
+                                .antMatchers("/", "/loginProc", "/join", "/joinProc","/session-expired","/findUserId", "/checkExistsId", "/changePassword").permitAll()
                                 .anyRequest().authenticated()
                 )
                 .formLogin(formLogin ->
