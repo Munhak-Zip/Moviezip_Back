@@ -1,5 +1,5 @@
 package com.example.moviezip.service;
-
+import com.example.moviezip.domain.Interest;
 import algebra.lattice.Bool;
 import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.User;
@@ -31,4 +31,8 @@ public interface UserService {
     String findUserIdByInfo(String nickname, String hint);
 
     Boolean checkUserExistsById(String userId);
+
+    User getUserById2(Long id);
+
+    Interest findInterest2(Long id);
 }

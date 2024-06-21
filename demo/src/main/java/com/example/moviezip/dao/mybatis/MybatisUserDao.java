@@ -1,5 +1,5 @@
 package com.example.moviezip.dao.mybatis;
-
+import com.example.moviezip.domain.Interest;
 import com.example.moviezip.dao.UserDao;
 import com.example.moviezip.dao.mybatis.mapper.UserMapper;
 import com.example.moviezip.domain.User;
@@ -103,6 +103,11 @@ public class MybatisUserDao implements UserDao {
     }
 
     @Override
+    public User getUserById2(Long id) throws DataAccessException {
+        return userMapper.getUserById2(id);
+    }
+
+    @Override
     public String findUserIdByInfo(String nickname, String hint) throws DataAccessException {
         return userMapper.findUserIdByInfo(nickname, hint);
     }
@@ -112,5 +117,10 @@ public class MybatisUserDao implements UserDao {
     @Override
     public Boolean checkUserExistsById(String userId) throws DataAccessException {
         return userMapper.checkUserExistsById(userId);
+    }
+
+    @Override
+    public Interest findInterest2(Long id) throws DataAccessException {
+        return userMapper.findInterest2(id);
     }
 }

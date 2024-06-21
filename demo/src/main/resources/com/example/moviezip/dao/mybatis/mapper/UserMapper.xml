@@ -73,6 +73,10 @@
         WHERE USERID =  #{userId, jdbcType=VARCHAR}
     </select>
 
+    <select id="getUserById2" resultType="User">
+        SELECT * FROM USER_TABLE WHERE ID = #{id}
+    </select>
+
     <!-- UserMapper.xml -->
     <resultMap id="userResultMap" type="com.example.moviezip.domain.UserDto">
         <result property="nickname" column="nickname"/>

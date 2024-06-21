@@ -3,7 +3,7 @@ package com.example.moviezip.dao;
 import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
 import org.springframework.dao.DataAccessException;
-
+import com.example.moviezip.domain.Interest;
 import java.util.List;
 
 public interface UserDao {
@@ -36,8 +36,12 @@ public interface UserDao {
 
     Long getIdByUsername(String username) throws DataAccessException;
 
+    public User getUserById2(Long id) throws DataAccessException;
+
     String findUserIdByInfo(String nickname, String hint) throws DataAccessException;
 
     Boolean checkUserExistsById(String userId) throws DataAccessException;
+
+    Interest findInterest2(Long id) throws DataAccessException;
 
 }

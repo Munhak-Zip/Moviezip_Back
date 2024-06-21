@@ -4,7 +4,7 @@ import com.example.moviezip.domain.User;
 import com.example.moviezip.domain.Interest;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
-
+import com.example.moviezip.domain.Interest;
 import java.util.List;
 
 @Mapper
@@ -52,4 +52,7 @@ public interface UserMapper {
     Boolean checkUserExistsById(@Param("userId") String userId);
 
 
+    User getUserById2(Long id);
+
+    Interest findInterest2(Long id);
 }

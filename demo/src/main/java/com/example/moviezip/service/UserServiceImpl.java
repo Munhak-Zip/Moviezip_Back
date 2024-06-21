@@ -5,7 +5,7 @@ import com.example.moviezip.dao.mybatis.mapper.UserMapper;
 import com.example.moviezip.domain.Movie;
 import com.example.moviezip.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
-
+import com.example.moviezip.domain.Interest;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
@@ -121,4 +121,15 @@ public class UserServiceImpl implements UserService {
     public Boolean findInterest(Long id) {
         return mybatisUserDao.findInterest(id);
     }
+
+    @Override
+    public User getUserById2(Long id) {
+        return mybatisUserDao.getUserById2(id);
+    }
+
+    @Override
+    public Interest findInterest2(Long id) {
+        return mybatisUserDao.findInterest2(id);
+    }
+
 }
