@@ -106,4 +106,14 @@ public class UserServiceImpl implements UserService {
         mybatisUserDao.addInterest(id, genre);
 
     }
+
+    @Override
+    public User getUserById2(Long id) {
+        return mybatisUserDao.getUserById2(id);
+    }
+
+    @Override
+    public Interest ffindInterest(Long id) {
+        return mybatisUserDao.findInterest(id);
+    }
 }
