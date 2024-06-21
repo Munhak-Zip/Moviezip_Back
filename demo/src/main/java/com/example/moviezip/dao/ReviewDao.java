@@ -11,7 +11,7 @@ public interface ReviewDao {
 
     List<Review> getMyReviewList(String userId) throws DataAccessException;
 
-    void deleteReview(long rvId) throws DataAccessException;
+    void deleteReview(int rvId) throws DataAccessException;
 
     List<Review> getReviewList(long mvId) throws DataAccessException;
 
