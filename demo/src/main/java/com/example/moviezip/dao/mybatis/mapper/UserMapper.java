@@ -54,4 +54,5 @@ public interface UserMapper {
 
     User getUserById2(Long id);
 
+    Interest findInterest2(Long id);
 }
