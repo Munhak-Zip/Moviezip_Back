@@ -30,8 +30,9 @@ public interface UserMapper {
     List<User> findAllUser();
 
    void addInterest(@Param("id")Long id, @Param("genre")String genre);
-//
-//    Interest findInterest(@Param("id") Long id);
+
+   //해당 아이디를 가진 사용자의 취향이 있는지
+    Boolean findInterest(@Param("id") Long id);
 
     void updateInterest(@Param("id")Long id, @Param("genre")String genre);
 

@@ -35,8 +35,9 @@
         VALUES
             (#{id}, #{genre})
     </insert>
-    <select id="findInterest" resultType="Interest">
-        SELECT * FROM INTEREST
+    <select id="findInterest" resultType="boolean">
+        SELECT CASE WHEN COUNT(*) > 0 THEN 1 ELSE 0 END
+        FROM INTEREST
         WHERE ID = #{id}
     </select>
     <update id="updateInterest">

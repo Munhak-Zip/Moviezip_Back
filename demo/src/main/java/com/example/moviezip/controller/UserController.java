@@ -6,9 +6,7 @@ import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
 import com.example.moviezip.domain.UserDto;
 import com.example.moviezip.service.CustomUserDetailsService;
-import com.example.moviezip.service.UserService;
 import com.example.moviezip.service.UserServiceImpl;
-import org.apache.ibatis.annotations.ResultMap;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
@@ -178,5 +176,13 @@ public class UserController {
         System.out.println("새 비밀번호: " + newPassword);
         userService.updateUserPassword(userId,newPassword);
     }
+
+    @PostMapping("/checkExistInterestById")
+    public Boolean checkExistInterestById(@RequestBody Map<String, Long> payload) {
+        Long id = payload.get("id");
+        System.out.println("사용자 아이디: " + id);
+        return userService.findInterest(id);
+    }
+
 
 }

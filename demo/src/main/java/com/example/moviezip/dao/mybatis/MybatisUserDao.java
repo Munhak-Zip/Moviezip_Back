@@ -2,7 +2,6 @@ package com.example.moviezip.dao.mybatis;
 
 import com.example.moviezip.dao.UserDao;
 import com.example.moviezip.dao.mybatis.mapper.UserMapper;
-import com.example.moviezip.domain.Interest;
 import com.example.moviezip.domain.User;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.dao.DataAccessException;
@@ -68,11 +67,11 @@ public class MybatisUserDao implements UserDao {
 //        userMapper.addInterest(interest);
 //    }
 //
-//    @Override
-//    public Interest findInterest(Long id) throws DataAccessException{
-//        System.out.println("MybatisUserDao - findInterest");
-//        return userMapper.findInterest(id);
-//    }
+    @Override
+    public Boolean findInterest(Long id) throws DataAccessException{
+        System.out.println("MybatisUserDao - findInterest");
+        return userMapper.findInterest(id);
+    }
 
     @Override
     public void updateInterest(Long id, String genre) throws DataAccessException{

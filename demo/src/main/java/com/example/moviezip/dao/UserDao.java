@@ -24,7 +24,7 @@ public interface UserDao {
 
    public void addInterest(Long id, String genre) throws DataAccessException;
 //
-//    public Interest findInterest(Long id) throws DataAccessException;
+    public Boolean findInterest(Long id) throws DataAccessException;
 
     public void updateInterest(Long id, String genre) throws DataAccessException;
 

@@ -116,4 +116,9 @@ public ResponseEntity<String> joinProcess(User user) {
     public Boolean checkUserExistsById(String userId) {
         return mybatisUserDao.checkUserExistsById(userId);
     }
+
+    @Override
+    public Boolean findInterest(Long id) {
+        return mybatisUserDao.findInterest(id);
+    }
 }
