@@ -32,6 +32,9 @@ public class WishImpl {
         return mybatisWishDao.getMyReview(userId);
     }
 
+    public int checkMyWish(long id, long movieId){ return mybatisWishDao.checkMyWish(id, movieId);}
 
+    public int saveWishMovie(long id, long movieId){return mybatisWishDao.saveWishMovie(id, movieId);}
 
+    public int deleteWishMovie(long id, long movieId){return mybatisWishDao.deleteWishMovie(id, movieId);}
 }
