@@ -18,12 +18,13 @@ public class Review extends Movie {
 
     }
 
-    public Review(Long rvId, int rvStar, String mvTitle, String content, String is_Critic, Long mvId, String mvImg) {
+    public Review(Long rvId, int rvStar, String mvTitle, String content, String is_Critic, Long mvId, String mvImg, String writer) {
         this.rvId = rvId;
         this.rvStar = rvStar;
         this.mvTitle = mvTitle;
         this.content = content;
         this.is_Critic = is_Critic;
+        this.writer = writer;
         super.setMvId(mvId);
         super.setMvImg(mvImg);
 
