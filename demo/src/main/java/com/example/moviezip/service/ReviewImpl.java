@@ -19,7 +19,7 @@ public class ReviewImpl {
     }
 
     public List<Review> getMyReviewList(String userId) { return mybatisReviewDao.getMyReviewList(userId); }
-    public void deleteReview(long rvId){
+    public void deleteReview(int rvId){
         mybatisReviewDao.deleteReview(rvId);
     }
 
@@ -27,7 +27,7 @@ public class ReviewImpl {
         return mybatisReviewDao.getReviewList(mvId);
     }
 
-    public Review getReviewDetail(long rvId) {
+    public Review getReviewDetail(int rvId) {
         return mybatisReviewDao.getReviewDetail(rvId);
     }
     public int updateReview(Review review) { return mybatisReviewDao.updateReview(review); }

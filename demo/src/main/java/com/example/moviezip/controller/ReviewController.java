@@ -47,7 +47,7 @@ public class ReviewController {
         List<Review> myReviewList = reviewImpl.getMyReviewList(wrtier);
         try {
             for (Review rv : myReviewList) {
-                System.out.println("내가 쓴 리뷰 :" + rv.getMvTitle()+rv.getContent());
+                System.out.println("내가 쓴 리뷰 :" + rv.getMvTitle()+rv.getContent()+rv.getRvId());
             }
         } catch (Exception e) {
             System.out.println("리뷰 실패:");
@@ -69,4 +69,29 @@ public class ReviewController {
         }
         return rv;
     }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @GetMapping("wish/myReviewList/ReviewBoxDetail/{rvId}")
+    public Review getReviewDetail(@PathVariable int rvId) throws Exception {
+        System.out.print(rvId);
+        Review rv = reviewImpl.getReviewDetail(rvId);
+        System.out.println("리뷰 상세 정보:" + rv.getContent());
+        return rv;
+    }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @PostMapping("/wish/MyReviewBoxUpdate/{rvId}")
+    public int updateReview(@PathVariable int rvId, @RequestBody Review rv) throws Exception {
+        int cnt = reviewImpl.updateReview(rv);
+        System.out.println("리뷰 수정 결과:" + rv.getContent());
+        return cnt;
+    }
+
+    @CrossOrigin(origins = "http://localhost:3000")
+    @DeleteMapping("wish/myReviewList/delete")
+    public void deleteReview(@RequestParam int rvId) throws Exception {
+        System.out.println("삭제");
+        reviewImpl.deleteReview(rvId);
+    }
+
 }
