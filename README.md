@@ -1,52 +1,49 @@
-# ⭐Movie.Zip_Back
+<p align="center">
+  <img src="https://github.com/Munhak-Zip/Moviezip_Back/assets/110006845/e8d64401-4e07-45d5-abd1-923abf6a17d4" alt="화면 캡처 2024-07-08 231353">
+</p>
+<br>
 
-더 자세한 깃허브 룰 설명은 팀 노션 참고. 
+## [💻 WEB] 영화 리뷰 모음집, MOVIE.ZIP (2024.03 ~ 2024.06)
+<p align="center">
+  <img src="https://github.com/Munhak-Zip/Moviezip_Back/assets/110006845/8f2ead82-be3e-4fb0-a2ec-04430d1a8cf5">
+</p>
+<br>
 
-# TEST ID/PW
+## 🧱 ERD
+<p align="center">
+  <img src="https://github.com/Munhak-Zip/Moviezip_Back/assets/110006845/9db79464-343c-4768-a839-533dbbb3fa6f">
+</p>
+<br>
 
-email :  <br>
-pw : 
+## 🛠️ Tech Stack
+### Spring Boot
+- Groovy-Gradle
+- Packaging : jar
+- Java 17
+- Dependency
+  - Spring Web
+  - Oracle
+  - MyBatis
+  - Spring Security
+  - ALS
+  - Junit5
 
-## 작업 순서 
+<br>
 
-1. 이슈 생성
-2. 브랜치 생성 후 작업. add, commit, push (절대 메인에 push xx)
-3. PR 날리기, pr 담당자에게 알리기
-4. 메인에 merge는 본인이 하면 xx 반드시 다른 사람이 코드 확인 후 merge
-5. 이슈 close
-
-## type
-- add : 새로운 파일 추가
-- feat : 만들어진 파일에 새로운 기능 추가, 수정기존의 기능을 요구 사항에 맞추어 수정
-- fix : 기능에 대한 버그 수정
-- build : 빌드 관련 수정
-- chore : 패키지 매니저 수정, 그 외 기타 수정 ex) .gitignore
-- ci : CI 관련 설정 수정
-- docs : 문서 수정
-- comment : 주석 추가
-- style : 코드 스타일, 포맷팅에 대한 수정
-- refactor : 기능의 변화가 아닌 코드 리팩터링 ex) 변수 이름 변경
-- test : 테스트 코드 추가/수정
-- release : 버전 릴리즈
-- remove : 코드 또는 파일, 리소스 제거
-
-## Commit message 
-commit은 틈틈히 쪼개서 하는게 좋음. 예를 들어서 새 파일 추가 → commit → 새 파일에 대한 작업 진행
-
-`[type] : 내용 #이슈번호`
-
-ex) `[add] : 이미지 파일 추가 #223`
-
-## branch 이름
-branch명은 한글로 작성 시 깨질 수 있음. 영문으로 작성할 것.
-
-`type/작업내용`
-
-ex)  `fix/login error`
-
-## PR 규칙 
-pr시 자신이 작업한 내용 자세하게 써주어야 함!!
-
-예진 ← 민영 ← 다윤 ← 미현 ex( 민영이가 예진이 PR merge, 예진이가 미현 PR merge
-
-merge 할 때 delete branch 해주세용
+## ✨ Member
+<div align="center">
+  <table>
+    <tr>
+      <td align="center"><img src="https://avatars.githubusercontent.com/ldayun" width="100" height="100" /></td>
+      <td align="center"><img src="https://avatars.githubusercontent.com/somflower" width="100" height="100" /></td>
+      <td align="center"><img src="https://avatars.githubusercontent.com/yjin-jo" width="100" height="100" /></td>
+      <td align="center"><img src="https://avatars.githubusercontent.com/MinCodeHub" width="100" height="100" /></td>
+    </tr>
+    <tr>
+      <td align="center"><a href="https://github.com/ldayun">이다윤</a></td>
+      <td align="center"><a href="https://github.com/somflower">김미현</a></td>
+      <td align="center"><a href="https://github.com/yjin-jo">조예진</a></td>
+      <td align="center"><a href="https://github.com/MinCodeHub">허민영</a></td>
+    </tr>
+  </table>
+</div>
