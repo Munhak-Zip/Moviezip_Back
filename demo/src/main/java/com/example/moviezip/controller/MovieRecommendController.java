@@ -16,22 +16,38 @@ import java.util.List;
 public class MovieRecommendController {
     private MovieRecommenderService recommenderService;
     private MovieImpl movieService;
+    private List<String> recommendedMovies; // 추천 영화 저장 변수
+    private long lastRecommendationTime; // 마지막 추천 시간 저장 변수
     @Autowired
     public void setMovieRecommend(MovieRecommenderService recommenderService, MovieImpl movieService) {
         this.recommenderService = recommenderService;
         this.movieService = movieService;
+        this.recommendedMovies = new ArrayList<>();
+        this.lastRecommendationTime = 0;
     }
 
     @CrossOrigin(origins = "http://localhost:3000")
     @GetMapping("/main/recommend")
     public List<Movie> recommendMovies(@RequestParam int userId) throws Exception {
-        // MovieRecommender 실행
-        List<String> recommendations = recommenderService.recommendMovies(userId); // 수정된 부분
-        if (recommendations.isEmpty()) {
-            System.out.println("없다");
+        long currentTime = System.currentTimeMillis();
+        // 하루가 지났는지 확인 (24시간 = 86400000 milliseconds)
+        if (currentTime - lastRecommendationTime > 86400000) {
+            // MovieRecommender 실행
+            recommendedMovies = recommenderService.recommendMovies(userId);
+            lastRecommendationTime = currentTime; // 마지막 추천 시간 업데이트
         }
+
+        if (recommendedMovies.isEmpty()) {
+            System.out.println("추천 영화가 없습니다.");
+            return new ArrayList<>(); // 비어 있는 경우 빈 리스트 반환
+        }
+        // MovieRecommender 실행
+        //List<String> recommendations = recommenderService.recommendMovies(userId); // 수정된 부분
+        //if (recommendations.isEmpty()) {
+        //    System.out.println("없다");
+        //}
         List<Movie> movieList = new ArrayList<>();
-        for (String str : recommendations) {
+        for (String str : recommendedMovies) {
             System.out.println("값" + str);
 
             String[] parts = str.split(", ");
